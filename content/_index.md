@@ -13,6 +13,10 @@ with the topics, and you are confident to call an expert helper when needed,
 then you have all it takes to lead a team to success,
 or lead even more people and join as an organization (see below).
 
+## Be a Q&A helper
+
+Help us answer questions from the participants in the online Q&A document (collaborative notes).
+
 
 ## Partners and local exercise groups
 
@@ -28,34 +32,35 @@ We collect here the exercise groups that we know:
 
 ## Instructors
 
-- ...
+- TBA
 
 
 ## Workshop organizers
 
-- ...
+- Radovan Bast
+- Diana Iusan
 
 
 ## On-boarding
 
-- ...
+- TBA
 
 
 ## Outreach
 
-- ...
+- Diana Iusan
 
 
 ## Recording and broadcasting
 
-- ...
+- Richard Darst
 
 
 ## Local organizers
 
-- ...
+- TBA
 
 
 ## Collaborative notes editors
 
-- ...
+- TBA
