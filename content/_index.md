@@ -37,8 +37,8 @@ We collect here the exercise groups that we know:
 
 ## Workshop organizers
 
-- Radovan Bast
 - Diana Iusan
+- Enrico Glerean
 
 
 ## On-boarding
