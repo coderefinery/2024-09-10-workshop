@@ -9,7 +9,7 @@ Are you writing code and managing data for your research?
 Do you feel like wasting too much time on manual work?
 Do you struggle to understand and reuse older code?
 
-Join the CodeRefinery workshop 12-14 and 19-21 March 2024, for free and online.
+Join the CodeRefinery workshop 10-12 and 17-19 September 2024, for free and online.
 
 The workshop covers good coding practices, reproducible research principles, and using Git for collaboration.
 It consists of streamed lectures and breakout room exercises with team leaders.
