@@ -43,12 +43,13 @@ We collect here the exercise groups that we know:
 
 ## On-boarding
 
-- TBA
+- Samantha Wittke
 
 
 ## Outreach
 
 - Diana Iusan
+- Samantha Wittke
 
 
 ## Recording and broadcasting
