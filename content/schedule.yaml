@@ -4,15 +4,15 @@ schedule:
   - title: "Onboarding"
     date: "2024-08-28"
     sessions:
-      - starts: 14:00
-        ends: 15:00
+      - starts: 12:00
+        ends: 13:00
         title: On-boarding for team leaders / local hosts (option 1)
         url: https://coderefinery.github.io/manuals/team-leaders/
   - title: "Onboarding (you don't need to attend all sessions, choose the one that is better for you)"
     date: "2024-08-30"
     sessions:
-      - starts: 9:00
-        ends: 10:00
+      - starts: 8:00
+        ends: 9:00
         title: On-boarding for team leaders / local hosts (option 2)
         url: https://coderefinery.github.io/manuals/team-leaders/
   - title: "Installation help"
