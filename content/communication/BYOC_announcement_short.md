@@ -1,4 +1,7 @@
-+++ title = "Workshop announcement with Bring your own code example (short version)" [extra] subject = "Bring your own classroom to a CodeRefinery workshop" +++
++++ title = "Workshop announcement with Bring your own code example (short version)" 
+[extra] 
+subject = "Bring your own classroom to a CodeRefinery workshop" 
++++
 
 Bring your own classroom to a CodeRefinery workshop! 
 Provide a learning space, without organizing a full training by yourself. 
