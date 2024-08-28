@@ -1,4 +1,5 @@
-+++ title = "Workshop announcement with Bring your own code example (short version)" 
++++ 
+title = "Workshop announcement with Bring your own code example (short version)" 
 [extra] 
 subject = "Bring your own classroom to a CodeRefinery workshop" 
 +++
