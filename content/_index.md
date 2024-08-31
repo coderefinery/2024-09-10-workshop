@@ -28,6 +28,8 @@ We collect here the exercise groups that we know:
 - [**Aalto University**](https://scicomp.aalto.fi/):
   - Local in-person exercise session and local support.
   - Possibility of [credit points](@/certificates.md) to those in Finland.
+- [Digital Scholarship Centre and Carpentry community at Oslo University](https://www.ub.uio.no/english/courses-events/courses/coderefinery/time-and-place/2024-09-10-CodeRefinery-Part1)
+  - Local in-person exercise session and local support 
 
 
 ## Instructors
