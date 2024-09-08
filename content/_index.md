@@ -34,7 +34,16 @@ We collect here the exercise groups that we know:
 
 ## Instructors
 
-- TBA
+- Radovan Bast
+- Richard Darst
+- Hossein Firooz
+- Diana Iusan
+- Bjørn Lindi
+- Thomas Pfau
+- Dhanya Pushpadas
+- Sabry Razick
+- Teemu Ruokolainen
+- Yu Tian
 
 
 ## Workshop organizers
