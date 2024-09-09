@@ -36,7 +36,7 @@ schedule:
         ends: 7:20
         title: Welcome and introduction
         url: https://github.com/coderefinery/workshop-intro/blob/master/livestream.md
-        presenters: Samantha Wittke
+        presenters: Samantha
       - starts: 7:20
         ends: 9:00
         title: Introduction to version control with Git - part 1/4
@@ -110,13 +110,13 @@ schedule:
         ends: 9:00
         title: How to document your research software
         url: https://coderefinery.github.io/documentation/
-        presenters: TBA
+        presenters: Jarno and Ashwin
       - starts: 10:00
         ends: 11:30
         title: Jupyter notebooks
         subtitle: A tool to write and share executable notebooks and data visualization
         url: https://coderefinery.github.io/jupyter/
-        presenters: Diana and TBA
+        presenters: Diana and Jarno
   - title: "Day 6"
     date: "2024-09-19"
     sessions:
@@ -136,7 +136,7 @@ schedule:
         ends: 12:00
         title: "Concluding remarks, general Q&A, and where to go from here"
         url: https://github.com/coderefinery/workshop-outro/blob/master/README.md
-        presenters: TBA
+        presenters: Richard
   - title: "Optional: Bring your own code session"
     date: "2024-10-22"
     sessions:
