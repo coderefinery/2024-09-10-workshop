@@ -20,7 +20,9 @@ This is all you need for the full workshop experience tomorrow:
 3) A user account on GitHub for doing the exercises
 - https://coderefinery.github.io/installation/github/
 
-4) OPTIONAL: if you want to run Git from your computer, please install required software before the workshop:
+4) If you participate as a team, we recommend that you reserve a physical or video room for your team to work together during the exercises of the first workshop week.
+
+5) OPTIONAL: if you want to run Git from your computer, please install required software before the workshop:
 - https://coderefinery.github.io/installation/
 
 
