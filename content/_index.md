@@ -54,6 +54,7 @@ We collect here the exercise groups that we know:
 
 ## On-boarding
 
+- Enrico Glerean
 - Samantha Wittke
 
 
@@ -70,9 +71,7 @@ We collect here the exercise groups that we know:
 
 ## Local organizers
 
-- TBA
+- Teemu Ruokolainen (Espoo, Finland)
+- Elisa Pierfederici (Oslo, Norway)
 
 
-## Collaborative notes editors
-
-- TBA
