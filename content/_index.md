@@ -74,4 +74,9 @@ We collect here the exercise groups that we know:
 - Teemu Ruokolainen (Espoo, Finland)
 - Elisa Pierfederici (Oslo, Norway)
 
+## Collaborative Notes managers
 
+- Radovan Bast
+- Bjørn Lindi
+- Samantha Wittke
+ 
