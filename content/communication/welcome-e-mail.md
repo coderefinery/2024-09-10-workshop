@@ -1,7 +1,7 @@
 +++
 title = "2024-09-09 CodeRefinery workshop practical information"
 [extra]
-subject = "CodeRefinery workshop practical information - day before"
+subject = "CodeRefinery workshop starts tomorrow - practical information"
 +++
 
 Dear {first_name},
