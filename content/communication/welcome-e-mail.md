@@ -4,8 +4,7 @@ title = "2024-09-09 CodeRefinery workshop practical information"
 subject = "CodeRefinery workshop practical information - day before"
 +++
 
-
-Dear participant,
+Dear {first_name},
 
 The CodeRefinery workshop starts tomorrow, Tuesday September 10th at 9:00 Central European Summer Time (CEST, Oslo) / 10:00 EEST (Helsinki)!
 
@@ -16,12 +15,12 @@ This is all you need for the full workshop experience tomorrow:
 - https://twitch.tv/coderefinery
 
 2) A second web-browser window to edit the document to ask questions during the workshop:
-- https://notes.coderefinery.org/workshop-2024-september#
+- https://notes.coderefinery.org/workshop-2024-september
 
 3) A user account on GitHub for doing the exercises
 - https://coderefinery.github.io/installation/github/
 
-4) OPTIONAL: if you want to run git from your computer, please install required software before the workshop:
+4) OPTIONAL: if you want to run Git from your computer, please install required software before the workshop:
 - https://coderefinery.github.io/installation/
 
 
