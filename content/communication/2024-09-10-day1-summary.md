@@ -1,7 +1,7 @@
 +++
-title = "2024-09-10 CodeRefinery workshop: sumamry of day 1 and preparations for day 3"
+title = "2024-09-10 CodeRefinery workshop: summary of day 1 and preparations for day 3"
 [extra]
-subject = "CodeRefinery workshop: sumamry of day 1 and preparations for day 3"
+subject = "CodeRefinery workshop: summary of day 1 and preparations for day 3"
 +++
 
 
