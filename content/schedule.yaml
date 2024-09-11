@@ -63,7 +63,7 @@ schedule:
         title: Introduction to version control with Git - part 4/4
         url: https://coderefinery.github.io/git-intro/
         presenters: Radovan and Bjørn
-        subtitle: "[Sharing work](https://coderefinery.github.io/git-intro/sharing/)"
+        subtitle: "[Sharing work](https://coderefinery.github.io/git-intro/sharing/), [Practical advice](https://coderefinery.github.io/git-intro/level/), [What to avoid](https://coderefinery.github.io/git-intro/what-to-avoid/)"
   - title: "Day 3"
     date: "2024-09-12"
     sessions:
