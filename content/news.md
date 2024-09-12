@@ -3,6 +3,14 @@
 
 ### News
 
+Day 3: 
+- Today we covered how to contribute to repositories that we are a member of as well as repositories that we were not a member of 
+- This concludes  the introduction and collaborative version control lessons and exercises
+- Next week we will step away from version control and get to know different tools and techniques that can help you write FAIR code and software such as documentation, licensing, Jupyter, modular code development, automated testing
+- There will be demos instead of exercise sessions, but you can do the exercises after the workshop days and use the notes to ask questions, or join our chat: https://coderefinery.zulipchat.com or the "bring your own code sessions" in october; see [schedule](https://coderefinery.github.io/2024-09-10-workshop/#schedule)
+> More info on the CodeRefinery ambassador program : https://coderefinery.org/join/individuals/#coderefinery-ambassador
+
+
 Day 2:
 
 - We covered all of the parts listed in the schedule
