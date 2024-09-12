@@ -378,7 +378,7 @@ Materials: https://coderefinery.github.io/git-collaborative/forking-workflow/
         - So if one is pushing a branchname that will be deleted in the future after merging, then one should not use the '-u' option? As this will then be used by 'git push' as default in the future when it is not in use anymore
 
 38. How do I do step 3 with the cross-reference? I am at the commit portion where I can either commit to my new branch or commit and create a new branch and a pull request, but that's not exactly what I want either...
-    - ...
+    - you can cross reference issue in your commit message, for eg: `fix #issuenumer` ` resolve #issue number` . If you don't want to cross reference with your commit message , you can do it in your pull request. Please check some of the pull request we had done today where we cross referenced the issue. I hope this answers your question
 
 39. In the pull request, how do you refer to the issue, like #25 abcdefg?
     - Entering `#25` should make a link to it, I think.  Writing `fixes #25` should link it so that merging the pull request will close that issue.
@@ -394,10 +394,12 @@ Materials: https://coderefinery.github.io/git-collaborative/forking-workflow/
     - the long version of -u is --set-upstream, it adds a tracking reference to the upstream server you are pushing to
 
 43. Why does 'compare changes' not work automatically when I ask it to show them before syncing the fork?
-    - ...
+    - When I compare upstream main with my branch on my fork (not the main branch my fork), I can see the changes and assosiated commits and pull request. But default main comparison doesn't show any changes. Good to chaeck stack flow discussion [here](https://stackoverflow.com/questions/74943541/after-a-github-fork-how-can-i-compare-my-branch-to-a-branch-in-the-upstream-rep).
 
 44. What is a clear use case for why I would fork v. clone?
-   - ...
+   - Fork: Creates a personal copy of someone else’s repository on your GitHub account. Used for contributing to projects you don’t have write access to. You can make changes to your forked repository and then propose those changes to the original repository via a pull request. This allows the maintainers of the original repository to review and potentially merge your changes.
+   - Clone: Cloning creates a local copy of a repository on your machine. This is useful for working offline, performing tests, or making personal changes. You can work on the cloned repository independently, and if you have write access, you can push your changes back to the remote repository.
+   - You can clone from a forked repository, but in order to contribute to someone's repository where you don't have write access, you must fork it first
 
 45. How long has CodeRefinery been around doing these workshops? Who started it?
   - You can find out about the history on our website: https://coderefinery.org/about/history/
