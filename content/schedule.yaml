@@ -125,7 +125,7 @@ schedule:
         title: Automated testing
         subtitle: Preventing yourself and others from breaking your functioning code
         url: https://coderefinery.github.io/testing/
-        presenters: Bjørn and TBA
+        presenters: Bjørn and Hossein
       - starts: 10:00
         ends: 11:30
         title: Modular code development
