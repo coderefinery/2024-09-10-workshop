@@ -276,7 +276,7 @@ Continue suggesting what we should do next.  You can vote below:
     - .
 
 40. For Aalto people, we can get credits but need to submit the exercise to an e-mail address, will we be given the address to send this PDF file? Sorry if I missed the info somewhere.:+1:
-    - .
+    - email:support@coderefinery.org
 
 ## Outro
 https://github.com/coderefinery/workshop-outro/blob/master/README.md
