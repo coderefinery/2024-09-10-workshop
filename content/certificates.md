@@ -35,7 +35,7 @@ provide us with the following **three text documents sent from your university e
    However any other personal reflection is welcome. Evaluation criteria: we
    expect reflections that are related to the content of each of the six days.
 
-The three documents should be sent to scip _@_ aalto.fi by 31/October/2024. Certificates will be issued around mid November. Clearly name each document with your name (and student number for Aalto University students). You must use your university email to submit your course materials. We do not provide certificates to people who are not affiliated with a higher education / research institution, but you are of course welcome to follow the course and learn with us.
+The three documents should be sent to `scip _@_ aalto.fi` by 31/October/2024. Certificates will be issued around mid November. Clearly name each document with your name (and student number for Aalto University students). You must use your university email to submit your course materials. We do not provide certificates to people who are not affiliated with a higher education / research institution, but you are of course welcome to follow the course and learn with us.
 
 **FAST Track**: If you submit your homework by Friday 4/October, you will receive the credit/certificate by 9/October.
 
