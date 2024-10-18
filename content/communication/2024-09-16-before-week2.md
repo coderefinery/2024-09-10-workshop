@@ -1,5 +1,5 @@
 +++
-title = "2024-09-16 CodeRefinery workshop: Week 2"
+title = "2024-09-16 Week 2"
 [extra]
 subject = "CodeRefinery workshop: Welcome to week 2"
 +++
