@@ -79,4 +79,10 @@ We collect here the exercise groups that we know:
 - Radovan Bast
 - Bjørn Lindi
 - Samantha Wittke
+
+## Bring your own code helpers
+
+- Radovan Bast
+- Diana Iusan
+- Samantha Wittke
  
