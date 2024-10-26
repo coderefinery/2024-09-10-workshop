@@ -146,6 +146,6 @@ schedule:
   - title: "Optional: Bring your own code session"
     date: "2024-12-18"
     sessions:
-      - starts: 8:00
-        ends: 10:00
+      - starts: 9:00
+        ends: 11:00
         title: Bring your own code and discuss and ask; you can also join this session if you have not attended the workshop
