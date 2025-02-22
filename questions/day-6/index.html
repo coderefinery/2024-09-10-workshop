@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Questions and notes from workshop day 6 - CodeRefinery workshop September 10-12, 17-19, 2024</title>
+    <link rel="shortcut icon" href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2024-09-10-workshop&#x2F;/img/favicon.ico">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- uikit -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.23.1/dist/css/uikit.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.23.1/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.23.1/dist/js/uikit-icons.min.js"></script>
+
+    <!-- time zone localization -->
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.7/dayjs.min.js" integrity="sha256-EfJOqCcshFS/2TxhArURu3Wn8b/XDA4fbPWKSwZ+1B8=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.7/plugin/utc.js" integrity="sha256-qDfIIxqpRhYWa543p6AHZ323xT3B8O6iLZFUAWtEQJw=" crossorigin="anonymous"></script>
+
+    
+      <link rel="alternate" type="application/atom+xml" title="CodeRefinery" href="https://coderefinery.github.io/2024-09-10-workshop/atom.xml" />
+    
+
+        
+      <title>CodeRefinery - Questions and notes from workshop day 6</title>
+      <meta name="twitter:title" content="Questions and notes from workshop day 6" />
+      <meta property="og:title" content="Questions and notes from workshop day 6" />
+      <meta property="og:site_name" content="CodeRefinery workshop September 10-12, 17-19, 2024" />
+    
+
+    
+      <meta name="description" content="Free workshop on git, testing, documentation, and more in a workshop - for researchers and scientists." />
+      <meta name="twitter:description" content="Free workshop on git, testing, documentation, and more in a workshop - for researchers and scientists." />
+      <meta property="og:description" content="Free workshop on git, testing, documentation, and more in a workshop - for researchers and scientists." />
+    
+
+    
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:image" content="https://raw.githubusercontent.com/coderefinery/coderefinery-artwork/main/socialshare/socialshare-workshop.png" />
+      <meta property="og:image" content="https://raw.githubusercontent.com/coderefinery/coderefinery-artwork/main/socialshare/socialshare-workshop.png" />
+    
+
+
+    
+
+    <link href="https://coderefinery.github.io/2024-09-10-workshop/style.css" rel="stylesheet">
+
+    
+    <script defer data-domain="coderefinery.github.io" src="https://plausible.cs.aalto.fi/js/script.js"></script>
+    
+
+
+  </head>
+
+  <body>
+    <div class="uk-container uk-margin-large-bottom">
+
+      <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+  <div class="uk-navbar-right">
+    <ul class="uk-navbar-nav uk-visible@s">
+      
+      
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2024-09-10-workshop">
+      About
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2024-09-10-workshop&#x2F;exercises">
+      List of exercises
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2024-09-10-workshop&#x2F;audience">
+      Audience
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2024-09-10-workshop&#x2F;certificates">
+      Certificates
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2024-09-10-workshop&#x2F;join">
+      How to join
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2024-09-10-workshop&#x2F;requirements">
+      Requirements
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2024-09-10-workshop&#x2F;questions">
+      Q&amp;A
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2024-09-10-workshop&#x2F;code-of-conduct">
+      Code of conduct
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2024-09-10-workshop&#x2F;communication">
+      Communication
+      
+    </a>
+
+    
+
+  </li>
+
+
+    </ul>
+    <a href="#" class="uk-navbar-toggle uk-hidden@s" uk-navbar-toggle-icon uk-toggle="target: #sidenav"></a>
+  </div>
+</nav>
+
+<div id="sidenav" uk-offcanvas="flip: true" class="uk-offcanvas">
+  <div class="uk-offcanvas-bar">
+    <ul class="uk-nav">
+      
+      
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2024-09-10-workshop">
+      About
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2024-09-10-workshop&#x2F;exercises">
+      List of exercises
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2024-09-10-workshop&#x2F;audience">
+      Audience
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2024-09-10-workshop&#x2F;certificates">
+      Certificates
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2024-09-10-workshop&#x2F;join">
+      How to join
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2024-09-10-workshop&#x2F;requirements">
+      Requirements
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2024-09-10-workshop&#x2F;questions">
+      Q&amp;A
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2024-09-10-workshop&#x2F;code-of-conduct">
+      Code of conduct
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2024-09-10-workshop&#x2F;communication">
+      Communication
+      
+    </a>
+
+    
+
+  </li>
+
+
+    </ul>
+  </div>
+</div>
+
+
+      <div class="markdown">
+        
+  <h1>Questions and notes from workshop day 6</h1>
+
+  <ul>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2024-09-10-workshop/questions/day-6/#preparation-for-day-6">Preparation for day 6:</a>
+      
+    </li>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2024-09-10-workshop/questions/day-6/#day-6-19-09-2024">Day 6 - 19&#x2F;09&#x2F;2024</a>
+      
+        <ul>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2024-09-10-workshop/questions/day-6/#icebreakers">Icebreakers</a>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2024-09-10-workshop/questions/day-6/#automated-testing">Automated testing</a>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2024-09-10-workshop/questions/day-6/#motivation">Motivation</a>
+              
+                <ul>
+                  
+                    <li>
+                      <a href="https://coderefinery.github.io/2024-09-10-workshop/questions/day-6/#when-is-it-ok-not-to-add-tests-choose-many">When is it OK not to add tests? choose many</a>
+                    </li>
+                  
+                </ul>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2024-09-10-workshop/questions/day-6/#can-you-give-other-examples">Can you give other examples?</a>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2024-09-10-workshop/questions/day-6/#testing-locally">Testing locally</a>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2024-09-10-workshop/questions/day-6/#automated-testing-1">Automated testing</a>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2024-09-10-workshop/questions/day-6/#test-design">Test design</a>
+              
+                <ul>
+                  
+                    <li>
+                      <a href="https://coderefinery.github.io/2024-09-10-workshop/questions/day-6/#lunch-break-1-hour-we-resume-at-xx-00">Lunch break (1 hour), we resume at xx:00</a>
+                    </li>
+                  
+                </ul>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2024-09-10-workshop/questions/day-6/#modular-code-development">Modular Code Development</a>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2024-09-10-workshop/questions/day-6/#our-task">Our task</a>
+              
+                <ul>
+                  
+                    <li>
+                      <a href="https://coderefinery.github.io/2024-09-10-workshop/questions/day-6/#break-we-resume-at-xx-04">Break, we resume at xx:04</a>
+                    </li>
+                  
+                </ul>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2024-09-10-workshop/questions/day-6/#outro">Outro</a>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2024-09-10-workshop/questions/day-6/#feedback">Feedback</a>
+              
+            </li>
+          
+        </ul>
+      
+    </li>
+  
+</ul>
+
+
+  
+  
+    <h2 id="preparation-for-day-6">Preparation for day 6:</h2>
+<p>Week two we will do demos and discussions in the collaborative notes, no hands-on exercises during the stream. 
+This is in reaction to earlier feedback, that we cannot provide enough time for exercises with all new tools during the workshop. 
+If you want to try things out by yourself after the workshop or type along (it will be fast!) you can find the installation instructions for the needed tools in the bottom right square in our <a rel="noopener" target="_blank" href="https://coderefinery.github.io/installation/">installation instructions</a>. </p>
+<p>:::</p>
+<h1 id="day-6-19-09-2024">Day 6 - 19/09/2024</h1>
+<h2 id="icebreakers">Icebreakers</h2>
+<p><strong>What's the worst bug you have seen or experienced?</strong></p>
+<ul>
+<li>CrowdStrike update on Microsfot windows taking down all airports in Europe :) :+1:
+<ul>
+<li>Hopefully they are watching this episode today to learn about testing :+1: :simle:</li>
+</ul>
+</li>
+<li>Error in the data file, used in computational code, which was untoticed for a decade. A lot of publications were made with a slightly wrong data.</li>
+<li>The Mars Climate Orbiter crashes because an error in units in the code.</li>
+</ul>
+<p><strong>How do you make sure your code continues to work when collaborating with others?</strong></p>
+<ul>
+<li>Dependencies are well specified</li>
+<li>I have not collaborated with other reseachers that are capable of utilizing code independently</li>
+<li>I have no idea</li>
+</ul>
+<p><strong>You just got an idea on how to change your code. But how do you make sure it continues working after the change? Any tricks you use and can share?</strong></p>
+<ul>
+<li>Lots of &quot;if&quot; and &quot;print&quot; :) :+1:</li>
+<li>Test data with recorded test results, ensure the expected results stay the same</li>
+<li>.</li>
+</ul>
+<h2 id="automated-testing">Automated testing</h2>
+<p>https://coderefinery.github.io/testing/</p>
+<h2 id="motivation">Motivation</h2>
+<p>https://coderefinery.github.io/testing/motivation/</p>
+<ol>
+<li>
+<p>How do you recommend people test your code before publications, like to make sure each line of code is doing what it is supposed to? I ask b/c sometimes, you may be the only researcher in your group who has expertise coding and is supposed to do all of it for the group (I ask just to ensure accuracy before publication)?</p>
+<ul>
+<li>In this talk we will talk about test-driven development which means implement the tests for each function before writing the function itself. To my experience, having a module code and add &quot;enough&quot; tests for your functions is the way to go. Recently I started using GenAI system to add some tests too.</li>
+<li>Can you explain how to use GenAI? or do you mean ChatGPT?</li>
+<li>Yeah, it' a good qusetion.  I think it's hard to know and an actually interesting scientific question.  I focus on testing things where errors are most likely and not obvious (for example, I might not test reading/writing but would try to separate the main analysis to functions that can be tested with known input)</li>
+</ul>
+</li>
+<li>
+<p>I mostly develop software to analyze my experiments or keep track of changes in variables in experiments, I'm not sure how I should incorporate tests when developing these software? Would it be okay to just have a simple checker for some e.g. reference samples and ensure that it gives the proper result everytime as I add new features?</p>
+<ul>
+<li>I have the same question</li>
+<li>You can check for example is the function produces the variable type you required. For example if the result is a data frame you can test if the columns are floats (numeric). Or if it has the required dimensions.
+<ul>
+<li>in my case, this is already given since it comes from a tool with standardized format, but yes, I think adding these never hurt!</li>
+</ul>
+</li>
+<li>Simple checks for reference samples seems like a good place to start!  Also can you break the hardest parts into separate functions that are easy to test, but don't worry about other low-risk parts?</li>
+</ul>
+</li>
+<li>
+<p>Are there any GenAI that you can integrate into your local computer (without it being on the browser)? I ask b/c of working with private data.</p>
+<ul>
+<li>You can use local models like Llama to run locally on your machine. Some IDEs (like Cursor.sh) have integreted adding these models to your development.</li>
+<li>Ollama: https://ollama.com/library</li>
+</ul>
+</li>
+</ol>
+<p>:::info</p>
+<h3 id="when-is-it-ok-not-to-add-tests-choose-many">When is it OK not to add tests? <strong>choose many</strong></h3>
+<ul>
+<li>
+<p>Jupyter or R Markdown notebook which produces a plot and you know by looking at the plot whether it worked?</p>
+<ul>
+<li>ooooooooo</li>
+<li>Is it not a test in itself to plot?
+<ul>
+<li>but what if you plot data and you actually do not know what to expect (in certain boundaries)?</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>A short, “obviously correct” Python or R script which you never intend to reuse?</p>
+<ul>
+<li>oooooo</li>
+<li>Please, define &quot;obviously correct&quot; ;-)</li>
+<li>Once I heard that someone said: go to the library and find undergrad theses, find the word &quot;obviously&quot; and you always find an error.</li>
+</ul>
+</li>
+<li>
+<p>A simple short, “obviously correct” shell script?</p>
+<ul>
+<li>ooooooooooo</li>
+</ul>
+</li>
+<li><h2 id="can-you-give-other-examples">Can you give other examples?</h2>
+</li>
+</ul>
+<p>:::</p>
+<ol start="4">
+<li>
+<p>How to test codes with 'random' inputs? So, the result is reproducible, but might vary in actual numbers? .</p>
+<ul>
+<li>You could add a seed to the random generator to produce known outputs (but any small change to the method could give different output)</li>
+<li>You could do statistical tests in simple cases</li>
+<li>Could you force it one directon or another by making the RNG always return 0 or 1 or 0.5 and get a known result?</li>
+</ul>
+</li>
+<li>
+<p>How to test a GUI code? So a user can use different actions in a different order.</p>
+<ul>
+<li>There are ways to test GUIs, but I don't know them. Same with websites.  I think it involves labling the buttons so that clicks can be simulated, which requires consideration even in the design phase.</li>
+</ul>
+</li>
+<li>
+<p>when I mainly code to do data exploration, plotting and analysis, how do I integrate automated testing? Like I don't use models and have hardly tried to write functions.</p>
+<ul>
+<li>If it's mainly data exploration, maybe you are always looking at the output of every bit, and there aren't many &quot;static&quot; things that should stay the same for long times.  I might not worry about tests here either, unless I can split out some common functions which will get reused often.</li>
+<li>(of course it's better to test everything, but let's be practical...)</li>
+</ul>
+</li>
+<li>
+<p>Can you talk about your experience integrating Ollama on your computer? Have there been any security concerns having it locally?</p>
+<ul>
+<li>I didn't face any issue up until now. Also it's an open-source software under heavy developement; and many of the issues are getting addressed and resolved. Usually I'm more concerned about uploading my data (or any other private/personal data) to cloud-based providers like OpenAI etc.</li>
+</ul>
+</li>
+</ol>
+<h2 id="testing-locally">Testing locally</h2>
+<p>https://coderefinery.github.io/testing/locally/</p>
+<ol start="7">
+<li>
+<p>When you have several functions to test, can you put tour test_ in a different script, so the original one is easier to read?</p>
+<ul>
+<li>Yes! It is the best practice to have a test folder and several test scripts inside them.
+<ul>
+<li>can you give an example how that would look like in practice?</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Are there similar programs to pytest in R and bash?</p>
+<ul>
+<li>same question for Fortran and C.</li>
+<li>For R you have <a rel="noopener" target="_blank" href="https://testthat.r-lib.org/">testthat package</a></li>
+<li>and bash?</li>
+</ul>
+</li>
+<li>
+<p>Sometime a code depends on some physical constants, like a speed of light. Sometime these constants are redefined by a new experiment. How to make tests for the code, if the produced numbers must be different due to this change?.</p>
+<ul>
+<li>A good question. Sometimes you need to test something which is &quot;dependent&quot; on an external source. Either another part of your code or an external physical system in your example. We will cover this in the upcoming sessions (under test design) which is called mocking.</li>
+<li>As a first approximation: set the constant to known value for a test (default should be the same, so an old test hopefully doesn't work.  Then you can add a new test setting it to a different value)</li>
+</ul>
+</li>
+<li>
+<p>how do you verify your tests? like you introduce an error/mistake in the test and how to avoid that?</p>
+<ul>
+<li>Usually I write the test at the same time as the code and hope that they check each other.  Of course it still can go wrong but for my purposes that's good enough.</li>
+</ul>
+</li>
+</ol>
+<h2 id="automated-testing-1">Automated testing</h2>
+<p>https://coderefinery.github.io/testing/continuous-integration/</p>
+<ol start="11">
+<li>
+<p>Can they show in the demo the testthat R package briefly?</p>
+<ul>
+<li>Unfortunately we only demo python here.</li>
+<li>Any watchers know R and want to come on stream and demonstrate?</li>
+</ul>
+</li>
+<li>
+<p>The concept of testing is based on understanding what is right and what is wrong. What if a code, compiled by compiler A.1001 gives one result and with version A.1002 (or on other OS) - another? Any suggestion for a strategy to handle such cases? The usual sotce for that - different rounding, etc..</p>
+<ul>
+<li>Is it supposed to give different results for different compilers?</li>
+<li>But anyway, this is definitely what makes testing a scientific challenge: you need to be able to understand what is the &quot;correct&quot; part that should be the same across compilers, etc. Maybe you need tolerances in the tests, to handle floating point variances?</li>
+<li>But compilers might have bugs! Right?</li>
+<li>Oh yes.  But if your test finds a bug in the compiler, I also consider that a win.  At least you know and can work around it.</li>
+</ul>
+</li>
+<li>
+<p>A question about git, what is the difference between using <code>git mv</code> instead of only use <code>mv</code> command?</p>
+<ul>
+<li><code>mv</code> moves the files, but git doesn't realize it (it think a file was deleted and added).  <code>git mv</code> moves the file but also updates git's state, so that it appears to be a move</li>
+<li>But <code>mv</code> followed by <code>git rm OLDNAME</code> and <code>git add NEWNAME</code> is always equivalent. (there is no extra &quot;this file was moved&quot; info in git, it always infers it from the contents)</li>
+</ul>
+</li>
+<li>
+<p>similar programs to pytest in bash?</p>
+<ul>
+<li>Yes but I don't know them.  The idea of pytest is very standard and there are similar things in almost every languge</li>
+<li>Pytest has plugins to run shell scripts, but I don't know how will it works.</li>
+<li>I see various things when I do a web search but I don't have any special knowledge - I'll let someone else comment if they know.</li>
+</ul>
+</li>
+<li>
+<p>what is &quot;lart&quot; in ls -lart?</p>
+<ul>
+<li>Four options to the <code>ls</code> command: <code>-l</code> is &quot;long listing&quot;, <code>-a</code> is &quot;all files (including hiden files that start with a <code>.</code>)&quot;, <code>-r</code> is reverse order, <code>-t</code> is &quot;sort by time&quot;.  So list everything, long listing, newest files first.
+<ul>
+<li>thanks!</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>what is the &quot;SSH: triton&quot; in the VScode lower left corner?</p>
+<ul>
+<li>It's a &quot;SSH-remote&quot; plugin for VScode.  Basically, VScode can automaticalyl connect to another computer (by the ssh service, secure shell), and run stuff there.  &quot;triton&quot; is the name of a HPC cluster.
+<ul>
+<li>ah, interesting, thanks! Learned something new about VScode :smile:</li>
+<li>Go VSCode! :D</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<h2 id="test-design">Test design</h2>
+<p>https://coderefinery.github.io/testing/test-design/</p>
+<ol start="17">
+<li>
+<p>Can you recommend a tutorial or similar for testing a data analysis (so end-to-end testing I guess?) in R? In my specific case, my data are gene sequences.</p>
+<ul>
+<li>I see this qusetion but don't have any good answers: starting with <code>testthat</code> tutorials might be a good starting point.  Come to think of it, I don't recall any good tutorials designed for data-type workflows in any language, but there must be some...</li>
+<li>There are some unit testing principles for data analysis projects based on Python that can be export to R, check <a rel="noopener" target="_blank" href="https://www.youtube.com/watch?v=Da-FL_1i6ps">this presentation</a></li>
+</ul>
+</li>
+<li>
+<p>Is there any tip, when testing Python code with external data (e.g. API query)? e.g. it is not always easy to predict what kind of data is fetched. e.g. sometimes, None, empty string, or strange string etc </p>
+<ul>
+<li>I would include some test data along with the code: tests work with that test data so it stays somewhat predictable.  Hopefully.</li>
+</ul>
+</li>
+</ol>
+<p>:::info</p>
+<h3 id="lunch-break-1-hour-we-resume-at-xx-00">Lunch break (1 hour), we resume at xx:00</h3>
+<p>:::</p>
+<h2 id="modular-code-development">Modular Code Development</h2>
+<p>https://coderefinery.github.io/modular-type-along/</p>
+<p><strong>What does &quot;modular code development&quot; mean for you?</strong></p>
+<ul>
+<li>splitting code into several parts that are self-contained</li>
+<li>I'm not sure about this word, but I would guess that some functions or components are reused between different tools</li>
+<li>Divide and conquer</li>
+</ul>
+<p><strong>What best practices can you recommend to arrive at well structured, modular code in your favourite programming language?</strong></p>
+<ul>
+<li>Pencil and paper first drawing the calls, parts that can be modularized, then writing empty files with only comments and what they should do there, then adding the code.</li>
+<li>.</li>
+<li>. </li>
+</ul>
+<p><strong>What do you know now about programming that you wish somebody told you earlier?</strong></p>
+<ul>
+<li>Create and import separate modules for functions, do not ever copy-paste from file to file</li>
+<li>.</li>
+<li>.</li>
+<li></li>
+</ul>
+<p><strong>Do you design a new code project on paper before coding? Discuss pros and cons.</strong></p>
+<ul>
+<li>Not before but during planning. Would be better to do it beforehand for very complex workflows</li>
+<li>When and I got the ideia of a function not so clear, I usually do some notes on paper of the steps.</li>
+<li>At least one scheme about the main idea, and then some other while creating functions</li>
+</ul>
+<p><strong>Do you build your code top-down (starting from the big picture) or bottom-up (starting from components)? Discuss pros and cons.</strong></p>
+<ul>
+<li>Bottom-up in the sense that I write the workflow linearly, function-by-function</li>
+<li></li>
+<li>.</li>
+<li></li>
+</ul>
+<p><strong>Would you prefer your code to be 2x slower if it was easier to read and understand?</strong></p>
+<ul>
+<li>Depends of how it scales: for high-throughput datasets, absolutely not :+1: </li>
+<li>Yes! I often end up working with code that was put up several years earlier by me or others.</li>
+<li>Absolutely, I ain't in a rush :)</li>
+<li>yes, but see the first answer (not for high-throughput datasets)</li>
+</ul>
+<ol start="19">
+<li>Where is the music from?
+<ul>
+<li>The music is written by a CodeRefinery member - specially made for us :-)</li>
+<li>Wow that is very cool. I will miss the music.</li>
+</ul>
+</li>
+</ol>
+<h2 id="our-task">Our task</h2>
+<p>https://coderefinery.github.io/modular-type-along/lesson/</p>
+<ol start="20">
+<li>
+<p>To the audience: how is this not modular?</p>
+<ul>
+<li>If you change the data, you either have to modify it on the code, or copy it again with the modification</li>
+</ul>
+</li>
+<li>
+<p>So modular code development follows the Don't repeat yourself principle.</p>
+<ul>
+<li>Yes - that's a good starting point!</li>
+</ul>
+</li>
+<li>
+<p>You may need an underscore in outfile.</p>
+<ul>
+<li>thanks!</li>
+</ul>
+</li>
+<li>
+<p>Is the for loop now going through the first 25, first 100 and first 500 rows of data?</p>
+<ul>
+<li>Yes.  Because of the existing structure it re-reads data each time.
+<ul>
+<li>thanks! I guess, then a first question to the data should be how long it is (how many measurements exist/how many rows of data there are)?</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>I'd like to use if out_file is not None instead of if out_file. In addition to None, also False and 0 evaluate to not True in python.</p>
+<ul>
+<li>.</li>
+</ul>
+</li>
+<li>
+<p>where do you specify in_file? how does the code know where is the data?</p>
+<ul>
+<li>get_data(&quot;temperatures.csv&quot;, num_measurements) is the specifications
+<ul>
+<li>ah, so def ... is a function and then later in the for loop you give the file. sorry, used to R, not so much to Python</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>I think we can remove out_file argument  in <code>plot_temperature</code>by defining after <code>if out_file:</code> <code>outfile = f&quot;{len(temperature.index).png&quot;</code> :+1:</p>
+<ul>
+<li>If we reuse the function for something different, maybe we need to specify other things within the filename?</li>
+</ul>
+</li>
+<li>
+<p>Maybe it's better to put get_mean() function call inside plot_temperatures() instead?</p>
+<ul>
+<li>.</li>
+</ul>
+</li>
+<li>
+<p>Why not use statistics.mean instead of creating a custom function?</p>
+<ul>
+<li>I agree </li>
+<li>In fact, the mean could be calculated directly in the plot_temperatures function instead of being a function argument</li>
+</ul>
+</li>
+<li>
+<p>Is there a common format for function names and variable names? I think I would not immediately understand the difference between get_mean (a function) and num_measurements (a variable) if I would not see the function definitions in the same script.</p>
+<ul>
+<li>I'm not one of the instructors, but please see: https://docs.python-guide.org/writing/style/</li>
+</ul>
+</li>
+<li>
+<p>We can also test if the column Air temperature is numeric. I experienced errors where the simple statistics are not calcualted because, pandas read it as object (because of some missing values)</p>
+<ul>
+<li>Good idea.  This could be a test but also it would be good to test each time the data is read.</li>
+</ul>
+</li>
+<li>
+<p>Maybe for the command line we define the out_file too?.</p>
+<ul>
+<li>Oh yes we should do this.
+<ul>
+<li>Ooh, I didn't realize it should give a window with the plot, ah right there's <code>plt.show()</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>You would need to disconnect the num_measurements from the loop and give the out_file from sys.argv of argparse.</p>
+<ul>
+<li>yes, thanks!  We are on it.</li>
+</ul>
+</li>
+<li>
+<p>Isn't in_file an argument not an option?</p>
+<ul>
+<li>Is it @click.option() to do that?</li>
+<li>I think it's like this for arguments: https://click.palletsprojects.com/en/8.1.x/arguments/</li>
+</ul>
+</li>
+<li>
+<p>I would love if someone could translate the demo code (in the documentation, https://coderefinery.github.io/modular-type-along/solution/) to R! :+1:</p>
+<ul>
+<li>Let's create an issue on GitHub :+1:
+<ul>
+<li>I checked, there is an issue already (#31): https://github.com/coderefinery/modular-type-along/issues/31</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>What advantages are there to using click instead of argparse?</p>
+<ul>
+<li>It's more modern/easier to use.  But a separate module so I usually use argparse. Really, either one is mature and stable enough to be good.
+<ul>
+<li>Modern / easier in which sense?</li>
+<li>argparse has a lot of boilerplate code somewhere in the file.  Click has everything defined right above the function, where it's easy to see and know what it does.
+<ul>
+<li>Would you say it's also a matter of taste? I like my argparser in the beginning of the file, listing all the arguments in one place.</li>
+<li>Definitely a matter of taste if you ask me.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>This was fun! kudos!</p>
+<ul>
+<li>yes, thanks! AND: please add this in R as well!</li>
+<li>If you know anyowhe who likes R who would like to donate the solution, we can help integrate it.  I know someone to ask though...</li>
+</ul>
+</li>
+</ol>
+<p>:::info</p>
+<h3 id="break-we-resume-at-xx-04">Break, we resume at xx:04</h3>
+<p>Continue suggesting what we should do next.  You can vote below:</p>
+<ul>
+<li>add tests: ooo</li>
+<li>make jupyter import these functions: </li>
+<li>git repository: </li>
+<li>split script functions into another module: o
+:::</li>
+</ul>
+<ol start="37">
+<li>
+<p>Why did we need the .gitignore file?</p>
+<ul>
+<li>Without the <code>.gitignore</code> we get a lot of files listed when we do <code>git status</code>. This is temporary files and generated files. These files we don't want to version control. We list these files in <code>.gitignore</code> and consequently git will not list these files during <code>git status</code>. Less clutter so to speak.</li>
+</ul>
+</li>
+<li>
+<p>If the data is complex (many possible variations for input values), then the testing code would become quite big and difficult for readability etc. Is there a good solution? (e.g. is it a good idea to store the test data in another file and the test code read from it?)</p>
+<ul>
+<li>Yes exactly.  Often I would make a testdata directory for this purpose.</li>
+</ul>
+</li>
+<li>
+<p>Are there any (good) AI tools which can automatically generate a test code, based on the existing code? (Thinking of test code seems to be not simple sometimes) Links to the tools would be great to share!</p>
+<ul>
+<li>.</li>
+</ul>
+</li>
+<li>
+<p>For Aalto people, we can get credits but need to submit the exercise to an e-mail address, will we be given the address to send this PDF file? Sorry if I missed the info somewhere.:+1:</p>
+<ul>
+<li>email:support@coderefinery.org</li>
+</ul>
+</li>
+</ol>
+<h2 id="outro">Outro</h2>
+<p>https://github.com/coderefinery/workshop-outro/blob/master/README.md</p>
+<h2 id="feedback">Feedback</h2>
+<p>Today was:</p>
+<ul>
+<li>too fast: </li>
+<li>too slow: </li>
+<li>right speed: ooooooo</li>
+<li>too advanced: o</li>
+<li>too basic: oo</li>
+<li>right level: ooooo</li>
+<li>needed more exercise time: o</li>
+<li>needed less exercise time: </li>
+<li>I will use what I learned today: ooooooo</li>
+<li>I would recommend today to others: ooooo</li>
+<li>I would not recommend today to others: </li>
+<li>too slow sometimes, too fast other times: </li>
+</ul>
+<p>One good thing about today:</p>
+<ul>
+<li>I didn't knew click, that was nice. :+1::+1:</li>
+<li>I have been using modular coding but this overview was a nice touch :+1:</li>
+<li>..</li>
+</ul>
+<p>One thing to improve for next time:</p>
+<ul>
+<li>..</li>
+<li>..</li>
+<li>..</li>
+</ul>
+<p>Any other feedback?</p>
+<ul>
+<li>Thank you for the course, I learned a lot! :clap::clap::clap::clap::clap::clap:</li>
+<li>Perhaps think about lunchtime for different timezone? ECT is one hour late, I think</li>
+<li>..</li>
+</ul>
+
+  
+
+      </div>
+
+      <div class="uk-margin-large-top">
+        <hr>
+        <div class="uk-child-width-expand@s" uk-grid>
+
+  <div>
+    <h4>Funding</h4>
+    <p>
+      CodeRefinery is a project within the
+      <a href="https://neic.no" target="_blank">Nordic e-Infrastructure Collaboration</a> (NeIC).
+      NeIC is an organisational unit under <a href="https://www.nordforsk.org/" target="_blank">NordForsk</a>.
+    </p>
+  </div>
+
+  <div>
+    <h4>Privacy</h4>
+    <p>
+      <a href="https://coderefinery.org/privacy-policy/" target="_blank">Privacy policy</a>
+    </p>
+  </div>
+
+  <div>
+    <h4>Follow us</h4>
+    <ul class="uk-iconnav">
+      <li>
+        <a href="https://github.com/coderefinery" target="_blank" uk-icon="icon: github">GitHub</a>
+      </li>
+      <li>
+        <a rel="me" href="https://fosstodon.org/@coderefinery" target="_blank" uk-icon="icon: social">Mastodon</a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/company/coderefinery-research-software-development/?viewAsMember=true" target="_blank" uk-icon="icon: linkedin">LinkedIn</a>
+      </li>
+    </ul>
+  </div>
+
+  <div>
+    <h4>Contact</h4>
+    <p>
+      <a href="mailto:support@coderefinery.org">support@coderefinery.org</a>
+    </p>
+  </div>
+
+  <div>
+    <h4>Improve this page</h4>
+    <p>
+      <a href="https:&#x2F;&#x2F;github.com&#x2F;coderefinery&#x2F;2024-09-10-workshop">Source code</a>
+    </p>
+  </div>
+
+</div>
+
+      </div>
+
+    </div>
+  </body>
+
+  <script src="https://cdn.jsdelivr.net/npm/anchor-js/anchor.min.js"></script>
+  <script>
+    anchors.add();
+  </script>
+</html>

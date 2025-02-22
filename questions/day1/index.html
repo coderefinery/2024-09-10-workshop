@@ -1,0 +1,1507 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Questions and notes from workshop day 1 - CodeRefinery workshop September 10-12, 17-19, 2024</title>
+    <link rel="shortcut icon" href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2024-09-10-workshop&#x2F;/img/favicon.ico">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- uikit -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.23.1/dist/css/uikit.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.23.1/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.23.1/dist/js/uikit-icons.min.js"></script>
+
+    <!-- time zone localization -->
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.7/dayjs.min.js" integrity="sha256-EfJOqCcshFS/2TxhArURu3Wn8b/XDA4fbPWKSwZ+1B8=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.7/plugin/utc.js" integrity="sha256-qDfIIxqpRhYWa543p6AHZ323xT3B8O6iLZFUAWtEQJw=" crossorigin="anonymous"></script>
+
+    
+      <link rel="alternate" type="application/atom+xml" title="CodeRefinery" href="https://coderefinery.github.io/2024-09-10-workshop/atom.xml" />
+    
+
+        
+      <title>CodeRefinery - Questions and notes from workshop day 1</title>
+      <meta name="twitter:title" content="Questions and notes from workshop day 1" />
+      <meta property="og:title" content="Questions and notes from workshop day 1" />
+      <meta property="og:site_name" content="CodeRefinery workshop September 10-12, 17-19, 2024" />
+    
+
+    
+      <meta name="description" content="Free workshop on git, testing, documentation, and more in a workshop - for researchers and scientists." />
+      <meta name="twitter:description" content="Free workshop on git, testing, documentation, and more in a workshop - for researchers and scientists." />
+      <meta property="og:description" content="Free workshop on git, testing, documentation, and more in a workshop - for researchers and scientists." />
+    
+
+    
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:image" content="https://raw.githubusercontent.com/coderefinery/coderefinery-artwork/main/socialshare/socialshare-workshop.png" />
+      <meta property="og:image" content="https://raw.githubusercontent.com/coderefinery/coderefinery-artwork/main/socialshare/socialshare-workshop.png" />
+    
+
+
+    
+
+    <link href="https://coderefinery.github.io/2024-09-10-workshop/style.css" rel="stylesheet">
+
+    
+    <script defer data-domain="coderefinery.github.io" src="https://plausible.cs.aalto.fi/js/script.js"></script>
+    
+
+
+  </head>
+
+  <body>
+    <div class="uk-container uk-margin-large-bottom">
+
+      <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+  <div class="uk-navbar-right">
+    <ul class="uk-navbar-nav uk-visible@s">
+      
+      
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2024-09-10-workshop">
+      About
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2024-09-10-workshop&#x2F;exercises">
+      List of exercises
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2024-09-10-workshop&#x2F;audience">
+      Audience
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2024-09-10-workshop&#x2F;certificates">
+      Certificates
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2024-09-10-workshop&#x2F;join">
+      How to join
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2024-09-10-workshop&#x2F;requirements">
+      Requirements
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2024-09-10-workshop&#x2F;questions">
+      Q&amp;A
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2024-09-10-workshop&#x2F;code-of-conduct">
+      Code of conduct
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2024-09-10-workshop&#x2F;communication">
+      Communication
+      
+    </a>
+
+    
+
+  </li>
+
+
+    </ul>
+    <a href="#" class="uk-navbar-toggle uk-hidden@s" uk-navbar-toggle-icon uk-toggle="target: #sidenav"></a>
+  </div>
+</nav>
+
+<div id="sidenav" uk-offcanvas="flip: true" class="uk-offcanvas">
+  <div class="uk-offcanvas-bar">
+    <ul class="uk-nav">
+      
+      
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2024-09-10-workshop">
+      About
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2024-09-10-workshop&#x2F;exercises">
+      List of exercises
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2024-09-10-workshop&#x2F;audience">
+      Audience
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2024-09-10-workshop&#x2F;certificates">
+      Certificates
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2024-09-10-workshop&#x2F;join">
+      How to join
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2024-09-10-workshop&#x2F;requirements">
+      Requirements
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2024-09-10-workshop&#x2F;questions">
+      Q&amp;A
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2024-09-10-workshop&#x2F;code-of-conduct">
+      Code of conduct
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2024-09-10-workshop&#x2F;communication">
+      Communication
+      
+    </a>
+
+    
+
+  </li>
+
+
+    </ul>
+  </div>
+</div>
+
+
+      <div class="markdown">
+        
+  <h1>Questions and notes from workshop day 1</h1>
+
+  <ul>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2024-09-10-workshop/questions/day1/#day-1-10-09-2024">Day 1 - 10&#x2F;09&#x2F;2024</a>
+      
+        <ul>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2024-09-10-workshop/questions/day1/#icebreakers">Icebreakers</a>
+              
+                <ul>
+                  
+                    <li>
+                      <a href="https://coderefinery.github.io/2024-09-10-workshop/questions/day1/#where-are-you-connecting-from-how-is-the-weather-there">Where are you connecting from? How is the weather there?</a>
+                    </li>
+                  
+                    <li>
+                      <a href="https://coderefinery.github.io/2024-09-10-workshop/questions/day1/#have-you-used-git-before-if-yes-how">Have you used git before, if yes, how?</a>
+                    </li>
+                  
+                </ul>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2024-09-10-workshop/questions/day1/#welcome-and-introduction">Welcome and introduction</a>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2024-09-10-workshop/questions/day1/#git-intro">Git-intro</a>
+              
+                <ul>
+                  
+                    <li>
+                      <a href="https://coderefinery.github.io/2024-09-10-workshop/questions/day1/#motivation">Motivation</a>
+                    </li>
+                  
+                    <li>
+                      <a href="https://coderefinery.github.io/2024-09-10-workshop/questions/day1/#copy-and-browse-an-existing-project">Copy and browse an existing project</a>
+                    </li>
+                  
+                    <li>
+                      <a href="https://coderefinery.github.io/2024-09-10-workshop/questions/day1/#exercise-until-xx-10">Exercise until xx:10</a>
+                    </li>
+                  
+                    <li>
+                      <a href="https://coderefinery.github.io/2024-09-10-workshop/questions/day1/#break-until-xx-21">Break until xx:21</a>
+                    </li>
+                  
+                    <li>
+                      <a href="https://coderefinery.github.io/2024-09-10-workshop/questions/day1/#comitting-recording-changes">Comitting (recording) changes</a>
+                    </li>
+                  
+                </ul>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2024-09-10-workshop/questions/day1/#break-until-xx-00">BREAK until xx:00</a>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2024-09-10-workshop/questions/day1/#merging-changes">Merging changes</a>
+              
+                <ul>
+                  
+                    <li>
+                      <a href="https://coderefinery.github.io/2024-09-10-workshop/questions/day1/#exercise-until-xx-35-merging-branches">Exercise until xx:35 : Merging branches</a>
+                    </li>
+                  
+                    <li>
+                      <a href="https://coderefinery.github.io/2024-09-10-workshop/questions/day1/#break-until-xx-06">Break until xx:06</a>
+                    </li>
+                  
+                </ul>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2024-09-10-workshop/questions/day1/#making-and-resolving-a-conflict">(making and ) Resolving a conflict</a>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2024-09-10-workshop/questions/day1/#feedback-day-1">Feedback, day 1</a>
+              
+                <ul>
+                  
+                    <li>
+                      <a href="https://coderefinery.github.io/2024-09-10-workshop/questions/day1/#news-for-day-1">News for day 1</a>
+                    </li>
+                  
+                </ul>
+              
+            </li>
+          
+        </ul>
+      
+    </li>
+  
+</ul>
+
+
+  
+  
+    <h1 id="day-1-10-09-2024">Day 1 - 10/09/2024</h1>
+<h2 id="icebreakers">Icebreakers</h2>
+<p>Let's test the notes with some icebreakers! :icecream: </p>
+<h3 id="where-are-you-connecting-from-how-is-the-weather-there">Where are you connecting from? How is the weather there?</h3>
+<ul>
+<li>Kiruna, Sweden - Almost raining, not yet.</li>
+<li>stockholm, sweden - Cloudy and almost raining.</li>
+<li>KTH, Stockholm, Sweden - rainy and grey</li>
+<li>Gothenburg, Sweden - cloudy</li>
+<li>rainy</li>
+<li>Tromso, relatively warm, cloudy</li>
+<li>Helsinki, a bit cooler but still good by my standards +2</li>
+<li>Trondheim. Rainy as usual. +4</li>
+<li>Sunny Tartu +3 beautiful weather in Tartu today</li>
+<li>Espoo, cloudy but warm :sun_with_face: Windy :+1: </li>
+<li>Oslo, sunny :)</li>
+<li>San Sebastián, cold and cloudy//x2</li>
+<li>Bergen, NO,  amazingly, not raining :+1:</li>
+<li>Copenhagen, sunny and not too cold</li>
+<li>Tallinn, Sunny</li>
+<li>Tromsø, the weather is shit as als </li>
+<li>Bergen, NO, some sun, some drizzle, 12 degree Celsius</li>
+<li>Santander (Spain), cloudy +1</li>
+<li>Helsinki, relatively warm, cloudy</li>
+<li>Tampere, sunny and warm</li>
+<li>Espoo, sunny and warm +1</li>
+<li>Bucharest, cloudy</li>
+<li>Melbourne, sunny and cool</li>
+<li>Oslo and sunny!</li>
+<li>Bordeaux, cloudy!oooooooooo</li>
+<li>I am to believe I am sitting on an island with my laptop ... Iceland? Nope, island ... somewhere close to Alvar allon puisto ...XD cool ... Cool ? May be ... </li>
+<li>University of Oulu, Finland</li>
+<li>kannelmäki</li>
+<li>Nesodden, Norway, sunny :heart_eyes_cat:</li>
+<li>Tuebingen, rainy</li>
+<li>Portugal, foggy</li>
+<li>Vaasa, cloudy</li>
+<li>Berlin, rainy</li>
+<li>Berlin, cloudy </li>
+<li>São Paulo, in a heatwave 4 am.</li>
+<li>Helsinki, Nice weather :+1: :+1: :+1: </li>
+<li>California, heat wave</li>
+<li>From the country side of France, cloudy and rainy </li>
+<li>Trondheim, Norway! Grey and rainy...</li>
+<li>Berlin, rainy</li>
+<li>Helsinki, nice</li>
+<li>Patras, Greece rainy 24C</li>
+<li>Bilbao, quite rainy :)</li>
+<li>Oslo, Norway, great weather, 20C and sunny</li>
+<li>Helsinki, very windy!</li>
+<li>Stockholm! Cloudy, bit rainy, humid, sad :'(</li>
+<li>Stockholm, a bit rainy</li>
+<li>Lund, sunny</li>
+<li>Aalborg, a bit cold but sunny</li>
+<li>Edinburgh, Windy but sunny!</li>
+<li>Tampere, not sure</li>
+<li>Tonsberg, Norway, sunny 14 C</li>
+<li>Lund, Sweden, cold and sunny</li>
+<li>Vilnius, Lithuania, feels like summer!</li>
+<li>Trondheim, Cold and Raining: perfect weather :-)</li>
+</ul>
+<h3 id="have-you-used-git-before-if-yes-how">Have you used git before, if yes, how?</h3>
+<p><em>Poll: Add an 'o' to the answer that applies to you</em></p>
+<ul>
+<li>Don't know what git is: ooooooo</li>
+<li>Yes: oooooooooooooooooooooooooooooooo</li>
+<li>No: ooooooooooooooooo</li>
+<li>Yes: learned a bit on-line, but never implemented in my research ooo</li>
+<li>Yes, YT videos :) </li>
+<li>Yes, on a programming course by myself, but never actually used it in a team setting</li>
+<li>No</li>
+<li>Yes, but I only installed as part of other tools. I don't know exactly what it is. o</li>
+<li>&quot;Indirectly&quot; through GitHub Desktop app</li>
+<li>Yes</li>
+<li>Only cloning repos :+1::+1:</li>
+<li>Yes, managing code till it becomes a mess</li>
+<li>just push and pull of main or master branch to keep track of latex documents and lately also some coding ( R ), would like to learn more +1</li>
+<li>No, I started to use it but only few commands :+1: </li>
+<li>yes, just a little</li>
+<li>No, only Github</li>
+<li>A Little bit :+1::+1: :+1: </li>
+<li>Yes, but only the basics.</li>
+<li>Yes, but only web browser version +1</li>
+<li>I have touched upon it, but knowledge is limited</li>
+<li>Nope</li>
+<li>Yes</li>
+<li>A little</li>
+<li>NO :()</li>
+<li>No, just GitHub but it was a few years ago</li>
+<li>Yes, a decent understanding but without team use</li>
+<li>Yes but not really from terminal</li>
+<li>Yes</li>
+<li>Noo</li>
+<li>a little bit but didn't really understand it - hence the course :)</li>
+<li>noo</li>
+<li>No</li>
+<li>I pushed my code to different repos, solve code conflict</li>
+<li>I have updated repos via ssh (commit on main branch), and rebased once, but not more</li>
+<li>Yes, started using it past week.</li>
+</ul>
+<h2 id="welcome-and-introduction">Welcome and introduction</h2>
+<p>Materials: https://github.com/coderefinery/workshop-intro/blob/master/livestream.md</p>
+<p>(always write new questions at the bottom, wherever that is - that's what we follow.  you can ask anytime, even now)</p>
+<blockquote>
+<p>Videos are also downloadable without YouTube (but requires git-annex, we should make that easier...): https://github.com/coderefinery/video-processing
+You can sign up for the github student package for freebies.</p>
+</blockquote>
+<h2 id="git-intro">Git-intro</h2>
+<p>https://coderefinery.github.io/git-intro/</p>
+<ol>
+<li>Are there alternatives to git?
+<ul>
+<li>see question 3</li>
+<li>Just to clarify, where can I find &quot;question 3&quot;?
+<ul>
+<li>Yeah, numbers get off here.  Down below.</li>
+<li>As there is a lot of information on all your pages, I tend to search – in this case for &quot;question 3&quot; (find / cmd+f). It was not clear to me that Motivation 1., 2., .. was equivalent to question 1, question 2, etc.</li>
+<li>Ah sorry, I meant question 3 here in notes (which you can find below)</li>
+</ul>
+</li>
+<li>mercurial is one alternative</li>
+<li>also subversion is an alternative but very few projects use it</li>
+<li>see also https://coderefinery.github.io/git-intro/motivation/#why-git-and-not-another-tool</li>
+</ul>
+</li>
+</ol>
+<h3 id="motivation">Motivation</h3>
+<p>https://coderefinery.github.io/git-intro/motivation/</p>
+<ol start="2">
+<li>
+<p>Whats the difference between Git and Github?</p>
+<ul>
+<li>Git is a program and repository format.  GitHub is one web service that uses it.  GitHub is like Gitlab, Bitbucket, etc.</li>
+<li>Like: .mp3 vs Spotify?  There are many programs that make and read mp3s, mp3 is name of file format, Spotify is one service that hosts it.</li>
+</ul>
+</li>
+<li>
+<p>What makes git different from other version control systems like cvs and mercurial?</p>
+<ul>
+<li>Fundamentally, they serve the same purpose quite (as much as this lesson goes into)</li>
+<li>Git is relatively modern so it is fully distributed: every repo is its own copy.  This allows it to be used by larger groups and more socially than others could be (we'll see this in day 3).  But these aren't unique to Git.</li>
+</ul>
+</li>
+<li>
+<p>I do CFD simulation, where the files are couple of hundred of GB. How do I manage different versions of the simulation files. What is the best way in your opinion? Thanks :).</p>
+<ul>
+<li>I'd say: for big files like this, you probably want to track them separately (they are big enough you need a dedicated version management system)</li>
+<li>I (one of the insturctors) like tho tool git-annex but it is rather hard to use.  It is good at big files and you can control where each file is stored.</li>
+<li>The normal problem with big files is that every copy of the repo has every file, so big files makes lots of wasted space.  This is what git-annex (and git-lfs) tracks.</li>
+<li>I would add: keep code and large datasets separated, because if I have to work on your code I would not like to have to download several GBs of data just to look at your code. Moreover, does the data need to be version controlled with the code? Perhaps yes, but then it's better to add some metadata in the data files pointing at the version of the code used to produce the data (e.g., a git tag or a git commit). </li>
+</ul>
+</li>
+<li>
+<p>Can you explain a potential word processing software that can be tracked by Git? I ask b/c I am not sure MS Word is compatible.</p>
+<ul>
+<li>latex, try it on overleaf for example if you don't want to install anything. 
+<ul>
+<li>Overleaf officially has very good integration with git/gitlab/github</li>
+</ul>
+</li>
+<li>markdown, basically everything that is a text file.</li>
+<li>Any files, including Word, can be tracked with git.  The merging that we just talked about can't be done with Word files automatically.  (It still might be worth it though: I sometimes use git in these cases just to have the version history)</li>
+<li>For collaborative document editing, I personally use either latex with overleaf (if everyone is fine with it, since latex is very different to what you see is what you get editors like word), or I use google docs or similar online tools, which also do some version tracking if you activate it. </li>
+<li>I'd like to recommend Markdown also, for it is compatible among many tools, as Rstudio, Github etc.</li>
+</ul>
+</li>
+<li>
+<p>Follow up to Q4 and Q5. Which types of files can be managed using git? And for which types of files should git be avoided (if possible)? </p>
+<ul>
+<li>Any file can be <em>tracked</em> in Git.  (really big files not recommended)</li>
+<li>Only plain text files can be <em>diffed</em> and <em>merged</em> automatically in Git: code, LaTeX, text files, small text data files, conf files, etc.</li>
+<li>There are extensions that allow <em>diffing</em> <em>merging</em> of other files like Jupyter notebooks.
+<ul>
+<li>:+1: </li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<h3 id="copy-and-browse-an-existing-project">Copy and browse an existing project</h3>
+<p>https://coderefinery.github.io/git-intro/motivation/</p>
+<p>Example repo: https://github.com/cr-workshop-exercises/recipe-book
+Example repo which will be shown on stream (your names will be recorded and on YouTube): https://github.com/cr-workshop-exercises/recipe-book-recorded</p>
+<ol start="7">
+<li>
+<p>What is the difference between forking and cloning a repo?</p>
+<ul>
+<li>Cloning creates a local copy of the repository to you machine. Forking creates a new representation of the repository in the online repository network associated with your account.</li>
+</ul>
+</li>
+<li>
+<p>So follow up to question 7, forking is specific to the online repo only, and cloning only copies the repo from a remote repo to your local machine?</p>
+<ul>
+<li>Forking is an operation that takes place on GitHub, GitLab and so on. It's like cloning - but on their servers - with some additional information attached. Cloning instead is a more fundamental operation, that is copying a repository (typically, but not only, to your machine) while also remembering the source (git will know the &quot;origin&quot; of the repo once you have cloned it).</li>
+<li>BTW, when using <em>git clone</em>, the local copy of repository will NOT update automatically. You need to use <em>git pull</em> for updating. </li>
+</ul>
+</li>
+<li>
+<p>Is there a/any convention for labeling commit messages?</p>
+<ul>
+<li>First line is quick summary of what happened (often imperative statement).  Then blank line and then longer description as needed.  For small projects doesn't matter so much, larger ones may have standards.</li>
+<li>See this example for a convention https://www.conventionalcommits.org/en/v1.0.0-beta.2/</li>
+</ul>
+</li>
+<li>
+<p>Trying to search something, what does &quot;This repository's code is being indexed right now. Try again in a few minutes.&quot; mean?</p>
+<ul>
+<li>It typically means that the repository is in the process of having its code scanned and indexed by the platform (such as GitHub, GitLab, or similar) to make it searchable. Once the indexing is done, you can search through the repository.</li>
+</ul>
+</li>
+<li>
+<p>What is the best way to see pull requests from command line? Can you see the pull requests made in a clone of the repository you have forked -- for instance in a clone of my fork of the recipies directory <code>https://github.com/&lt;USER&gt;/recipe-book</code> can I see the pull requests made to the original repo? Can you see a pull request if in repositories that you have cloned repository -- if I clone the <code>https://github.com/cr-workshop-exercises/recipe-book repository?</code></p>
+<ul>
+<li>Pull Requsets are a GitHub-based concept.  Branches exist in git: you can clone the repo and look at what branches are there.  PRs can only be seen in the GitHub web interface, or <code>gh</code> command line tool, or other similar things. :+1:</li>
+</ul>
+</li>
+</ol>
+<h3 id="exercise-until-xx-10">Exercise until xx:10</h3>
+<p>https://coderefinery.github.io/git-intro/browsing/#exercise</p>
+<ul>
+<li>You are pretending to be a new person joining a project.  Look through the repository and understand what the current state is</li>
+<li>Try to do what you can, but if you can't do it all, it's OK: you can still continue</li>
+<li>Ask questions below as you keep working on it.</li>
+</ul>
+<p>Poll: You are:</p>
+<ul>
+<li>Done: oooooooooooooooooooooooooo</li>
+<li>Not doing exercise: oo</li>
+<li>Major technical issues: o</li>
+<li>Don't know what to do: oo
+<ul>
+<li>Read: https://coderefinery.github.io/git-intro/browsing/#exercise and do as much as you can; ask questions below if something is unclear</li>
+</ul>
+</li>
+</ul>
+<p>More questions: 
+10. I cannot find the commit history. I am on github &lt;&gt;Code
+- on github? it's the little clock icon top-right-ish, below the green &quot;&lt;&gt; Code&quot; button. in my case: clock icon with &quot;32 commits&quot; next to it
+- Got it, thanks
+- I don't find this clock icon (there should be a snapshot in the lectures) -hint: I am another person)<img src="https://notes.coderefinery.org/uploads/b7704bc7-a4e9-44af-85fe-1ebcb9bb29f0.png" alt="" />
+- thank you for highlighting it, this made the difference :+1:
+- You're welcome :)
+- and good suggestion to add a screenshot. later we will learn how everybody can contribute changes to any repo, also our lessons :-)</p>
+<ol start="11">
+<li>
+<p>I forked the main branch of the exercise repository. Is there a way to &quot;un-fork&quot; and fork all branches?</p>
+<ul>
+<li>you could delete the fork (settings and scroll all the way down) and re-fork, but it's not a problem for this or other exercises. if you want to browse the branches, you can also do it in the original repo that you forked from. </li>
+<li>Settings-&gt; Danger zone towards the bottom -&gt; &quot;Delete this repository&quot;?</li>
+<li>but don't worry about it since only branch labels are gone but the network is still there (this will become clearer later what branch labels are)</li>
+</ul>
+</li>
+<li>
+<p>I am trying step 5, searching salt,  but I get an error message <code>This repository's code is being indexed right now. Try agagain in a few minutes.</code></p>
+<ul>
+<li>Wait a minute for index to be made, and it should work.  We hope.</li>
+<li>I tried this: repo:username/recipe-book &quot;salt&quot; but also got an error with it saying it is indexing ^^</li>
+<li>I got exactly the same error. wait for a while, still doesn't work. any way to manually index?</li>
+<li>At least it work if you try repo:cr-workshop-exercises/recipe-book salt</li>
+<li>Update: Now is working.</li>
+<li>It works on the original repo, but not on the repository that I forked, is it just a question of waiting some process to finish?</li>
+</ul>
+</li>
+<li>
+<p>I cannot find &quot;Insights&quot; question 2. </p>
+<ul>
+<li>&quot;Insights&quot; is on top of the page, above the green button, found it?</li>
+<li>Got it, thanks. It was hidden under ... because the window was too narrow
+<ul>
+<li>ah!</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>How to add search term to “repo:USER/recipe-book” ?</p>
+<ul>
+<li>Add a space there and extre term in the box (I think)
+<ul>
+<li>yes, on top of the page there is &quot;(magnifying glass) Type ...&quot;</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Do i need to write down these excersises somewhere in order to get the accredited?</p>
+<ul>
+<li>I recommend to not delete the fork that you created until the credits are approved. In next exercises we will start to make changes to the forks.</li>
+</ul>
+</li>
+<li>
+<p>I went to the pull requests tab but don't see any.. is that the issue for other people?</p>
+<ul>
+<li>I see atleast two pull requests. Did you visit <a rel="noopener" target="_blank" href="https://github.com/cr-workshop-exercises/recipe-book-recorded/pulls">here</a>? </li>
+<li>Maybe you look at the pull requests to your fork (and there are possibly zero). But try to browse the link above. We did not explain yet what pull requests are but we will get there.</li>
+<li>I checked and there are no pull requests in my forked version, but there are 2 where you mentioned, and 1 for teh recipe-book rep (not recorded), so maybe it has to do with my fork not bringing over the pull requests?</li>
+<li>Yeah, the pull requests would be only on the first repo,</li>
+</ul>
+</li>
+</ol>
+<h3 id="break-until-xx-21">Break until xx:21</h3>
+<ul>
+<li>Then a bit of commentary on the exercises</li>
+</ul>
+<ol start="19">
+<li>
+<p>What's the different between GitHub, VS Code and Command line?</p>
+<ul>
+<li>They are all ways to look at the same repo data: basically, different ways of working.  Most people would use &quot;command line&quot; or &quot;VS Code&quot; for daily work, but GitHub web interface is good for simple things</li>
+<li>We offer three tracks to make it easy for people at any level to follow along and understand the concepts, without having to learn some new tool.</li>
+<li></li>
+</ul>
+</li>
+<li>
+<p>The network looks different when using the forked repo, as opposed to how it looks in bast's repo (extra long line is added to the graph for my user in my forked one)</p>
+<ul>
+<li>we'll need to investigate some.  It does look a bit different than I expect, since it doesn't show the main repo.</li>
+</ul>
+</li>
+<li>
+<p>What does it means that a branch is merged into the main branch?</p>
+<ul>
+<li>We'll learn more about this tomorrow!</li>
+<li>Basically: two lines of work come together and get combined.</li>
+</ul>
+</li>
+<li>
+<p>Do you count the initial commit as a change?</p>
+<ul>
+<li>Very insightful question!</li>
+<li>For git: yes it is a change, same as anything else, it adds new files. (under the hood, git doesn't actually track changes, it tracks versions.  It's the first version, if you ask to show changes it shows everything.)</li>
+</ul>
+</li>
+<li>
+<p>Why in the network graph appears several labels of main?</p>
+<ul>
+<li>each repo in the &quot;fork network&quot; can have its own branches.  Is there only one per row with a username? (yes)</li>
+</ul>
+</li>
+<li>
+<p>If I click &quot;blame&quot; view and then click on &quot;blame prior to change&quot; I visualize the code before the change, correct? But how to reverse it? How to come back to the code after the change was made? I can't undo this, unless I go back to the main repository and click again to open the code.</p>
+<ul>
+<li>interesting! I did not know about the nice functionality &quot;blame prior to change&quot; - only way I know to get back is to click back on the repo and reload it</li>
+</ul>
+</li>
+<li>
+<p>Does it take a while for the network graph to display? It seems it has been rendering for a while. </p>
+<ul>
+<li>For me it is taking forever too...</li>
+<li>Good it's not just me :)</li>
+</ul>
+</li>
+<li>
+<p>How do I change folder of a new recipe?</p>
+<ul>
+<li>great question! I am not sure this is easy/possible on GitHub. For this I would go to the command line where one can &quot;git mv oldfolder newfolder&quot;. Anyone else knows how to do this on GitHub?</li>
+</ul>
+</li>
+<li>
+<p>Do the releases i.e., 'tags', are basically assigned to the most recent or all the commits prior to that in said branch, in this case, the main branch?</p>
+<ul>
+<li>They are assigned to a single commit (you can specify an older one though).  Because of how Git works it includes all the previous history.</li>
+</ul>
+</li>
+<li>
+<p>Is there the same functionality for 'compare' repos in GitLab? If so, can you just compare two text files from within each repo?</p>
+<ul>
+<li>Yes.  For two different files, I don't know if that can be done via the web.</li>
+</ul>
+</li>
+</ol>
+<blockquote>
+<p>More questions below exercise</p>
+</blockquote>
+<h3 id="comitting-recording-changes">Comitting (recording) changes</h3>
+<p>https://coderefinery.github.io/git-intro/commits/</p>
+<h4 id="exercise-recording-changes-making-commits-until-xx-55">Exercise: Recording changes (making commits), until xx:55</h4>
+<p>https://coderefinery.github.io/git-intro/commits/#exercise</p>
+<ul>
+<li>You pretend to be a new contributor: you make a branch and add some changes, separate from the &quot;main&quot; branch</li>
+<li>You then do another change on the main branch</li>
+<li>You see what this looks like: how all the commits go together.</li>
+<li>Try to get to at least step 2 or 3 to be able to do the rest of the day.</li>
+</ul>
+<p>Poll:</p>
+<ul>
+<li>I'm done: oooooooooooooooooo</li>
+<li>I'm not trying: o</li>
+<li>Had major problems: oo</li>
+</ul>
+<ol start="25">
+<li>
+<p>How to add a folder?</p>
+<ul>
+<li>You'd add a file in the folder and folder made automatically (git doesn't track folders...).  (Note: can you add a file in a new folder in the Git web interface?)</li>
+<li>yes, on github create a new file (plus symbol), then start typing &quot;somefolder/&quot; and this then suggests creating the folder.</li>
+<li>I can add a new Repository, gitspace and gist. Which one is a new file? 
+<ul>
+<li>it's the plus symbol left of the green &quot;&lt;&gt; Code&quot; button to add files/directories. the plus symbol on top of page is for something else.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>How to create a branch without switching to the branch (from command line)? And how to switch to a branch that has been created?</p>
+<ul>
+<li><code>git branch BRANCH-NAME</code> makes it from your current location</li>
+<li><code>git branch BRANCH-NAME STARTING-POINT</code> makes it from STARTING-POINT.</li>
+</ul>
+</li>
+<li>
+<p>How to know the branch that is being modified (vs code)? For instance, how do I know which is the branch to which I am committing?</p>
+<ul>
+<li>Are you on command line, vs code, or Github?</li>
+<li>VS Code: I think you see it on the bottom left corner.</li>
+<li>This is a <em>very</em> good question: one should always know what branch they are before commiting!</li>
+</ul>
+</li>
+<li>
+<p>How does the food service look like at Aalto?</p>
+<ul>
+<li>Are you in the meeting room?</li>
+<li>No but I'm thinking if I should come over tomorrow.
+<ul>
+<li>There are cookies and coffee :)</li>
+<li>Lunch is self-paid in the building
+<ul>
+<li>OK, sounds good. Will be there tomorrow.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>in my network graph I can see other users. do I have to opt in/out something to make them invisible?</p>
+<ul>
+<li>You can make repositories and forks private which should hide them from these things</li>
+<li>Github public repos are designed for collaborative projects, thus things are very open and linked (&quot;Social Coding&quot; is their tagline).  These days you have have free private repositories.</li>
+</ul>
+</li>
+<li>
+<p>VS code asks me to publish my branch (while pushing). What does it mean to publish a branch? It says branch <code>branch-name</code> has no remote branch. Would you like to publish the branch.</p>
+<ul>
+<li>Someone who knows vscode better should answer, but: I think it might mean &quot;do push outside the first time&quot;</li>
+<li>making the branch visible outside your computer by &quot;pushing&quot; it to the remote repository (we will clarify &quot;pushing&quot; and &quot;remote&quot; more on Thursday)</li>
+</ul>
+</li>
+<li>
+<p>Scenario: The contributor of a project forks the main repository, then creates a feature branch in his forked repository. While the contributor works on his feature branch, changes are made to the upstream repository. The main branch of the forked repository has the main of the original repository as upstream and can be updated quickly, but then the feature branch in the forked repository is missing the new changes made to the main repository. Therefore, the main in the forked repository must be merged into the feature branch. Question 1: Should one merge or rebase? In general, is it better to merge or to rebase? Why? Question 2: If changes in the feature branch conflict with newer changes pulled from the upstream, a conflict will arise. What is the best practice at this point?</p>
+<ul>
+<li>we will discuss conflict resolution later. rebase will make it look like the local branch commits happened after the upstream commits. advantage: nicer history. disadvantage: conflict resolution can look a bit tricker for a conflicting rebase compared to a conflicting merge.</li>
+<li>My practices: question 1: rebase if it's simple and it's only me working on it.  Otherwise merging (looks worse but saves frustration).  We'll talk about question 2 tomorrow or day 3.</li>
+<li>Personal opinion: 1. Rebase gives you a nicer commit history, without the need of merge commits. Of course rebasing is ok only if you know what you are doing (i.e., rewriting history of the rebased branch - it can be rude if you have already published that branch). 2. Conflicts happen, it's a fact of software development and tooling against this can help you much less than using proper practices (e.g., merge/rebase very often, and use CI/automated tests every time to be as sure as reasonably possible that you're not breaking anything)</li>
+</ul>
+</li>
+<li>
+<p>I get the error &quot;We weren’t able to create the release for you. Make sure you have a valid tag. &quot; when I want to create a release. My tag name is &quot;inventing-potato-salad&quot;. what is wrong with it?</p>
+<ul>
+<li>Hm, I'm not sure.</li>
+<li>we will try to reproduce the problem. can you post exact steps that lead to this?
+<ul>
+<li>hei, I asked the question. I think it was because of the tag I wanted to create. It had spaces. I tried again without spaces and it worked.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>What are the 'tags' exactly? When do you use them?</p>
+<ul>
+<li>It's used to record one point in history which (in theory) will never change.  To record milestones like releases or paper submissions (which might be updated but then it gets a new tag)</li>
+<li>they make it easier in papers to refer to a version. instead of saying that this paper was generated with commit abc123xyz456... (hard to remember), you can then say that this was version &quot;v1.1&quot; which then resolves internally to abc123xyz456...</li>
+</ul>
+</li>
+<li>
+<p>Are tags given only to the main branch? Or is it possible to add tags in other branches?</p>
+<ul>
+<li>Anywhere</li>
+<li>it is also possible to add tags to past commits</li>
+</ul>
+</li>
+<li>
+<p>Can you explain a bit that &quot;timeline&quot;? Is it minutes, or arbitrary x-axis?</p>
+<ul>
+<li>Arbitrary units: I think they essentially make all intervals a unit of one while keeping teh order</li>
+<li>commits are chronologically ordered but I am not sure the timeline is linear. the key here is the ordering.</li>
+</ul>
+</li>
+<li>
+<p>Can you show the compare function again? A bit fast. And your pictures hide the URL on top</p>
+<ul>
+<li>We'll try to show again but here is the URL you get to it: https://coderefinery.github.io/git-intro/commits/#compare-two-arbitrary-commits</li>
+<li>Got it, thanks</li>
+</ul>
+</li>
+<li>
+<p>A bit off-topic license question. You license your repository under a CC0 license. I think that this works for the recipes (as they can be equated to data), but I am not so sure whether this can cover the python recipe-checker.To my knowledge CC-XZY licenses do not really apply to code as they do not cover the liability issues that are potentially linked to re-using code. But I stand to be contradicted and would like to know the reasoning behind your choice.</p>
+<ul>
+<li>very good remark (we added the script later). for the script a good license choice might be BSD or MIT. for a repo that has both data and code one can add one license for data and one for code. we should have done that. more about that next Tue but here we only wanted to raise awareness about licenses and derivative work and reuse. but great observation!</li>
+</ul>
+</li>
+<li>
+<p>In the &quot;(5) Browse the commits you just made&quot; for VS Code you mention it requires and extension, do you know which one it is exactly?</p>
+</li>
+</ol>
+<h2 id="break-until-xx-00">BREAK until xx:00</h2>
+<p>Please keep asking questions below, we will try to answer also all open questions asap</p>
+<ol start="37">
+<li>When I try to push my commit on the new branch (in the last exercise), I get the error message <pre style="background-color:#f5f5f5;color:#1f1f1f;"><code><span>~/git/externals/recipe-book$ git push 
+</span><span>fatal: The current branch butter-for-all has no upstream branch.
+</span><span>To push the current branch and set the remote as  upstream, use
+</span><span>
+</span><span>git push --set-upstream origin butter-for-all
+</span></code></pre>
+I am hesitant to &quot;set upstream origin&quot; as I don't want to push to the upstream repo that I forked, but maybe that's not what will happen?
+<ul>
+<li>maybe you typed: &quot;git push butter-for-all&quot; instead of &quot;git push origin butter-for-all&quot;
+<ul>
+<li>I typed just &quot;git push&quot;</li>
+</ul>
+</li>
+<li>it will work if you type it explicitly: &quot;git push where-to which-branch&quot;. the error means it did not know where to since the local branch wasn't connected to any upstream branch. if you type &quot;git push --upstream origin butter-for-all&quot;, it gets connected and from there on you can type &quot;git push&quot; and it will know what you mean. but I recommend to be explicit about which branch and where to.
+<ul>
+<li>Ok, thanks! Do you recommend &quot;git push butter-for-all&quot; or &quot;git push origin butter-for-all&quot;?
+<ul>
+<li>I use the latter. It's a little bit more typing but more explicit but pushing a branch somewhere is a once-per-day/once-per-week operation so it's not too much. </li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<ul>
+<li>
+<ol start="38">
+<li>I have done two commits in my new branch, in a new file/recipe, then switched back to main again, and there I modified an existing recipe. When doing the git diff, I only see the new file in the new branch, not the changed text in the recipe I modified on main. Was I supposed to see that change I did in main as well? I can see all the changes on github, and they are showing nicely in the git log --graph output.</li>
+</ol>
+<ul>
+<li>you compare with &quot;git diff main new-branch&quot;? yes, I would expect to see changes done on both branches. once this works you can also try the other way: &quot;git diff new-branch main&quot;
+<ul>
+<li>Ah, it does show, but it does not show the changed text, so I overlooked it. It was at the bottom (wished it would have shown what text was changed though):</li>
+</ul>
+<pre style="background-color:#f5f5f5;color:#1f1f1f;"><code><span>diff --git a/mains/vegetarian-lasagna.md b/mains/vegetarian-lasagna.md
+</span><span>index 1a4d50b..b03ed8b 100644
+</span></code></pre>
+<ul>
+<li>does it show the changed text before the +++ --- data on top? it should show added lines and removed lines.</li>
+</ul>
+</li>
+<li>I have the same issue, however I am not using the terminal but the web interface. When I compare, I see the new recepie I created on the new branch, but not the modified recepie on 'main' branch.</li>
+<li>We might have to look at this more later.  Do you have anyone local to show it to to ask for another opinion?</li>
+<li>If I swap to compare the new branch with the main, not the other way around, than it shows both changes.
+<ul>
+<li>Do you mean swap order in the diff, or swap to the branch before diffing? When swapping order in the diff I still don't see it here.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<ol start="39">
+<li>Is there a way to synchronise between using VS code/GitHub/ the command line? I was trying to see if anything was different in my local folder, but the new branch didn't appear with &quot;git status&quot;. I did the exercice on GitHub and was trying to see anything on my local computer.</li>
+</ol>
+<ul>
+<li>VScode and command line: if you navigate to the same directory, you see the same repo.  You can use both in parallel</li>
+<li>For GitHub it is cloning, pushing, and pulling... which we will talk about tomorrow.</li>
+</ul>
+</li>
+<li>
+<ol start="40">
+<li>How to check if I have cloned using HTTPS or SSH URL (from command line)?</li>
+</ol>
+<ul>
+<li>Could it be <code>git remote -v</code>? :+1: 
+<ul>
+<li>If you did it by ssh it will show something like <code>origin git@github.com:coderefinery/repo.git (fetch)</code>, for https it will show something like <code>origin	https://github.com/coderefinery/repo.git (fetch)</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="merging-changes">Merging changes</h2>
+<p>https://coderefinery.github.io/git-intro/merging/</p>
+<h3 id="exercise-until-xx-35-merging-branches">Exercise until xx:35 : Merging branches</h3>
+<p>https://coderefinery.github.io/git-intro/merging/#exercise</p>
+<ul>
+<li>This depends on having made some commits in the previous exercise - you go back if needed</li>
+<li>You will practice making a &quot;pull request&quot; (aka &quot;change propsal&quot;)</li>
+</ul>
+<p>Poll: I am:</p>
+<ul>
+<li>done: oooooooooooooooooooooooo</li>
+<li>not trying: o</li>
+<li>had problems: oo</li>
+<li>need more time: o</li>
+</ul>
+<p>Please ask questions below :)</p>
+<ol start="41">
+<li>
+<p>I created a brnch new-recipe, but it does not appear on github when I check in branches. IN the command line when I write git branch, it shows both the main and new-recipe branch</p>
+<ul>
+<li>You need to push the changes...Hmm push has not been covered yet.</li>
+<li>The exercise text has you do this merge only on your own computer (without a Pull Request on Github) since we haven't gotten there yet.  We're sorry, but all the pieces aren't there yet.  You can:</li>
+<li>Try to push (<code>git push</code> or VSCode push) (but this is something new!  You don't have to)</li>
+<li>Do the merge only on your computer like it says</li>
+<li>Make a new commit on Github.</li>
+</ul>
+</li>
+<li>
+<p>Do the releases i.e., 'tags', are basically assigned to the most recent or all the commits prior to that in said branch, in this case, the main branch?</p>
+<ul>
+<li>
+<p>you can decide which commit to tag. if you create a release/tag on github or if you tag locally, by default it is your current branch and current commit but you can tag commits in the past.</p>
+</li>
+<li>
+<p>--&gt; how do you tag certain commits in the past?</p>
+</li>
+<li>
+<p>They are assigned to one commit (version) but because of how Git works that contains all previous versions, too.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Is there the same functionality for 'compare' repos in GitLab? If so, can you just compare two text files from within each repo?</p>
+<ul>
+<li>I believe there is. Let me look it up ...
+<ul>
+<li>I just tested in on gitlab and same thing works there. if you add &quot;/compare&quot; at the end of URL it lets you compare branches or tags or versions. (if this was the question)</li>
+<li>Yes, that was the question, kiitos.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>When I try to make pull request it is warning me &quot;Can't automatically merge. What should I do?&quot;</p>
+<ul>
+<li>Does it talk about a way to resolve the conflicts?  If so, then the same lines of the same file was modified on both sides (we'll demonstrate this after the next break).  In this case, I'd recommend making a new branch and commit to keep it simple.</li>
+<li>Thank you, I'm trying with a new branch</li>
+</ul>
+</li>
+<li>
+<p>I created the pull request and completed the merge on github. Now, on my computer how do I know that there are changes made to the main branch on github (on vs code and via command line)?</p>
+<ul>
+<li>now you would need to &quot;pull&quot; the update to your local repository so that it shows up also on your local main branch. command line: &quot;git switch main&quot; (to make sure you are on the main branch) and then &quot;git pull origin main&quot; (pull the changes from origin and integrate them into my main branch)</li>
+</ul>
+</li>
+<li>
+<p>When I merge &quot;branch&quot; with &quot;main&quot;, I see the content of &quot;branch&quot; is inbedded in the &quot;main&quot;, however the changes on &quot;main&quot; does not show up on &quot;branch&quot;. Does this mean that the merge is only one directional?</p>
+<ul>
+<li>yes, merge only modifies the branch you merge to, it does nothing to the other branch and keeps it unmodified.</li>
+</ul>
+</li>
+<li>
+<p>What are the Squash and Rebase in the merge options?</p>
+<ul>
+<li>good question! let's demo it later. but in short:
+<ul>
+<li>squash: combine several commits into one</li>
+<li>rebase: is an alternative to merge where instead of creating a merge commit, the branch is moved &quot;to the end&quot;, behind the other branch, incorporating the commits of the other branch.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>When I accidently modified and committed changes to the main branch that were meant for another branch, is there a way to go back to the original branch and transfer changes, as to not lose the progress/changes made locally? Hope that makes sense..</p>
+<ul>
+<li>the another branch already exists? or not yet?</li>
+<li>the other branch exists but was not selected prior to making the changes (i.e. changes were done to the main branch but are supposed to be part of another branch)</li>
+<li>this is not a complete answer but for command line we have a recovery chapter here: https://coderefinery.github.io/git-intro/recovering/#recovering-from-committing-to-the-wrong-branch</li>
+<li>in short, the recovery would be: get the commit to the branch where it was supposed to be, and then rewinding the other branch back by one commit. I am not sure the latter is easy when purely on the web and personally I would fix this on the command line.</li>
+</ul>
+</li>
+<li>
+<p>I merged the branch. But then after the merge, I made some changes to the branch I had created and then I did a commit and push on the branch <code>git push origin &lt;branch-name&gt;</code>. Should I see the new pull request for the changes I made on the branch automatically on github?</p>
+<ul>
+<li>You should see the branch on GitHub, the pull request you'll have to create yourself. :+1: </li>
+<li>(Sometimes) GitHub shows a yellow box saying there have been changes on branch X, do you want to create pull request (or something along the lines)</li>
+<li>You can always go via the pull request menu and manually choose the branches you want to create a pull request for </li>
+</ul>
+</li>
+<li>
+<p>When I try to merge using the command line it automatically opens vim for making a description of the merge. Can I make it open using nano, or is there another way that doesn't rely on vim?</p>
+<ul>
+<li>Yes, you can set the editor: https://coderefinery.github.io/installation/editors/</li>
+<li>roughly <code>git config --global core.editor EDITOR_COMMAND</code> - read to see the right way for each editor.</li>
+</ul>
+</li>
+<li>
+<p>How do I un-commit a proposed change to a repository? </p>
+<ul>
+<li>the pull request is already merged or not yet?</li>
+<li>not yet, I am not the owner of the repository (I forked the repository but accidently suggested changes to the original repository)</li>
+<li>You can close the pull request.  Removing the branch is a separate thing which can be done (I don't think we cover it).</li>
+</ul>
+</li>
+<li>
+<p>Just out of curiosity, in large projects with multiple people working on the same code, is it possible to merge multiple pull requests before sending to main?</p>
+<ul>
+<li>The same way you merge different branches into main you could also merge different other branches into each other via pull requests; I'll let someone else comment when this is useful.
+<ul>
+<li>...</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Can we make pull requests for changes selectively?</p>
+<ul>
+<li>Yes (but you need to make different branches for each change - a branch is the fundamental unit of work)</li>
+</ul>
+</li>
+<li>
+<p>If I make a typo in the commit message, is there a way to correct it in the web version of GitHub?</p>
+<ul>
+<li>I don't think so (from command line you can on your own computer, but that is &quot;rewriting history&quot; and we'll talk about risks of that later).</li>
+<li>What could you then do in that case?</li>
+<li>I'd just go on: commit messages are a log, not perfection, and doesn't really matter in the future.  (There are plenty of typos around).  I think it's better to commit often than try to be too perfect.</li>
+<li>If you ask someone they can help you fix it via the command line if it was really important</li>
+<li>no worries!</li>
+</ul>
+</li>
+<li>
+<p>How do I know for sure that a branch can be safely deleted? Are there any specific checks that can be manually performed on the cli?</p>
+<ul>
+<li>Normally most things that would delete a branch would warn if you are losing info</li>
+<li>You can delete a merged branch, since the new branch (<code>main</code> here) now includes those commits: you aren't losing the data, only the pointer to that data</li>
+</ul>
+</li>
+<li>
+<p>After removing a branch, can you recover an old version from that branch?</p>
+<ul>
+<li>If it's merged in with something else: yes, look at the network and you can see <em>every</em> old commit, and figure out where it was.</li>
+<li>I see, thank you!</li>
+</ul>
+</li>
+<li>
+<p>If I have made multiple changes, for example added and modified files, to a fork but don't want to include all of them in the pull request, is it possible to choose/delete only some of the changes?</p>
+<ul>
+<li>You'd need to separate it out into separate branches.  There are different ways to do this if it's already together.</li>
+</ul>
+</li>
+<li>
+<p>How do I add the currently pulled request in the original repository to my fork of the recipe-book?</p>
+<ul>
+<li>This is &quot;updating the repository&quot;.  I think we talk about this somewhere, maybe someone has the link.</li>
+</ul>
+</li>
+<li>
+<p>Can a person who hasn't forked the base repository make contributions?</p>
+<ul>
+<li>No, you need the fork as a way to store your changes before they get accepted (since you can't modify the main one)</li>
+<li>Unless you have been given permissions to modify the &quot;upstream&quot; - we'll cover this on day 3! Good question.</li>
+</ul>
+</li>
+</ol>
+<ul>
+<li>
+<ol start="60">
+<li>How does multiple people working on the same file commit and merge onto the same file of the same branch ? I can imagine things will get messy. What is the best practice to solve the isssue?</li>
+</ol>
+<ul>
+<li>typically no problem if they are editing the file in different places but to avoid conflicts and surprises it can be good to inform others who are working on the same file. nice mechanisms for it: issue or draft pull request (or other communication). then conflicts might happen but we will resolve them.</li>
+</ul>
+</li>
+<li>
+<ol start="61">
+<li>Is there a way to rename a single file? +2</li>
+</ol>
+<ul>
+<li>GitHub web: go to &quot;edit this file view&quot; and it looks like you can edit the filename there. 
+<ul>
+<li>Where is &quot;edit this file view&quot;? =&gt; You go to edit the file and then, the name of the file is editable (right at the top of the window with the contents of the file)</li>
+</ul>
+</li>
+<li>Local (command line/vscode): rename the file and add the new one / <code>git rm</code> the old one.  <code>git mv</code> does both at once.</li>
+</ul>
+</li>
+</ul>
+<h3 id="break-until-xx-06">Break until xx:06</h3>
+<ul>
+<li>Then we have a demo of &quot;conflict resolution&quot;: what happens when two people modify the same file?</li>
+</ul>
+<h2 id="making-and-resolving-a-conflict">(making and ) Resolving a conflict</h2>
+<p>+1
+This is a discussion and demo-only (you can try it out later on your own) .</p>
+<ul>
+<li>
+<ol start="62">
+<li>Not conflict based, and might come later, but how do you &quot;update&quot; your local main to reflect the forked original, i.e. so that the kebab recipe appears.</li>
+</ol>
+<ul>
+<li>We'll see this tomororw.  it's &quot;update&quot;</li>
+</ul>
+</li>
+<li>
+<ol start="63">
+<li>Do you recommend using branches no matter how small the changes are, and no matter the size of the team (one person or several)? Doing branch, pull request and merge for small change when it is a small team seems maybe like a lot of overhead in admin?</li>
+</ol>
+<ul>
+<li>It really depneds on the use case.  When you have multiple people actively involved, branches + pull requests keep everyone informed.</li>
+</ul>
+</li>
+<li>
+<ol start="64">
+<li>Can I retract a merge request? Lets say I changed my mind, or I noticed some problems.</li>
+</ol>
+<ul>
+<li>Yes.  You can close the pull request.  After it's merged, you would undo the commits in new commits.</li>
+</ul>
+</li>
+<li>
+<ol start="65">
+<li>What kind of discussions should go into issues, and what should go into the discussion of the PR? The communication to solve a conflict seems like it fits in the PR, but for other things the line can be blurry...</li>
+</ol>
+<ul>
+<li>Yeah, it really is blurry: often something starts in an issue and moves to a pull request.  You can refer them to each other.</li>
+</ul>
+</li>
+<li>
+<p>Kitty! :heart_eyes_cat: :+1: </p>
+<ul>
+<li>CATS</li>
+</ul>
+</li>
+</ul>
+<h2 id="feedback-day-1">Feedback, day 1</h2>
+<h3 id="news-for-day-1">News for day 1</h3>
+<ul>
+<li>Today, we covered all the lessons as shown on the course page.</li>
+<li>Tomorrow, we will do many of the same things, but now on our own computers (and cloning/pushing/pulling between the web and your own computer) :+1:</li>
+<li>Tomorrow, having the local editors available is good: VS Code or command line.  If you don't have these, you can still attend and there are some steps you can do, and you'll learn for the future. :+1:</li>
+<li>Twitch will hold a reply immediately, for seven days.  They will be on YouTube by midnight.</li>
+</ul>
+<p>Today was (vote for all that apply):</p>
+<ul>
+<li>too fast: :+1::+1:</li>
+<li>too slow: :+1:  :+1: </li>
+<li>right speed: :+1: :+1: :+1: :+1::+1: :+1::+1: :+1: :+1: :+1:  :+1: :+1: :+1: :+1::+1: :+1: :+1: :+1::+1::+1: :+1::+1: :+1: </li>
+<li>too advanced:</li>
+<li>too basic:</li>
+<li>right level: :+1::+1::+1::+1::+1::+1::+1::+1::+1::+1::+1::+1::+1::+1::+1::+1::+1::+1::+1:</li>
+<li>needed more exercise time: :+1::+1:</li>
+<li>needed less exercise time: :+1: </li>
+<li>I will use what I learned today: :+1::+1::+1::+1::+1::+1::+1::+1::+1::+1::+1::+1::+1::+1::+1::+1::+1:</li>
+<li>I would recommend today to others: :+1::+1::+1::+1::+1::+1::+1::+1::+1::+1::+1::+1::+1::+1::+1::+1::+1::+1::+1:</li>
+<li>I would not recommend today to others: </li>
+<li>too slow sometimes, too fast other times: :+1::+1::+1::+1::+1:</li>
+</ul>
+<p>One good thing about today:</p>
+<ul>
+<li>HedgeDoc is a nice way for interaction between participants. :+1::+1::+1::+1::+1::+1::+1::+1::+1::+1::+1::+1:</li>
+<li>I really liked the rythm of the course, you do not assume we are git geeks :) :+1::+1::+1::+1::+1::+1:</li>
+<li>Breaks were enough.:+1::+1::+1::+1::+1::+1::+1::+1::+1::+1: </li>
+<li>Nice course materials :+1::+1::+1::+1::+1::+1::+1::+1::+1: </li>
+<li>Cute cat(s) :+1::+1::+1::+1::+1::+1::+1: </li>
+<li>Clear explanation for the things we go:+1: </li>
+<li>Great combination of interaction with the video + notes document + materials website + own work. I feel I learn the material quickly with this. :+1::+1::+1::+1:</li>
+<li>I like the communication with the masses through shared text :+1::+1::+1: (agree, particularly if you wanna go through the material again you can revisit the questions)</li>
+<li>Practical tasks, easy to understand, usefull for use in the near future</li>
+<li>HedgeDoc was nice, since often people leave their mic/video accidentally on on Zoom/Teams and  this causes interruptions. Now it was prevented, which was nice! :+1:</li>
+</ul>
+<p>One thing to improve for next time:</p>
+<ul>
+<li>The concept of git push was not introduced properly. It is required to make sure that the commits made locally are seen on github. It would be nice if you could spend a few minutes to introduce git push and how to work with remote repos. We did a clone and just after clone was introduced, it would have been nice to introduce a git push with a git commit of a small change made to a file.  :+1::+1::+1::+1::+1::+1:</li>
+<li>I still feel a bit lost with how to integrate git or github within a writing a word document task, can i just upload a word document to github? </li>
+<li>I dowloaded the tools you recommended, visual studio code, but we did not get info on what those are for :+1:</li>
+<li>It would be great to have a bit more time for the exercises (maybe not the last one with the pull request, but the first couple exercises). I found that I had made it through around 75% of the exercises before we returned to the session, so I would suggest and extra 5 - 10 minutes.:+1:</li>
+<li>Yes, agree with the last one, particularly if technical problems emerge, you need to time to resolve those problems first :+1:</li>
+<li>I would like to use VScode to talk to github/my local git but I miss the link -&gt; need some assistance to transfer</li>
+<li>Perhaps 5 minutes about the BIG picture :+1::+1::+1::+1:</li>
+<li>As usually in real life git is used on commandline, it would be great to introduce also the instructions for that too :+1::+1::+1:</li>
+<li>I would like another way to communicate with the instructors maybe in addition to HedgeDoc for immediate issues, like the Zoom faces sometimes were on top of the web URL or blocking different features on GitHub, so if there was a way to communicate this more quickly, it would fix something relatively basic.</li>
+<li>I believe that the pace was too fast at the beginning, when I was still getting familiar with the basic interface. Afterwards it was OK for me :+1:</li>
+<li>If i get behind, I get lost easily.:+1:</li>
+<li>The git CLI examples don't always include all the steps needed, seems the GitHub website GUI is complete for all questions</li>
+<li>more cats!! :+1:</li>
+<li>Maybe you can all save a copy of this forum from today and email it to the course participants as a PDF? I suggest this especially as you mentioned that these notes can easily get deleted...
+<ul>
+<li>this notes should remain available and they are even version controlled. You can download them as HTML (or Markdown) from the Menu</li>
+</ul>
+</li>
+<li>Will the notes remain available indefinitely?
+<ul>
+<li>They get archived on the course website indefinitely (cleared from here for tomorrow though)</li>
+</ul>
+</li>
+</ul>
+<p>Any other feedback?</p>
+<ul>
+<li>Thanks for today, super useful!!!! </li>
+<li>See you tomorrow, thanks!</li>
+</ul>
+
+  
+
+      </div>
+
+      <div class="uk-margin-large-top">
+        <hr>
+        <div class="uk-child-width-expand@s" uk-grid>
+
+  <div>
+    <h4>Funding</h4>
+    <p>
+      CodeRefinery is a project within the
+      <a href="https://neic.no" target="_blank">Nordic e-Infrastructure Collaboration</a> (NeIC).
+      NeIC is an organisational unit under <a href="https://www.nordforsk.org/" target="_blank">NordForsk</a>.
+    </p>
+  </div>
+
+  <div>
+    <h4>Privacy</h4>
+    <p>
+      <a href="https://coderefinery.org/privacy-policy/" target="_blank">Privacy policy</a>
+    </p>
+  </div>
+
+  <div>
+    <h4>Follow us</h4>
+    <ul class="uk-iconnav">
+      <li>
+        <a href="https://github.com/coderefinery" target="_blank" uk-icon="icon: github">GitHub</a>
+      </li>
+      <li>
+        <a rel="me" href="https://fosstodon.org/@coderefinery" target="_blank" uk-icon="icon: social">Mastodon</a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/company/coderefinery-research-software-development/?viewAsMember=true" target="_blank" uk-icon="icon: linkedin">LinkedIn</a>
+      </li>
+    </ul>
+  </div>
+
+  <div>
+    <h4>Contact</h4>
+    <p>
+      <a href="mailto:support@coderefinery.org">support@coderefinery.org</a>
+    </p>
+  </div>
+
+  <div>
+    <h4>Improve this page</h4>
+    <p>
+      <a href="https:&#x2F;&#x2F;github.com&#x2F;coderefinery&#x2F;2024-09-10-workshop">Source code</a>
+    </p>
+  </div>
+
+</div>
+
+      </div>
+
+    </div>
+  </body>
+
+  <script src="https://cdn.jsdelivr.net/npm/anchor-js/anchor.min.js"></script>
+  <script>
+    anchors.add();
+  </script>
+</html>
