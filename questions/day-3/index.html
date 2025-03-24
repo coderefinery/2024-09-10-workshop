@@ -1,0 +1,1440 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Questions and notes from workshop day 3 - CodeRefinery workshop September 10-12, 17-19, 2024</title>
+    <link rel="shortcut icon" href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2024-09-10-workshop&#x2F;/img/favicon.ico">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- uikit -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.23.1/dist/css/uikit.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.23.1/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.23.1/dist/js/uikit-icons.min.js"></script>
+
+    <!-- time zone localization -->
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.7/dayjs.min.js" integrity="sha256-EfJOqCcshFS/2TxhArURu3Wn8b/XDA4fbPWKSwZ+1B8=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.7/plugin/utc.js" integrity="sha256-qDfIIxqpRhYWa543p6AHZ323xT3B8O6iLZFUAWtEQJw=" crossorigin="anonymous"></script>
+
+    
+      <link rel="alternate" type="application/atom+xml" title="CodeRefinery" href="https://coderefinery.github.io/2024-09-10-workshop/atom.xml" />
+    
+
+        
+      <title>CodeRefinery - Questions and notes from workshop day 3</title>
+      <meta name="twitter:title" content="Questions and notes from workshop day 3" />
+      <meta property="og:title" content="Questions and notes from workshop day 3" />
+      <meta property="og:site_name" content="CodeRefinery workshop September 10-12, 17-19, 2024" />
+    
+
+    
+      <meta name="description" content="Free workshop on git, testing, documentation, and more in a workshop - for researchers and scientists." />
+      <meta name="twitter:description" content="Free workshop on git, testing, documentation, and more in a workshop - for researchers and scientists." />
+      <meta property="og:description" content="Free workshop on git, testing, documentation, and more in a workshop - for researchers and scientists." />
+    
+
+    
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:image" content="https://raw.githubusercontent.com/coderefinery/coderefinery-artwork/main/socialshare/socialshare-workshop.png" />
+      <meta property="og:image" content="https://raw.githubusercontent.com/coderefinery/coderefinery-artwork/main/socialshare/socialshare-workshop.png" />
+    
+
+
+    
+
+    <link href="https://coderefinery.github.io/2024-09-10-workshop/style.css" rel="stylesheet">
+
+    
+    <script defer data-domain="coderefinery.github.io" src="https://plausible.cs.aalto.fi/js/script.js"></script>
+    
+
+
+  </head>
+
+  <body>
+    <div class="uk-container uk-margin-large-bottom">
+
+      <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+  <div class="uk-navbar-right">
+    <ul class="uk-navbar-nav uk-visible@s">
+      
+      
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2024-09-10-workshop">
+      About
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2024-09-10-workshop&#x2F;exercises">
+      List of exercises
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2024-09-10-workshop&#x2F;audience">
+      Audience
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2024-09-10-workshop&#x2F;certificates">
+      Certificates
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2024-09-10-workshop&#x2F;join">
+      How to join
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2024-09-10-workshop&#x2F;requirements">
+      Requirements
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2024-09-10-workshop&#x2F;questions">
+      Q&amp;A
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2024-09-10-workshop&#x2F;code-of-conduct">
+      Code of conduct
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2024-09-10-workshop&#x2F;communication">
+      Communication
+      
+    </a>
+
+    
+
+  </li>
+
+
+    </ul>
+    <a href="#" class="uk-navbar-toggle uk-hidden@s" uk-navbar-toggle-icon uk-toggle="target: #sidenav"></a>
+  </div>
+</nav>
+
+<div id="sidenav" uk-offcanvas="flip: true" class="uk-offcanvas">
+  <div class="uk-offcanvas-bar">
+    <ul class="uk-nav">
+      
+      
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2024-09-10-workshop">
+      About
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2024-09-10-workshop&#x2F;exercises">
+      List of exercises
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2024-09-10-workshop&#x2F;audience">
+      Audience
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2024-09-10-workshop&#x2F;certificates">
+      Certificates
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2024-09-10-workshop&#x2F;join">
+      How to join
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2024-09-10-workshop&#x2F;requirements">
+      Requirements
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2024-09-10-workshop&#x2F;questions">
+      Q&amp;A
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2024-09-10-workshop&#x2F;code-of-conduct">
+      Code of conduct
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2024-09-10-workshop&#x2F;communication">
+      Communication
+      
+    </a>
+
+    
+
+  </li>
+
+
+    </ul>
+  </div>
+</div>
+
+
+      <div class="markdown">
+        
+  <h1>Questions and notes from workshop day 3</h1>
+
+  <ul>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2024-09-10-workshop/questions/day-3/#day-3-12-09-2024">Day 3 - 12&#x2F;09&#x2F;2024</a>
+      
+        <ul>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2024-09-10-workshop/questions/day-3/#icebreakers">Icebreakers</a>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2024-09-10-workshop/questions/day-3/#questions-from-day-2">Questions from Day 2</a>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2024-09-10-workshop/questions/day-3/#day-3">Day 3</a>
+              
+                <ul>
+                  
+                    <li>
+                      <a href="https://coderefinery.github.io/2024-09-10-workshop/questions/day-3/#concepts">Concepts</a>
+                    </li>
+                  
+                    <li>
+                      <a href="https://coderefinery.github.io/2024-09-10-workshop/questions/day-3/#collaborating-within-the-same-repository">Collaborating within the same repository</a>
+                    </li>
+                  
+                </ul>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2024-09-10-workshop/questions/day-3/#exercise-session-back-on-stream-at-xx-00">Exercise session; back on stream at xx:00</a>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2024-09-10-workshop/questions/day-3/#break-until-xx-10">BREAK until xx:10</a>
+              
+                <ul>
+                  
+                    <li>
+                      <a href="https://coderefinery.github.io/2024-09-10-workshop/questions/day-3/#code-review">Code review</a>
+                    </li>
+                  
+                </ul>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2024-09-10-workshop/questions/day-3/#lunch-break-we-resume-at-xx-00">Lunch break, we resume at xx:00</a>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2024-09-10-workshop/questions/day-3/#contributing-changes-to-repositories-that-belong-to-others">Contributing changes to repositories that belong to others</a>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2024-09-10-workshop/questions/day-3/#exercise-session-we-will-resume-at-xx-45">Exercise session; we will resume at xx:45</a>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2024-09-10-workshop/questions/day-3/#feedback-day-3">Feedback Day 3</a>
+              
+                <ul>
+                  
+                    <li>
+                      <a href="https://coderefinery.github.io/2024-09-10-workshop/questions/day-3/#news-from-day-3">News from day 3</a>
+                    </li>
+                  
+                </ul>
+              
+            </li>
+          
+        </ul>
+      
+    </li>
+  
+</ul>
+
+
+  
+  
+    <h1 id="day-3-12-09-2024">Day 3 - 12/09/2024</h1>
+<h2 id="icebreakers">Icebreakers</h2>
+<p>Let's test the notes with some icebreakers! :icecream: </p>
+<p>If you could ask for any superpowers, what would you ask for?</p>
+<ul>
+<li>Fly :+1: :+1: :+1: :+1: :+1::+1:</li>
+<li>teleporting (:+1:)</li>
+<li>Regeneration</li>
+<li>Blink (short-range teleport)</li>
+<li>Undistracted focus</li>
+<li>Becoming a cat</li>
+<li>Turning into a neutrino ...</li>
+<li>Breathing undewater</li>
+<li>Understanding women :( (s/women/humans)</li>
+<li>Wake up early</li>
+</ul>
+<p>In preparation for today, have you opend an access request issue in <a rel="noopener" target="_blank" href="https://github.com/cr-workshop-exercises/access-requests/issues">access request repo</a></p>
+<ul>
+<li>Yes and I accepted it:oooooooooooooooo</li>
+<li>Yes but I have not accepted it yet: </li>
+<li>I did not sent it yet, but will do it asap: oo</li>
+<li>I do nt know what you mean, help me: </li>
+<li>Yes but haven't gotten the email yet: o</li>
+<li>yes</li>
+</ul>
+<hr />
+<h2 id="questions-from-day-2">Questions from Day 2</h2>
+<ol>
+<li>
+<p>Where are the notes from today?</p>
+<ul>
+<li>You can find them all linked from the event web page: https://coderefinery.github.io/2024-09-10-workshop/questions/</li>
+<li>Okay, thank you</li>
+</ul>
+</li>
+<li>
+<p>Feel free to answer this tomorrow (12/9):</p>
+<pre style="background-color:#f5f5f5;color:#1f1f1f;"><code><span> git branch --all
+</span><span>     * alex/fruit-salad
+</span><span>       main
+</span><span>       test-banana
+</span><span>       test-cherry
+</span><span>       remotes/origin/HEAD -&gt; origin/main
+</span><span>       remotes/origin/alex/fruit-salad
+</span><span>       remotes/origin/main
+</span><span>       remotes/origin/radovan/lasagna
+</span><span>       remotes/origin/radovan/poke
+</span><span>       remotes/origin/radovan/vegetable-soup
+</span></code></pre>
+<p>--&gt; I checked and the last commit was from Alex in March, so why does it say this:
+--&gt; remotes/origin/HEAD -&gt; origin/main
+what does this indicate? I thought the HEAD was the pointer to the latest commit, so I'm not sure why it is origin/main if the latest one was:</p>
+<pre style="background-color:#f5f5f5;color:#1f1f1f;"><code><span>    git log
+</span><span>        commit 89d5ef9b8296b57c29c734b7c5288a643e85eb8f (HEAD -&gt; alex/fruit-salad, origin/alex/fruit-salad)
+</span><span>        Author: Alex Smith &lt;alex.smith@example.org&gt;
+</span><span>        Date:   Wed Mar 6 20:22:55 2024 +0100
+</span><span>
+</span><span>        fruit salad: instructions
+</span></code></pre>
+<ul>
+<li>you are right that HEAD normally points to the current commit when working locally. GitHub uses HEAD to point to the default branch. From <code>remotes/origin/HEAD -&gt; origin/main</code> I can see that <code>main</code> is the default branch on GitHub. It was a good question and it is a bit confusing and I believe here GitHub uses a Git feature to keep track of default branch.</li>
+</ul>
+</li>
+<li>
+<p>git log -S fixme --&gt; I tried this in the networkx repo and it returned several commits but didn't see the pattern of 'fixme' in those logs, why not?
+-- e.g., git log -S fixme
+commit 870ca9b9298f92323504c2bbf234618ac11256d4
+Author: aric <a href="mailto:none@none">none@none</a>
+Date:   Tue Aug 11 17:36:07 2009 +0000</p>
+<pre style="background-color:#f5f5f5;color:#1f1f1f;"><code><span>         Merge attrgraph branch into trunk
+</span><span>
+</span><span>         --HG--
+</span><span>         extra : convert_revision : svn%3A3ed01bd8-26fb-0310-9e4c-ca1a4053419f/networkx/trunk%401364
+</span><span>
+</span><span>     commit ad25ae40af532158bf1d6765d0dc822d67bcbcb3
+</span><span>     Author: aric &lt;none@none&gt;
+</span><span>     Date:   Mon Nov 3 04:37:22 2008 +0000
+</span><span>
+</span><span>         Merged revisions 741-766,769-770,794-797,799,804-829,845-848,858-885 via svnmerge from
+</span><span>         https://networkx.lanl.gov/svn/networkx/branches/pre99
+</span><span>
+</span><span>         ........
+</span><span>           r741 | aric | 2008-02-18 18:29:21 -0700 (Mon, 18 Feb 2008) | 3 lines
+</span><span>
+</span><span>           pre99 branch refactoring directory layout
+</span><span>         ........
+</span><span>           r742 | aric | 2008-02-18 18:30:17 -0700 (Mon, 18 Feb 2008) | 2 lines
+</span><span>
+</span><span>           pre99: missing utils.py
+</span><span>         ........
+</span><span>           r743 | aric | 2008-02-18 20:42:25 -0700 (Mon, 18 Feb 2008) | 7 lines
+</span><span>
+</span><span>           pre99: graph,digraph,multigraph,multidigraph
+</span><span>
+</span><span>                  list functions in __init__
+</span><span>
+</span><span>                   remove xgraph,xdigraph
+</span><span>         ........
+</span><span>           r744 | aric | 2008-02-18 20:42:58 -0700 (Mon, 18 Feb 2008) | 3 lines
+</span><span>
+</span><span>           pre99: example of labeled graphs
+</span><span>         ........
+</span><span>           r745 | aric | 2008-02-18 20:44:46 -0700 (Mon, 18 Feb 2008) | 5 lines
+</span><span>
+</span><span>           pre99: tests for graph,digraph,multigraph,multidigraph
+</span><span>
+</span><span>                  uses nose - run with nosetests
+</span><span>         ........
+</span><span>           r746 | aric | 2008-02-18 20:45:23 -0700 (Mon, 18 Feb 2008) | 2 lines
+</span><span>
+</span><span>           pre99: __init__ for classes
+</span><span>         ........
+</span><span>           r747 | aric | 2008-02-18 20:47:51 -0700 (Mon, 18 Feb 2008) | 2 lines
+</span></code></pre>
+<ul>
+<li>the &quot;fixme&quot; does not show up in the commit messages but <code>git log -S</code> looks also into the changes. so if you look at the individual commits (e.g. <code>git show 870ca9b9298f923235</code>), then a &quot;fixme&quot; got added or removed</li>
+</ul>
+<p>--&gt; slight different issue here, it finds 'degree_correlation' but not the entire string: 'Logic error in degree_correlation', why is that?
+git log -S &quot;Logic error in degree_correlation&quot;
+commit 4dff462e5259fff0ae39afb6f89ab0518afa980c
+Author: dschult <a href="mailto:none@none">none@none</a>
+Date:   Wed Aug 3 03:25:34 2005 +0000</p>
+<pre style="background-color:#f5f5f5;color:#1f1f1f;"><code><span>                 Update threshold to include degree_correlation(cs).
+</span><span>
+</span><span>                 improve triangle_sequence, etc complexity by introducing
+</span><span>                 counters instead of repeatedly counting &quot;d&quot; symbols.
+</span><span>
+</span><span>                 Also put in   enumerate(cs) in place of range(0,len(cs))
+</span><span>                 in a few places.
+</span><span>
+</span><span>                 Added tests for degree_correlation(cs).
+</span><span>
+</span><span>                 --HG--
+</span><span>                 extra : convert_revision : svn%3A3ed01bd8-26fb-0310-9e4c-ca1a4053419f/networkx/trunk%4036
+</span></code></pre>
+<ul>
+<li>Same explanation as question 2: <code>git log -S</code> not only looks at commit metadata but also the commit content (added lines and removed lines). <code>git show 4dff462</code> reveals that &quot;Logic error in degree_correlation&quot; got added.</li>
+<li>It's a really powerful tool to be able to search all history, also for code that got removed and even if commit messages don't mention it.</li>
+</ul>
+</li>
+<li>
+<p>git log -S &quot;Logic error in degree_correlation&quot; --patch --&gt; should this theoretically do something similar to git annotate networkx/algorithms/threshold.py?</p>
+<ul>
+<li>Somewhat: it would find commits that have adjusted that phrase, and show them.  It's a different format, maybe more appropriate in some cases.</li>
+</ul>
+</li>
+</ol>
+<hr />
+<ol start="5">
+<li>What is the link for the GitHub so I can make an issue (as just mentioned)? I can't find it.
+<ul>
+<li>https://github.com/cr-workshop-exercises/access-requests/issues/new/choose </li>
+</ul>
+</li>
+</ol>
+<h2 id="day-3">Day 3</h2>
+<p>Materials: https://coderefinery.github.io/git-collaborative/</p>
+<h3 id="concepts">Concepts</h3>
+<p>Materials: https://coderefinery.github.io/git-collaborative/concepts/</p>
+<p>Your questions here: </p>
+<ol start="6">
+<li>How do pushes to local fork compare to synchronizing to the upstream source where you forked from? Is there a way to commit and push to the place one forked from?
+<ul>
+<li>Very good question! We will demonstrate that later today and then also answer more here.</li>
+<li>to already give a written answer: technically it is the same mechanism and you can push to either. often, one does not have write access to the original repo (if it is not yours) and can only push to your fork. but if you have write access to both, you can push to the original repository also.</li>
+</ul>
+</li>
+</ol>
+<h3 id="collaborating-within-the-same-repository">Collaborating within the same repository</h3>
+<p>Materials: https://coderefinery.github.io/git-collaborative/same-repository/</p>
+<h2 id="exercise-session-back-on-stream-at-xx-00">Exercise session; back on stream at xx:00</h2>
+<p>Exercise preparation and materials: https://coderefinery.github.io/git-collaborative/same-repository/#exercise</p>
+<p>Please remember to accept the e-mail and &quot;unwatch&quot;.</p>
+<p>What to do: Open an issue (assign to yourself), create new branch, make changes (create a new recipe file), push to the repository, open pull request, review someone elses 'PR' :heavy_check_mark:  (try to get until step 5)</p>
+<p>How is it going? </p>
+<ul>
+<li>Done: oooooo</li>
+<li>Not trying: o</li>
+<li>Don't know what to do (please ask for clarfication below): oo</li>
+<li>Major issues (please ask below): o</li>
+<li>I wish we had more time: ooo</li>
+</ul>
+<p>Have fun :) </p>
+<ol start="7">
+<li>
+<p>I am participating as individual learner and joined on the recorded repo - I don't see the &quot;Settings&quot; tab. Is this only for those that open a team repo (e.g. the owner)? :+1: :+1: :+1: </p>
+<ul>
+<li>yes, only repository owners/admins can see settings tab on repositories</li>
+<li>in this exercise we give you write access but not admin access, but for your own research group repositories you can choose to give all group members admin access
+<ul>
+<li>great, thanks for clarification!</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Does GitHub recognize all the mentioned keywords for connecting the issues in both commit messages as well as pull request descriptions? It was only mentioned &quot;fixes&quot; under commit messages in the material, and then the rest of them (closes, resolves etc) under pull requests</p>
+<ul>
+<li>yes, you can use them in commit messages and/or pull requets: close/closes/fix/fixes/resolve/resolves (maybe more?, same on GitLab)
+<ul>
+<li>Full list of words seems to be <a rel="noopener" target="_blank" href="https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue">here</a></li>
+</ul>
+</li>
+<li>sometimes I forget to add it to the commit messages but then I get another chance in the pull request to not forget. and if I forget then, I go to the issue and before closing it, I write down there which pull request or commit fixed it so that future generations understand what happened there and until when the issue was in the wild.</li>
+</ul>
+</li>
+<li>
+<p>I made an issue to the centralized-workflow-exercise repo, but seem to not be able to assign the issue to myself -- i.e. when I open the issue, I can't click on <code>Assignees</code> . </p>
+<ul>
+<li>We will show this on stream, can you see the assignees tab?</li>
+<li>it could be a permission issue, but write access should be enough to self-assign an issue (if I can trust the internet)</li>
+</ul>
+</li>
+<li>
+<p>I guess that what is intended in point 5 is for us to make a pull request onto the original template? When I open pull request in my copy of the template I cannot see the option to make that the base, only my main appears. Sorry, I forgot to say that I am participating individually. </p>
+<ul>
+<li>PRs are used with <em>forks</em> (edit: or within the same repository), not with repositories generated by a template. <em>forks</em> keep a relationship with the original project, so GitHub has enough metadata to keep a relationship. Generating from a template instead is a completely different idea, where you want to start a completely new project but just copy the structure from an existing one, that is used as a template
+<ul>
+<li>but in this case we work within the same repository, not from a fork</li>
+<li>but indeed please check whether you are pushing the branch to the correct repository. if the repository contains the word &quot;template&quot;, then it is not the right one. it should be in this case either https://github.com/cr-workshop-exercises/centralized-workflow-exercise-recorded or https://github.com/cr-workshop-exercises/centralized-workflow-exercise</li>
+<li>Sorry, I am confused. I am participating individually, I copied a template, created an issue, created a branch, added a file solving the issue, commited it, then merged the branch (points 1-4). Now I wish to do point 5, what am I supposed to do?
+<ul>
+<li>I think you might have followed the tab &quot;part of a team or exercise room&quot; instead of the tab &quot;following on your own&quot;.</li>
+</ul>
+</li>
+<li>Ooops! You are right, sorry
+<ul>
+<li>you should still be able to create a new branch and open a pull request even if you are the only user in your repository (it seems strange but it is so). </li>
+</ul>
+</li>
+<li></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>working in VScode in the git bash terminal, when I want to create a new file (here - in the current working directory), what would be a quicker way than doing it in the VScode GUi (click file - new file - choose file name - navigate to directory)?</p>
+<ul>
+<li>When you are with the mouse in the explorer (the uppermost tab on the left with the two sheets), there appears a sheet with a little plus symbol in the upper right of that explorer which lets you create a new file in the current directory, can you see that? (not sure if it looks the same on all platforms)
+<ul>
+<li>yes, I see that, but I wondered more about a command line way from the git bash terminal?</li>
+<li>you can also do <code>nano mains/filename.md</code></li>
+<li>Ah ok sorry, I am not sure if there is a command that opens it right away in the GUI to edit, but you can create a new file in the current working directory for example with <code>touch filename.xx</code> 
+<ul>
+<li>ah, great, thanks, I did not know about <code>touch</code>!</li>
+<li>Uh, I just learned by trying: typing <code>code filename.xx</code> in the integrated terminal opens the new file in current location for editing. Does that work for you too? (<code>code</code> is also the command to start VSCode from command line)
+<ul>
+<li>yes, that works for me too! I first created the file using <code>touch</code> and then opened it using <code>code</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Can you provide us the terminal command for making a pull request on the repository? By now I've cloned the repository locally and made some commits.</p>
+<ul>
+<li>it is possible to do this from command line but you would need an additional tool. the &quot;normal&quot; command line approach would be to first push the branch to the repository on github, and then create the pull request on the web.</li>
+</ul>
+</li>
+<li>
+<p>When I am in VScode git bash terminal and cd to the directory of my choice and clone a repo in there - the rest of VScode seems to not know that I want to work there. I would expect the explorer and source control windows to navigate to the same directory on the fly. Is there a setting I have to set?</p>
+<ul>
+<li>Good question, same behaviour here. Will check a bit and get back.</li>
+</ul>
+</li>
+<li>
+<p>How do I do a pull request in command line? Here: https://coderefinery.github.io/git-intro/merging/, it says that this will be covered in the &quot;collaborative git lesson&quot; but i cant find it.</p>
+<ul>
+<li>see question 12 (in short: typically on the web after pushing the branch to the github repo)</li>
+</ul>
+</li>
+<li>
+<p>Once I do a pull request and I recieved a comment requesting to fix something else of the code, should I fix it using another pull-request or I should keep working on my branch and do a new commit?</p>
+<ul>
+<li>In general, if it fits with the fixes of your original PR, you can add it to the same branch, then you have the discussion and fixes together. If not, you can also do a new branch and then a new PR.:+1:</li>
+</ul>
+</li>
+</ol>
+<blockquote>
+<p>Add your questions below :) </p>
+</blockquote>
+<h2 id="break-until-xx-10">BREAK until xx:10</h2>
+<ol start="16">
+<li>
+<p>After I cloned the repo, I forgot to make a new branch. I did changes in the local main branch and committed locally. What is the best way now to change it?</p>
+<ul>
+<li>When making an accidental commit locally but <em>before pushing to remote</em>, it is luckily quite straightforward to recover / undo. You can try this <code>git reset HEAD~1</code> and then check <code>git status</code> what is the state of the repo.</li>
+<li>It went back to the status before I committed. &quot;nothing added to commit but untracked files present&quot;
+<ul>
+<li>Ok that sounds good. You should now be able to create the new branch and continue normally.</li>
+</ul>
+</li>
+<li>could you also rename the branch and then push it? Is it possible to rename &quot;main&quot;?
+<ul>
+<li>yes, you can rename &quot;main&quot;. Pushing also worked, you can look into branch &quot;main_modified&quot;.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>I am in VScode git bash terminal: I have edited a new file  in a new branch. When want to stage it with <code>git add -p filename.md</code> it says &quot;No changes.&quot; and then I cant commit because there is nothing staged. Why?</p>
+<ul>
+<li>Have you rememebered to save the file?
+<ul>
+<li>yes</li>
+<li><img src="https://notes.coderefinery.org/uploads/8a76b53a-3296-4b30-bb9c-4d5d6e3d3c0c.png" alt="" />
+<ul>
+<li>Can you do <code>git status</code>?
+<ul>
+<li>yes, output is `On branch strawberry-salad
+Untracked files:
+(use &quot;git add <file>...&quot; to include in what will be committed)
+strawberry-salad.md</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<p>nothing added to commit but untracked files present (use &quot;git add&quot; to track)<code>- Peculiar :)  - ah, I tried without the -p option. now I think it worked? strange - It seems the -p option is for interactive mode, I'm not sure what happened there. - yeah I got it from the git cheatsheet https://aaltoscicomp.github.io/cheatsheets/git-the-way-you-need-it-cheatsheet.pdf - I see it - maybe it's easier not to use it for now :) - If it is the very first commit of the file, I think</code>-p` wouldn't work</p>
+<ol start="18">
+<li>
+<p>Where can I place the &quot;fixes #Y&quot;? Title of pull request? Comment in pull request? Commit body/title?</p>
+<ul>
+<li>You can try it out, where it links. I usually put it in the commit title, but when I forget I put it in the body/description of the PR</li>
+</ul>
+</li>
+<li>
+<p>What does &quot;a new branch with some half-finished work&quot; mean? That there is something done there that is not committed in git?</p>
+<ul>
+<li>I think it probably means: you've started working, and made the commits.  But it's not done enough to merge (maybe it still breaks other things?).  Commiting is fine, and you can even push so others can monitor the progress and provide help.  But you dont' want to merge until it's ready.</li>
+</ul>
+</li>
+<li>
+<p>In relation to question 12 and 14. the previous days it was said that today we will learn how to push and pull from local repository to github. Maybe I missed something :) But could you teach us how to pull and push form local repository in command line? :+1:</p>
+<ul>
+<li>Sorry I missed where did you show the command lines, could you paste the link?
+<ul>
+<li>Link 1: On the exercise here https://coderefinery.github.io/git-intro/sharing/ click on &quot;terminal&quot; and you see the workflow to push local to remote (=github).</li>
+<li>Link 2: Today we pushed from local to collaborative repository: https://coderefinery.github.io/git-collaborative/same-repository/
+<ul>
+<li>Thank you! I've just managed to do a push. I suppose the pull that is similar</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>After that I wrote <code>git push origin new-branch-name</code>, I got <code>ERROR: Permission to cr-workshop-exercises/recipe-book.git denied to xxx, &quot;</code>. Does it mean that I don't have write access?</p>
+<ul>
+<li>I also had this error. After opening an issue in GitHub everything worked.
+<ul>
+<li>I am not sure why you saw this error and it is surprising to me that opening issue resolved it. Maybe something took a bit time? maybe temporary problem github-side?</li>
+<li>Did this resolve or are you still having this issue? :+1:
+<ul>
+<li>I pushed to a wrong repository... (<code>cr-workshop-exercises/recipe-book</code>) :sweat_smile:</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>I opened an issue 'Pizza' and when I did the pull request I got a message 'changes requested'. Should I just edit the file? How do I submit the pull request again? And, the message contains: 'your pull request is not automatically linked in the issue, due to not explicitly including the &quot;fixes #15&quot;' - where should I add that? </p>
+<ul>
+<li>You could edit the description of the PR or add a comment to include the &quot;fixes ...&quot; </li>
+<li>For the requested changes, you can edit the file directly in the webinterface or also do it locally on your branch and push it again, the PR will then update with your commit.</li>
+</ul>
+</li>
+<li>
+<p>When I push, I got this error message: fatal: unable to access 'https://github.com/cr-workshop-exercises/centralized-workflow-exercise.git/': The requested URL returned error: 403</p>
+<ul>
+<li>Now it works.
+<ul>
+<li>Did you need to do anything? Or was it resolved by waiting a bit?</li>
+<li>I didn't do anything, just waited and tried again.
+<ul>
+<li>Ok, some of the processed in background might take a moment. 
+<ul>
+<li>there might have been a temporary problem on github-side.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>How are the pull request and issue are connected? Is it with the &quot;#[number]&quot; identifier?</p>
+<ul>
+<li>Yes, if you mention just &quot;&quot;#number&quot; in the PR, there will be a mention of this connection in the issue; if you mention it with one of the keywords, e.g. &quot;fixes #number&quot; it will also close the issue after the PR is merged</li>
+</ul>
+</li>
+<li>
+<p>I see in the pull request shown now the issue was linked in the pull request title and not description as mentioned earlier - but this is probably equivalent and works also?</p>
+<ul>
+<li>I believe both work, you could try what happens :)
+<ul>
+<li>It seems it might not work in title, based on Q #28, but I can try it later </li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>I accidentally merged the main branch to mine. How can I reverse the changes? I am using VS Code.</p>
+<ul>
+<li>If you are working locally and have not pushed to remote after the merge, you can undo the merge with <code>git reset --hard HEAD~1</code> and then check <code>git status</code>.</li>
+<li>But in general this isn't the worst thing to happen: sometimes people do this because they need updates.  It won't affect merging your branch→main later, git can figure it out.</li>
+</ul>
+</li>
+<li>
+<p>Where on GitHub is issue #26 that is referenced in the instructor's pull request? I can find issue #16 but not #26</p>
+<ul>
+<li>Could it be on the recorded repo instead of the non-recorded one?</li>
+<li>I guess #26 refers to the pull request and #16 is the issue. You can see in the title the font color of #26 is different from the font color of #16 when you open the pull request</li>
+<li>yes I think that was it.  In the &quot;pull request&quot; tab instead: https://github.com/cr-workshop-exercises/centralized-workflow-exercise-recorded/pull/26
+<ul>
+<li>Oh okay, that makes sense.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>I don't think issue #16 is fully linked to that pull request? I don't see the &quot;linked pull request&quot; in the issue overview</p>
+<ul>
+<li>Ah, I see it is referenced in the commit, not in the pull request itself.  You can see a commit listed under here:</li>
+<li>https://github.com/cr-workshop-exercises/centralized-workflow-exercise-recorded/issues/16
+<ul>
+<li>The commit is added to both, so it is possible to click to the issue, but the full integration of the pull request into the issue does not seem to be there. Probably the keyword+number needs to be in the pull request description?</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<blockquote>
+<p>[off-topic comment removed]</p>
+</blockquote>
+<ul>
+<li>Radovan: this is outside the scope of this workshop</li>
+</ul>
+<h3 id="code-review">Code review</h3>
+<p>Materials: https://coderefinery.github.io/git-collaborative/code-review/</p>
+<ol start="29">
+<li>
+<p>When opening a file inside a repository, is it by default a .md file? I would like to use this version control with Word documents, is it possible to upload a word document and work collaboratively with my collegues on the Github web? I assume working on code is possible, by uploading Rscripts or .md files, right?</p>
+<ul>
+<li>it can be any kind of file, some functionality (e.g. looking at changes may be a bit weird for some file types), you define the type by adding the extension (eg. <code>.txt</code>, <code>.md</code>, <code>.py</code> , etc.)</li>
+<li>works best with text files, rather than binary file formats (like .doc); it seems there is ways to work with word files too though (https://olickel.com/tracking-word-documents-with-git) but no experience
+Great, tanks!</li>
+</ul>
+</li>
+<li>
+<p>How do I conveniently reference a commit in a conversation? If I click 'copy', to the right of the commit title, it copies the whole hash.</p>
+<ul>
+<li>Hm.  I might select the short form manually and Control-C.  I haven't often had this problem, somehow, but it does seem familiar.</li>
+<li>Thanks for the clarification on-stream. For context: in comments to my PR, someone suggested a change to a file that I had added, and I happened to commit a change to that effect almost at the same time, so wanted to reference the commit that implemented the requested change.</li>
+</ul>
+</li>
+<li>
+<p>After the course ends, will there be some type of Slack channel or chat forum if we run into errors in the future (that is associated with CodeRefinery):+1:</p>
+<ul>
+<li>You can join our chat: https://coderefinery.zulipchat.com (sorry, trying to do too many things at once :sweat_smile: ), there we have a <code>#help</code> channel which can be used to ask questions and we have many people excited to help :) The chat is however not specific for the course.</li>
+<li>How often is it monitored, the chat forum?
+<ul>
+<li>We hang out there all the time, but depending how busy people are it can take a day or two to get an answer (also depends on the complexity of the question)</li>
+</ul>
+</li>
+<li>We also provide two &quot;bring your own code&quot; sessions after the workshop, where you can can drop in and ask questions (see bottom of schedule: https://coderefinery.github.io/2024-09-10-workshop/#schedule); :+1:</li>
+</ul>
+</li>
+</ol>
+<blockquote>
+<p>Thank you for clarifying the difference between pull and pull request, that a pull request means asking the owner to make a pull.:+1: :+1:</p>
+</blockquote>
+<ol start="32">
+<li>How to link a pull request to an issue? 
+<ul>
+<li>See question 8 for some keywords that you can use to link PR and issues.</li>
+<li>For automatically closing the issue (and getting the clickable link), it is enough with keyword+nr in commit message (on the branch in the pull request). But for full link it seems keyword+nr needs to be in pull request description as well :+1:</li>
+</ul>
+</li>
+</ol>
+<h2 id="lunch-break-we-resume-at-xx-00">Lunch break, we resume at xx:00</h2>
+<p>You can ask more questions below, but please also remember to take a break :) </p>
+<ol start="33">
+<li>I pressed delete branch on GitHub after the Pull Request was approved, then tried to get it updated locally as well by doing 'git pull', but my local branch was not deleted. I can still see it if I do 'git branch', and git pull says 'already up to date'. How to get local repo updated/in synch with remote, and remove that leftover branch from the pull request?
+<ul>
+<li>I believe you always have to delete the branch on both remote and locally. To delete the local branch you can use <code>git branch -d branchname</code> or do so manually in e.g. VSCode or your preferred environment. </li>
+<li>one thing that you can do is <code>git fetch --prune</code> and that will inform local repo which remote branches don't exist anymore and update the info about tracking. but as far as I know it won't delete local branches. for git, local branch and remote branch are two different pointers which can happen to point to the same commit at times.
+<ul>
+<li>side comment: not sure we talk about <code>git fetch</code> or <code>git fetch origin</code> but it is a way to fetch commits that don't exist locally without modifying local branches. this allows to look changes before merging them (&quot;git pull&quot; does two things: &quot;git fetch&quot; followed by &quot;git merge&quot;) </li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<h2 id="contributing-changes-to-repositories-that-belong-to-others">Contributing changes to repositories that belong to others</h2>
+<p>Materials: https://coderefinery.github.io/git-collaborative/forking-workflow/</p>
+<ol start="34">
+<li>
+<p>Why fork instead of cloning? Is it to get it into ones own GitHub account?</p>
+<ul>
+<li>Basically yes.  You can always clone to work on your own computer, but to make it visible to the upstream (so that you can make a PR and they can merge it), it needs to be on GitHub.  Since you can't change their repo, you have to &quot;fork (the github concept)&quot;
+<ul>
+<li>Ah, so to work on a clone from for example google jax one would have to have one's credentials in that account? Which would basically be impossible I guess, and fork is the only way</li>
+<li>That is right!</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>How can I move out of the repo I am in (VScode - git bash terminal) in order to move into another one? Other than opening a new window?</p>
+<ul>
+<li>I think it's &quot;open new project&quot; or similar - yes, it's basically a new window.  These editors are &quot;one window per project (=directory)&quot;
+<ul>
+<li>ah, ok. thanks. So when I close a VScode window where I am in centralized-workflow-exercise-recorded I kind of &quot;log off&quot;?</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>What is the difference between pull request and issues? they both suggest changes to the current version of the project. What makes it different</p>
+<ul>
+<li>Issue is basically free-form text.  Pull request is a structured code change from branch to branch which has a specific action: merging it.</li>
+<li>I actually was going to ask the same thing. Can you explain your answer furhter? like the objective of each, free-form text v. not, and how they are related (or not).</li>
+<li>Issue: You can inform about something to be improved, and discuss about it, but at this point there is no changes yet. </li>
+<li>PR: Now we have changes, someone maded a suggestion and this suggestion can be discussed in the PR and further adaptions can be made</li>
+</ul>
+</li>
+<li>
+<p>When one writes 'git push', what is being done compared to for example 'git push -u origin branchname'?</p>
+<ul>
+<li><code>git push</code> alone tries to find the defaults and work automatically</li>
+<li><code>git push origin branchname</code> explicitely says what to do (what remote, what branch)</li>
+<li><code>git push -u origin branchname</code> adds a <code>-u</code> which is &quot;remember this as defaults for the future&quot;
+<ul>
+<li>So if one is pushing a branchname that will be deleted in the future after merging, then one should not use the '-u' option? As this will then be used by 'git push' as default in the future when it is not in use anymore</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>How do I do step 3 with the cross-reference? I am at the commit portion where I can either commit to my new branch or commit and create a new branch and a pull request, but that's not exactly what I want either...</p>
+<ul>
+<li>you can cross reference issue in your commit message, for eg: <code>fix #issuenumer</code> <code> resolve #issue number</code> . If you don't want to cross reference with your commit message , you can do it in your pull request. Please check some of the pull request we had done today where we cross referenced the issue. I hope this answers your question</li>
+</ul>
+</li>
+<li>
+<p>In the pull request, how do you refer to the issue, like #25 abcdefg?</p>
+<ul>
+<li>Entering <code>#25</code> should make a link to it, I think.  Writing <code>fixes #25</code> should link it so that merging the pull request will close that issue.</li>
+</ul>
+</li>
+<li>
+<p>Atm, there is only one closed pull request for the forking-workflow-exercise repo.</p>
+<ul>
+<li>THanks for letting us know.</li>
+</ul>
+</li>
+<li>
+<p>What is the automated test? Like why did it fail in the example? Does it mean that it is not meeting certain criteria that was manually made?</p>
+<ul>
+<li>Basically yes, the automatic test can check any criteria we want.  In this case it makes sure it has an &quot;ingredients&quot; and &quot;instructions&quot; section - simple text check (it's in check_recipes.py)</li>
+<li>Do a lot of people use this feature? b/c I assume you need to make a reference script/text for the test to check</li>
+</ul>
+</li>
+<li>
+<p>Why do you need the -u after git push origin? What does it do?</p>
+<ul>
+<li>the long version of -u is --set-upstream, it adds a tracking reference to the upstream server you are pushing to</li>
+</ul>
+</li>
+<li>
+<p>Why does 'compare changes' not work automatically when I ask it to show them before syncing the fork?</p>
+<ul>
+<li>When I compare upstream main with my branch on my fork (not the main branch my fork), I can see the changes and assosiated commits and pull request. But default main comparison doesn't show any changes. Good to chaeck stack flow discussion <a rel="noopener" target="_blank" href="https://stackoverflow.com/questions/74943541/after-a-github-fork-how-can-i-compare-my-branch-to-a-branch-in-the-upstream-rep">here</a>.</li>
+</ul>
+</li>
+<li>
+<p>What is a clear use case for why I would fork v. clone?</p>
+</li>
+</ol>
+<ul>
+<li>Fork: Creates a personal copy of someone else’s repository on your GitHub account. Used for contributing to projects you don’t have write access to. You can make changes to your forked repository and then propose those changes to the original repository via a pull request. This allows the maintainers of the original repository to review and potentially merge your changes.</li>
+<li>Clone: Cloning creates a local copy of a repository on your machine. This is useful for working offline, performing tests, or making personal changes. You can work on the cloned repository independently, and if you have write access, you can push your changes back to the remote repository.</li>
+<li>You can clone from a forked repository, but in order to contribute to someone's repository where you don't have write access, you must fork it first</li>
+</ul>
+<ol start="45">
+<li>How long has CodeRefinery been around doing these workshops? Who started it?</li>
+</ol>
+<ul>
+<li>You can find out about the history on our website: https://coderefinery.org/about/history/</li>
+<li>We have been doing these workshops since 2016, first in person, then in Zoom, and most recently streamed.</li>
+</ul>
+<h2 id="exercise-session-we-will-resume-at-xx-45">Exercise session; we will resume at xx:45</h2>
+<p>Exercise materials: https://coderefinery.github.io/git-collaborative/forking-workflow/#exercise</p>
+<p>See also help topics below the exercise box</p>
+<p>How is it going? </p>
+<ul>
+<li>Done: oooooooo</li>
+<li>Not trying: oo</li>
+<li>Don't know what to do (please ask for clarfication below): o</li>
+<li>Major issues (please ask below): o</li>
+<li>I wish we had more time: o</li>
+</ul>
+<p>Good luck and have fun :) </p>
+<blockquote>
+<p>Tip: It just happened to me that I misspelled the branch using <code>git switch --create misspllessed-banrch</code>. You can rename the branch with <code>git branch -m correctly-spelled-branch</code></p>
+</blockquote>
+<ol start="46">
+<li>
+<p>Shoot, I only did git clone from the original repo, not fork before. Now I cannot push I think? How can I clean this up?</p>
+<ul>
+<li>One way is to adjust the remote's URL.  <code>git remote set-url origin THE_RIGHT_URL</code> - 
+<ul>
+<li>but then I first have to fork on github, no? and then link to &quot;my fork&quot;?</li>
+<li>Oh yes.  You still need to fork first, but then this method can adjust your local copy to point to your fork, then you can push.  You usually can fix things, if you want</li>
+</ul>
+</li>
+<li>(you can also always save the change, delete and re-clone and re-apply the change.  More crude but doesn't require remembering anything.)
+<ul>
+<li>great, worked, thanks!</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>I think i created a pull request directly from command-line by &quot;git push origin lasagna&quot; (&quot;lasagna&quot; is the name of my arbitrary branch). I forked the original repository, than cloned the fork to my computer, worked on it locally and pushed up. Does this mean I don't need to merge it with my own fork first? Is &quot;origin&quot; means upstream in this case?</p>
+<ul>
+<li>&quot;origin&quot; is wherever you first cloned from: so in this case &quot;origin&quot; is your own fork.  I think you have made a branch on your fork (which is exactly what you want!). - you are now probably ready to make the pull request.</li>
+</ul>
+</li>
+<li>
+<p>could you explain why I have o set my forked repo as upstream before I can push? ```$ git push
+fatal: The current branch strawberry-salad has no upstream branch.
+To push the current branch and set the remote as upstream, use</p>
+<p>git push --set-upstream origin strawberry-salad</p>
+</li>
+</ol>
+<p>To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'. ``` 
+- Hmm, this is about linking the branches, so git does not know yet which remote branch you would like to push your local branch to. You could do <code>git push origin strawberry-salad</code> to specify directly. 
+- okay, thanks. so is this a combination of merge and push then?
+- <code>git push origin strawberry-salad</code> will upload all commits that are referenced locally by <code>strawberry-salad</code> to origin and then update the branch <code>strawberry-salad</code> also on origin. It will only do that if the remote branch does not contain other commits (it will not let you accidentally overwrite commits). A merge commit is then not needed since it only moves <code>strawberry-salad</code> forward on origin. Hopefully that clarified it but please ask more if not.
+- You can <code>git push origin strawberry-salad</code> and it knows where to go.  See this qusetion 37 for an answer about what the<code>-u</code> means. Basically, <code>-u</code> once sets the default, so than it the future you don't have to specify the <code>origin</code> or the branchname in the future.</p>
+<ol start="49">
+<li>
+<p>Sorry, I missed how to link a pull request to an issue, could you please say again how to do this? I tried putting the issue number #n in the title, but it did not work</p>
+<ul>
+<li>It seems that the linking needs to happen in the description (or a comment) of the pull request, rather than the title.
+<ul>
+<li>Thanks. I tried adding &quot;Issue #n&quot; to the comments, but still not there. There may be some fixed format to do it
+<ul>
+<li>You need to write <code>Fixes #n</code>, or <code>fixes #n</code>, <code>Closes #n</code> (or one of the other keywords)
+<ul>
+<li>Thanks, I guess that the list is in https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/using-keywords-in-issues-and-pull-requests</li>
+<li>What about if it only solves part of an issue? What would be the preferred option to use?
+<ul>
+<li>I have seen &quot;related #number&quot; (or just the #number without anything before), then the PR is mentioned in the issue automatically but not closed. But this may also relate to writing good issues, maybe that issue should rather be two issues? 
+<ul>
+<li>Got it, thanks.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Is there a way to sync changes at upstream fork source (ie after merge) down to forked repo via CLI?</p>
+<ul>
+<li>this is how I would do it using the command line: &quot;git pull UPSTREAM-URL BRANCHNAME&quot;, followed by &quot;git push FORK-URL BRANCHNAME&quot;
+<ul>
+<li>Is the BRANCHNAME in the pull command the source (remote fork source) or target (local repo)?
+<ul>
+<li>good question. indeed it is the source. <code>git pull URL BRANCHNAME</code> will modify my current branch name. To avoid any confusion I use the same branch name locally and before running the <code>git pull</code> command I make sure I am on the local branch. <code>git pull</code> modifies the current branch.
+<ul>
+<li>Thanks. The URL, does it need to be https (and not ssh)?</li>
+<li>Depends on if you have ssh or https set up.  I'd recommend using whatever you have been using (you can check with <code>git remote -v</code>).
+<ul>
+<li>I tried now and both ssh and https worked for pulling from fork source used in the exercise, but I guess for more private repos (like the google ones), one would probably have to use https to pull from fork source to local repo?</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Is it that writing <code>#25</code> will make a link to that issue/PR number, but only <code>fixes #25</code> and similar makes it where it gets closed.  Does this show up differently on the pages?</p>
+<ul>
+<li>yes, if you use <code>#25</code> in a commit or pull request and an issue or pull request with the number 25 exists, it will cross-reference them. only the special keywords are interpreted to also close issues once they are merged to the default branch.</li>
+</ul>
+</li>
+<li>
+<p>If one forgets to create a new branch and sends the pull request, should one try to fix the name (&quot;main) or just leave as is? (I tried to fix and made a mess :-)  )</p>
+<ul>
+<li>You could wait until it is merged and then re-create the fork if this is a one-time thing. I would only clean up (rewind main and put the change on a branch) if I am actively working on the fork on other things as well.</li>
+<li>Sending a PR from main really only starts to become a problem for the next PR few months later. When you open it, you then see that there is a large number of commits in there which you did not intend to send. When you see this, then this is the reason. But it can always be repaired and don't hesitate to contact us on CodeRefinery chat to help repairing :-)</li>
+</ul>
+</li>
+<li>
+<p>Can the instructors merge some pull requests, so that we can try synching back to the fork? Ah nevermind, I just needed to refresh GitHub, now there are some commits/merges</p>
+<ul>
+<li>Could this be done on the non-recorded repository also?
+<ul>
+<li>Thanks for reminder. going there to help merge.
+<ul>
+<li>Thanks! :+1:</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>My issue is resolved (#4) and the pull request accepted, but I cant find my recipe?</p>
+<ul>
+<li>is this in the recorded one or the unrecorded? 
+<ul>
+<li>recorded
+<ul>
+<li>ok looking ... just a sec ... 
+<ul>
+<li>nevermind, it is just not in the folder that I expected it in. my bad!
+<ul>
+<li>yes. no problem. the file could be git moved to the right folder as follow-up. nice that we solved it.
+<ul>
+<li>is there a way to do it on github? or do I have to correct it in my clone of my fork and then push it again?
+<ul>
+<li>I admit I don't know how to do it on GitHub. I would have cloned/pulled, fixed it locally, then pushed back. Maybe someone knows how to do that?</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>How to delete the merged branch in the forked repo in GitHub? </p>
+<ul>
+<li>go back to the pull request (which is now closed?) and in there you can delete it. or in your fork go to branch overview (it's next the button which says which branch you are on).
+<ul>
+<li>Thanks, found the delete button now in the bottom of pull request</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<blockquote>
+<p>Questions can continue below the Feedback (so that we will see that there is new ones ), but please take a moment to let us know how today was going for you</p>
+</blockquote>
+<h2 id="feedback-day-3">Feedback Day 3</h2>
+<h3 id="news-from-day-3">News from day 3</h3>
+<ul>
+<li>Today we covered how to contribute to repositories that we are a member of as well as repositories that we were not a member of </li>
+<li>This concludes  the introduction and collaborative version control lessons and exercises</li>
+<li>Next week we will step away from version control and get to know different tools and techniques that can help you write FAIR code and software such as documentation, licensing, Jupyter, modular code development, automated testing</li>
+<li>There will be demos instead of exercise sessions, but you can do the exercises after the workshop days and use the notes to ask questions, or join our chat: https://coderefinery.zulipchat.com or the &quot;bring your own code sessions&quot; in october; see <a rel="noopener" target="_blank" href="https://coderefinery.github.io/2024-09-10-workshop/#schedule">schedule</a></li>
+</ul>
+<blockquote>
+<p>More info on the CodeRefinery ambassador program : https://coderefinery.org/join/individuals/#coderefinery-ambassador</p>
+</blockquote>
+<p>Today was (vote for all that apply):</p>
+<ul>
+<li>too fast:</li>
+<li>too slow:👍🏿</li>
+<li>right speed:oooooooooooooooo</li>
+<li>too advanced:</li>
+<li>too basic: </li>
+<li>right level: ooooo</li>
+<li>needed more exercise time:ooooo</li>
+<li>needed less exercise time: oooo</li>
+<li>I will use what I learned today: oooooooooooooooooo</li>
+<li>I would recommend today to others: oooooooooooo</li>
+<li>I would not recommend today to others:</li>
+</ul>
+<p>One good thing about today:</p>
+<ul>
+<li>I learned to work in an collabrative environment:+1: :+1: :+1: :+1:</li>
+<li>Github has a lot of tools and resources for collaboration. :+1:</li>
+<li>Understood why, in some cases, it's useful to fork a project instead of just cloning the original one</li>
+<li>I understood a lot more git commands than just commit, push and pull, was finally able to connect github with VScode and git bash (command line)</li>
+<li>Behind the scenes team were fast to answer  questions and solving issues :+1::+1: </li>
+<li>Thank you for providing help for both GitHub interface as well as git CLI</li>
+<li>I confidently and corectly used things learned yesterday.</li>
+</ul>
+<p>One thing to improve for next time: </p>
+<ul>
+<li>We want cats! :+1: </li>
+<li>More answering of questions from notes on stream (answering by the lecturers)</li>
+</ul>
+<p>Any other feedback?</p>
+<ul>
+<li>Is there any chance on a lecture on CI/CD?
+<ul>
+<li>Yes, day 6 (next thursday)
+<ul>
+<li>what is CI/CD? :+1:</li>
+<li>It stands for Continuous integration and delivery, take a peek: https://coderefinery.github.io/testing/continuous-integration/</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>See you next week!</li>
+<li>This was a fantastic week 1, thank you for it. I am glad I used time I do not have to attend it. :-)</li>
+<li>Thank you for making all this effort to create this interactive course :heart:. It is also great how you set up the course with the stream, the editing document, the different windows, the people in the background supporting the presenters, answering questions in real time and so on. This is really professional. It is a bit confusing to keep up with everything as a beginner, but since it is possible to go through the material again, I am sure it will get easier and more plausible.</li>
+</ul>
+<p>Questions can continue:</p>
+<ul>
+<li>
+<ol start="56">
+<li>Is it possible for us to go through the collaborative exercises at home alone until next week and still keep the access to the recorded repository in order to learn?</li>
+</ol>
+<ul>
+<li>Yes. Best to join the chat and let us know if you need someone to do something from our side: https://coderefinery.zulipchat.com :+1:</li>
+<li>Awesome thank you! :+1:</li>
+</ul>
+</li>
+</ul>
+
+  
+
+      </div>
+
+      <div class="uk-margin-large-top">
+        <hr>
+        <div class="uk-child-width-expand@s" uk-grid>
+
+  <div>
+    <h4>Funding</h4>
+    <p>
+      CodeRefinery is a project within the
+      <a href="https://neic.no" target="_blank">Nordic e-Infrastructure Collaboration</a> (NeIC).
+      NeIC is an organisational unit under <a href="https://www.nordforsk.org/" target="_blank">NordForsk</a>.
+    </p>
+  </div>
+
+  <div>
+    <h4>Privacy</h4>
+    <p>
+      <a href="https://coderefinery.org/privacy-policy/" target="_blank">Privacy policy</a>
+    </p>
+  </div>
+
+  <div>
+    <h4>Follow us</h4>
+    <ul class="uk-iconnav">
+      <li>
+        <a href="https://github.com/coderefinery" target="_blank" uk-icon="icon: github">GitHub</a>
+      </li>
+      <li>
+        <a rel="me" href="https://fosstodon.org/@coderefinery" target="_blank" uk-icon="icon: social">Mastodon</a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/company/coderefinery-research-software-development/?viewAsMember=true" target="_blank" uk-icon="icon: linkedin">LinkedIn</a>
+      </li>
+    </ul>
+  </div>
+
+  <div>
+    <h4>Contact</h4>
+    <p>
+      <a href="mailto:support@coderefinery.org">support@coderefinery.org</a>
+    </p>
+  </div>
+
+  <div>
+    <h4>Improve this page</h4>
+    <p>
+      <a href="https:&#x2F;&#x2F;github.com&#x2F;coderefinery&#x2F;2024-09-10-workshop">Source code</a>
+    </p>
+  </div>
+
+</div>
+
+      </div>
+
+    </div>
+  </body>
+
+  <script src="https://cdn.jsdelivr.net/npm/anchor-js/anchor.min.js"></script>
+  <script>
+    anchors.add();
+  </script>
+</html>

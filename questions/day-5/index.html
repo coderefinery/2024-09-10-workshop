@@ -1,0 +1,1252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Questions and notes from workshop day 5 - CodeRefinery workshop September 10-12, 17-19, 2024</title>
+    <link rel="shortcut icon" href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2024-09-10-workshop&#x2F;/img/favicon.ico">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- uikit -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.23.1/dist/css/uikit.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.23.1/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.23.1/dist/js/uikit-icons.min.js"></script>
+
+    <!-- time zone localization -->
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.7/dayjs.min.js" integrity="sha256-EfJOqCcshFS/2TxhArURu3Wn8b/XDA4fbPWKSwZ+1B8=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.7/plugin/utc.js" integrity="sha256-qDfIIxqpRhYWa543p6AHZ323xT3B8O6iLZFUAWtEQJw=" crossorigin="anonymous"></script>
+
+    
+      <link rel="alternate" type="application/atom+xml" title="CodeRefinery" href="https://coderefinery.github.io/2024-09-10-workshop/atom.xml" />
+    
+
+        
+      <title>CodeRefinery - Questions and notes from workshop day 5</title>
+      <meta name="twitter:title" content="Questions and notes from workshop day 5" />
+      <meta property="og:title" content="Questions and notes from workshop day 5" />
+      <meta property="og:site_name" content="CodeRefinery workshop September 10-12, 17-19, 2024" />
+    
+
+    
+      <meta name="description" content="Free workshop on git, testing, documentation, and more in a workshop - for researchers and scientists." />
+      <meta name="twitter:description" content="Free workshop on git, testing, documentation, and more in a workshop - for researchers and scientists." />
+      <meta property="og:description" content="Free workshop on git, testing, documentation, and more in a workshop - for researchers and scientists." />
+    
+
+    
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:image" content="https://raw.githubusercontent.com/coderefinery/coderefinery-artwork/main/socialshare/socialshare-workshop.png" />
+      <meta property="og:image" content="https://raw.githubusercontent.com/coderefinery/coderefinery-artwork/main/socialshare/socialshare-workshop.png" />
+    
+
+
+    
+
+    <link href="https://coderefinery.github.io/2024-09-10-workshop/style.css" rel="stylesheet">
+
+    
+    <script defer data-domain="coderefinery.github.io" src="https://plausible.cs.aalto.fi/js/script.js"></script>
+    
+
+
+  </head>
+
+  <body>
+    <div class="uk-container uk-margin-large-bottom">
+
+      <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+  <div class="uk-navbar-right">
+    <ul class="uk-navbar-nav uk-visible@s">
+      
+      
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2024-09-10-workshop">
+      About
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2024-09-10-workshop&#x2F;exercises">
+      List of exercises
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2024-09-10-workshop&#x2F;audience">
+      Audience
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2024-09-10-workshop&#x2F;certificates">
+      Certificates
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2024-09-10-workshop&#x2F;join">
+      How to join
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2024-09-10-workshop&#x2F;requirements">
+      Requirements
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2024-09-10-workshop&#x2F;questions">
+      Q&amp;A
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2024-09-10-workshop&#x2F;code-of-conduct">
+      Code of conduct
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2024-09-10-workshop&#x2F;communication">
+      Communication
+      
+    </a>
+
+    
+
+  </li>
+
+
+    </ul>
+    <a href="#" class="uk-navbar-toggle uk-hidden@s" uk-navbar-toggle-icon uk-toggle="target: #sidenav"></a>
+  </div>
+</nav>
+
+<div id="sidenav" uk-offcanvas="flip: true" class="uk-offcanvas">
+  <div class="uk-offcanvas-bar">
+    <ul class="uk-nav">
+      
+      
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2024-09-10-workshop">
+      About
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2024-09-10-workshop&#x2F;exercises">
+      List of exercises
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2024-09-10-workshop&#x2F;audience">
+      Audience
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2024-09-10-workshop&#x2F;certificates">
+      Certificates
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2024-09-10-workshop&#x2F;join">
+      How to join
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2024-09-10-workshop&#x2F;requirements">
+      Requirements
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2024-09-10-workshop&#x2F;questions">
+      Q&amp;A
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2024-09-10-workshop&#x2F;code-of-conduct">
+      Code of conduct
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2024-09-10-workshop&#x2F;communication">
+      Communication
+      
+    </a>
+
+    
+
+  </li>
+
+
+    </ul>
+  </div>
+</div>
+
+
+      <div class="markdown">
+        
+  <h1>Questions and notes from workshop day 5</h1>
+
+  <ul>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2024-09-10-workshop/questions/day-5/#day-5-18-09-2024">Day 5 - 18&#x2F;09&#x2F;2024</a>
+      
+        <ul>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2024-09-10-workshop/questions/day-5/#icebreakers">Icebreakers</a>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2024-09-10-workshop/questions/day-5/#questions-from-day-4">Questions from day 4</a>
+              
+            </li>
+          
+        </ul>
+      
+    </li>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2024-09-10-workshop/questions/day-5/#how-to-document-your-research-software">How to document your research software</a>
+      
+        <ul>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2024-09-10-workshop/questions/day-5/#why-documenting-code">Why documenting code?</a>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2024-09-10-workshop/questions/day-5/#create-a-wishlist">Create a wishlist</a>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2024-09-10-workshop/questions/day-5/#popular-tools-and-solutions">Popular tools and solutions</a>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2024-09-10-workshop/questions/day-5/#in-code-documentation">In-code documentation</a>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2024-09-10-workshop/questions/day-5/#comments-which-one-is-more-useful">Comments: Which one is more useful</a>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2024-09-10-workshop/questions/day-5/#writing-good-readme-files">Writing good README files</a>
+              
+                <ul>
+                  
+                    <li>
+                      <a href="https://coderefinery.github.io/2024-09-10-workshop/questions/day-5/#break-we-resume-at-xx-11">Break, we resume at xx:11</a>
+                    </li>
+                  
+                </ul>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2024-09-10-workshop/questions/day-5/#sphinx-and-markdown">Sphinx and Markdown</a>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2024-09-10-workshop/questions/day-5/#summary">Summary</a>
+              
+                <ul>
+                  
+                    <li>
+                      <a href="https://coderefinery.github.io/2024-09-10-workshop/questions/day-5/#lunch-break-1-hour-we-resume-at-xx-00">Lunch break (1 hour), we resume at xx:00</a>
+                    </li>
+                  
+                </ul>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2024-09-10-workshop/questions/day-5/#jupyter">Jupyter</a>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2024-09-10-workshop/questions/day-5/#notebooks-and-version-control">Notebooks and version control</a>
+              
+                <ul>
+                  
+                    <li>
+                      <a href="https://coderefinery.github.io/2024-09-10-workshop/questions/day-5/#break-we-resume-at-xx-05">Break, we resume at xx:05</a>
+                    </li>
+                  
+                </ul>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2024-09-10-workshop/questions/day-5/#sharing-notebooks">Sharing notebooks</a>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2024-09-10-workshop/questions/day-5/#feedback">Feedback</a>
+              
+                <ul>
+                  
+                    <li>
+                      <a href="https://coderefinery.github.io/2024-09-10-workshop/questions/day-5/#news-for-day-19-09">News for day 19.09</a>
+                    </li>
+                  
+                </ul>
+              
+            </li>
+          
+        </ul>
+      
+    </li>
+  
+</ul>
+
+
+  
+  
+    <h1 id="day-5-18-09-2024">Day 5 - 18/09/2024</h1>
+<h2 id="icebreakers">Icebreakers</h2>
+<p><strong>How would you explain your current job to someone in the year 1700? (if you don't know, write what you do and we'll try to figure out!)</strong></p>
+<ul>
+<li>&quot;I am an alchemist.&quot; :smile: </li>
+<li>I'm watching clouds</li>
+<li>Automatic librarian?</li>
+<li>I use machines that contain parts that are smaller than the eye can see. I use these machines to collect information and sort it in different ways.</li>
+<li>I guess something like being a munk (I study paleoenvironment, so maybe &quot;gods creation&quot; would be understood :D)</li>
+<li>a witch? :smile: a person that takes care of nature, actually a cartographer as a profession</li>
+<li>a weather fortuneteller</li>
+</ul>
+<p><strong>What's the best documented project you've seen?</strong></p>
+<ul>
+<li>I am still looking for a well documented project.</li>
+<li>I like the tidyverse packages (R)</li>
+<li>Matplotlib and pandas have nice documentation.</li>
+</ul>
+<p><strong>Do you prefer reading short social media posts or long blogs? How about short code snippets or long source codes?</strong>
+short social media posts: o
+long blogs: oooo
+short code snippets: oooooo
+long source code: 
+both short (professional) social media posts and long blogs (different goal):oo</p>
+<h2 id="questions-from-day-4">Questions from day 4</h2>
+<ol>
+<li>
+<p>For the conda environment, is it recommended to use these for R scripts as well (i.e., the YAML file), and to post this on GitHub with your script so people can set up the environment and then copy your script, or is it recommended to use CRAN or Bioconductor?</p>
+<ul>
+<li>I would recommend the first, use the YAML file to list the dependencies and channels, and version control this files such that it is part of your GitHub repository. Then it is available for other people to copy/reuse.</li>
+</ul>
+</li>
+<li>
+<p>Can you clarify how dependencies and channels are related? I am a bit unclear about the difference.</p>
+<ul>
+<li>Here is snippet of the YAML file that creates the coderefinery Conda environment:</li>
+</ul>
+<pre data-lang="sh" style="background-color:#f5f5f5;color:#1f1f1f;" class="language-sh "><code class="language-sh" data-lang="sh"><span style="color:#5597d6;">name:</span><span> coderefinery
+</span><span style="color:#5597d6;">channels:
+</span><span style="color:#5597d6;">-</span><span> conda-forge
+</span><span style="color:#5597d6;">-</span><span> defaults
+</span><span style="color:#5597d6;">-</span><span> bioconda
+</span><span style="color:#5597d6;">dependencies:
+</span><span style="color:#5597d6;">-</span><span> python</span><span style="color:#72ab00;">&gt;</span><span>=3.10
+</span><span style="color:#5597d6;">-</span><span> click=8.1.7
+</span><span style="color:#5597d6;">-</span><span> ipywidgets=8.1.2
+</span><span style="color:#5597d6;">-</span><span> jupyterlab=4.1.2
+</span></code></pre>
+<p>The channels are the places where conda will search for packages. Here we have 3 channels. The packages that will be searched for and installed are listed under <code>dependencies</code>. The dependencies are the software being installed.</p>
+</li>
+<li>
+<p>If packages are the highest level, containing metadata, data, and functions, and loading the library creates the environment and contains all the functions in that package?</p>
+<ul>
+<li>in Python <code>import SOMENAME</code> basically runs <code>SOMENAME.py</code> or <code>SOMENAME/__init__.py</code> and makes all of those available via <code>SOMENAME.*</code> - was that the question?</li>
+<li>I meant in R?</li>
+</ul>
+</li>
+<li>
+<p>~/Library/Caches/org.R-project.R/R/renv/cache/v5/macos/R-4.4/aarch64-apple-darwin20 --&gt; apparently I had tried to do renv::init() in R but it said there was already an renv in my home directory (see above), how/when are these created and can you have more than one, just in dif subfolders? I am not sure I fully understand this workflow: renv::init(), renv::snapshot() and renv::restore().</p>
+<ul>
+<li>Can someone who knows R more answer this?</li>
+</ul>
+</li>
+<li>
+<p>Can you explain the idea of .gitignore?</p>
+<ul>
+<li>The purpose of .gitignore is to list files or subdirectories that you don't want to be version controlled. Here is the content of a .gitignore from a repository in CodeRefinery:</li>
+</ul>
+<pre data-lang="sh" style="background-color:#f5f5f5;color:#1f1f1f;" class="language-sh "><code class="language-sh" data-lang="sh"><span style="color:#5597d6;">*~
+</span><span style="color:#5597d6;">public/
+</span><span style="color:#5597d6;">static/processed_images/
+</span></code></pre>
+<p>This states that any temporary emacs files, these are named <code>anytext.txt~</code>, should not be version controlled. Likewise, any files under the subdirectory <code>public</code> and <code>static/processed_images</code>. Git will not care about files created in these subdirectories.</p>
+</li>
+<li>
+<p>Are lock files typically in .json formats?</p>
+<ul>
+<li><code>renv.lock</code> files are in json format, https://rstudio.github.io/renv/articles/renv.html. But other lock files don't have to be in json format.</li>
+</ul>
+</li>
+<li>
+<p>You mentioned new types of publications that are more common now for tool development -- do they require less strict peer review? How does this relate to TENK Finland?</p>
+<ul>
+<li>They still have peer review, and I guess the strictness depends on what venue it is.  Most are designed to be useful, as in not excessively gatekeep, I think.</li>
+<li>Some of us have actually been working to pressure JUFO in Finland to rate the Journal of Open Source Software higher.  But this is basically a opinion-based decision done by entrenched academics who are benefited by the current system, so it's slow going.</li>
+</ul>
+</li>
+<li>
+<p>It seems there are several markdown languages, like YAML, XAML, XML -- which are slightly different - what is the difference, which is used for a CFF file, and how do I generate a CFF file easily for my software I developed?</p>
+<ul>
+<li>I think CFF is YAML, and there seems to be a builder here: https://citation-file-format.github.io/#/create-a-citationcff-file-now</li>
+</ul>
+</li>
+<li>
+<p>Have any of you gone through the trademark process for any tool you have designed in the Nordics -- what was that process like, outlined from start to getting the trademark (pre v. post-publication)?</p>
+<ul>
+<li>I don't know anyone who has.  It's never been close to relevant for us.</li>
+</ul>
+</li>
+<li>
+<p>How do we know that: Lines 11-12: The compiler gcc and the library libgomp1 will have evolved (based on the name libgomp1)?</p>
+<ul>
+<li>From exercise Containers-1: https://coderefinery.github.io/reproducible-research/exercises/#recording-environments</li>
+<li>We don't &quot;know&quot; but this is a general progression: the gcc compiler gets new versions and new features every few years</li>
+<li>However in this exercise, this isn't what I am most worrid about: compilers are very basic tools so they try very very hard to not change them and break old code under any circumstances.  And <code>libgomp1</code> has this <code>1</code> on the end, which is the &quot;soname&quot; which serves as a version: I think the convention is that anytime a library gets incompatible changes, that number should increment.  C programmers are much more careful about backwards compatability than others.</li>
+</ul>
+</li>
+<li>
+<p>Why am I getting this error when trying to run snakemake? snakemake -j 1
+Traceback (most recent call last):
+```
+File “/../../../../../../word-count/code/count.py&quot;, line 2, in <module>
+import click
+ModuleNotFoundError: No module named 'click'</p>
+<pre style="background-color:#f5f5f5;color:#1f1f1f;"><code><span>Error in rule count_words:
+</span><span>    jobid: 4
+</span><span>    input: code/count.py, data/last.txt
+</span><span>    output: statistics/last.data
+</span><span>    shell:
+</span><span>        python code/count.py data/last.txt &gt; statistics/last.data
+</span><span>        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+</span><span>
+</span><span>Removing output files of failed job count_words since they might be corrupted:
+</span><span>statistics/last.data
+</span><span>Shutting down, this might take some time.
+</span><span>Exiting because a job execution failed. Look above for error message
+</span><span>Complete log: .snakemake/log/2024-09-17_Number_ID.snakemake.log
+</span><span>WorkflowError:
+</span><span>At least one job did not complete successfully.
+</span><span>```
+</span></code></pre>
+<ul>
+<li>Have you installed the coderefinery Conda environment? It contains the module click(click=8.1.7), but it seems that your python environment is missing that module. The way to create a python environment named <code>coderefinery</code> with conda is:</li>
+</ul>
+<pre style="background-color:#f5f5f5;color:#1f1f1f;"><code><span>conda env create -f https://raw.githubusercontent.com/coderefinery/software/main/environment.yml
+</span><span># To activate the environment:
+</span><span>conda activate coderefinery
+</span></code></pre>
+<p>I had installed it but may have not activated it in that window.. i might have deactivated it at some point, need to check</p>
+</li>
+</ol>
+<h1 id="how-to-document-your-research-software">How to document your research software</h1>
+<p>https://coderefinery.github.io/documentation/</p>
+<p>:::info</p>
+<h2 id="why-documenting-code">Why documenting code?</h2>
+<ul>
+<li>To make it possible for other people to use the code</li>
+<li>To know what it is doing, what is needed, what are its output. Needs to be sufficiently clear to be able to tweak it as needed.</li>
+<li>So that it's usable.  What's the point if it's not? (the level depends on the code)</li>
+<li>To remind myself of the functions I did. It's like having frozen food in the freezer. If its not labeled, I have a hard time to know what it is.  o</li>
+<li>To prevent having to rewrite parts of the code that are not understandable later</li>
+<li>to explain to myself and others what the code is supposed to do and why in other words than &quot;code&quot;</li>
+<li>People in research group settings do not have the same skill levels when using different analysis tools. Well documented code shared for common use improves research integrity and reproducibility. By the way, &quot;well documented&quot; means very different things for different audiences: someone might want function-level parameter types and someone else may want to know in plain English what a specific tool does and why. My solution was a pdf explaining the contents and usage instruction for tools in a toolkit I made for the research group.</li>
+</ul>
+<p>:::</p>
+<p>:::info</p>
+<h2 id="create-a-wishlist">Create a wishlist</h2>
+<ul>
+<li>A detailed way of using the code, input/output format, command lines and potentially some few examples of how it is used. Of course, what are all the parameters and all these minutia that would allow to use the code to its full.</li>
+<li>What are the assumptions hidden &quot;under the hood&quot;, especially in the case of research software</li>
+<li>Where is the code, how to use it, what does it do and not do, towards what purpose should it be used, are there any dependencies</li>
+<li>examples on how to use the software/package/library</li>
+<li>a gallery with examples (some of them are easy and quick to be understood by an image)</li>
+<li>It has several levels: at first just quick examples of using it, with the most often used arguments. Later, probably a &quot;proper&quot; documentation with a list of all arguments and their default values, and a list of outputs, assumptions inside, and always examples, examples, and examples</li>
+<li>A short snippet at the top with input (and options/parameters), output, what it does, anything I should be aware (full paths etc), requirements (and obscure details, e.g. only version of a library that works). Comment throught on what does what (and why, if not obvious)</li>
+<li>Easy to find (I want basic info in the readme in an obvious place)</li>
+<li>A document with all the libraries and versions</li>
+<li>flowcharts for working with the library</li>
+<li>getting paid to do the extra work :+1: </li>
+<li>Am I allowed to use it (licensing)? :+1:
+:::</li>
+</ul>
+<h2 id="popular-tools-and-solutions">Popular tools and solutions</h2>
+<p>https://coderefinery.github.io/documentation/tools/</p>
+<ol start="12">
+<li>In code documentation: &quot;Can be used to auto-generate documentation for functions/classes&quot; How? Do the comments have to be a certain format? which tools offer auto generated documentation?
+<ul>
+<li>Yes, comments need to be in a format that can be read.  This is called &quot;api docs&quot; and many tools made for documentation have some implementation of this. Both Doxygen and Sphinx offer this.
+<ul>
+<li>thanks, can you recommend any ressource for total newbys (mainly using R) ?
+<ul>
+<li>For R there is a tool called <code>roxygen2</code>, https://roxygen2.r-lib.org, but I have no experience with it.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<h2 id="in-code-documentation">In-code documentation</h2>
+<p>::: info</p>
+<h2 id="comments-which-one-is-more-useful">Comments: Which one is more useful</h2>
+<p>Comment A:</p>
+<p>Comment B: ooooooooooooooo</p>
+<p>Why?</p>
+<ul>
+<li>It explains what the funtion does</li>
+<li>B explains the <strong>why</strong>:+1::+1::+1::+1:</li>
+<li>it does not only reproduce the code in plain languange, but gives a reason</li>
+<li>The first one doesnt describe what the code does</li>
+</ul>
+<p>:::</p>
+<ol start="13">
+<li>
+<p>Are these docstrings related to the &quot;api docs&quot; (see question 12)?</p>
+<ul>
+<li>Yes, the can be.  Most of the API docs things will automatically read all docstrings and compile it into a organized reference.</li>
+</ul>
+</li>
+<li>
+<p>Did you write the Python docstring entirely by yourself or is it also programmatically created?</p>
+<ul>
+<li>In this lesson or in general?  In this lesson we probably wrote them all ourselves.
+<ul>
+<li>I'm asking because I use python extensively and have not thought about if there is a way to create the docstrings programmatically.
+<ul>
+<li>Some IDEs create the docstring template automatically, but you need to add detailed information.
+<ul>
+<li>Thanks, that clarifies things! Great.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<h2 id="writing-good-readme-files">Writing good README files</h2>
+<p>https://coderefinery.github.io/documentation/writing-readme-files/</p>
+<ol start="15">
+<li>could you explain why one wants to use badges?
+<ul>
+<li>If you get an Digital Object Identifier (DOI) from a place like Zenodo for your software, you can add the DOI as badge to your repository.</li>
+<li>In general when you want some important information to be displayed in a way that is immediate to read to someone that views your repository in github/gitlab/other git forges (Note that these badges typically are links to something that lives on the internet)
+<ul>
+<li>ok, thanks for the clarification to both!</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<p>:::info</p>
+<h3 id="break-we-resume-at-xx-11">Break, we resume at xx:11</h3>
+<p>:::</p>
+<h2 id="sphinx-and-markdown">Sphinx and Markdown</h2>
+<p>https://coderefinery.github.io/documentation/sphinx/
+Mainly a demonstration of using these tools on Github Pages.  The idea is reusable to other tools too.  This is a long demo.</p>
+<ol start="16">
+<li>
+<p>When creating a package, in what folder should I start sphynk? Inside doc or it has to have a separate folder?</p>
+<ul>
+<li>If it's being included as part of some other software, that has the code there?  Often <code>doc/</code> at the top level but you see various things. :+1:</li>
+</ul>
+</li>
+<li>
+<p>Is there a specific document generator that is used for PyPI?</p>
+<ul>
+<li>It uses whatever readme file there is (but you need to tell it where it is / to use it).  It can use markdown, ReST, and maybe(?) others.  This is defined as part of the package metadata (pyproject.toml or setup.py)</li>
+</ul>
+</li>
+<li>
+<p>Why would you want to use Sphinx or a wiki page rather than just a README file in GitHub?</p>
+<ul>
+<li>A README is a good starting point anyway.  You'd think about these once the project gets so big it's not enough (like below, full API docs are a bit too much for README files).</li>
+<li>Also Sphinx has plugins for API reference generation, which a README alone does not give you. </li>
+</ul>
+</li>
+<li>
+<p>How is building a static webpage using sphinx (or another tool) beneficial compared to just build a HTML static webpage directly?</p>
+<ul>
+<li>Like writing raw HTML?
+<ul>
+<li>yes</li>
+</ul>
+</li>
+<li>If you want to write raw HTML, you can, but with things like Markdown it's a lot higher level: focus on the content and not the presentation details.  It's a trade-off most people like it seems.</li>
+<li>Markdown is basically fancy syntax for the most common HTML tags (you can embed raw HTML even).
+<ul>
+<li>thanks!</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>In MyST markdown this should be equivalent to:</p>
+<pre style="background-color:#f5f5f5;color:#1f1f1f;"><code><span>:::{automodule} example
+</span><span>:members: 
+</span><span>
+</span><span>:::
+</span></code></pre>
+<p>or something like that.  I'll test.</p>
+<ul>
+<li>Thanks for testing, I hav'nt been able to yet</li>
+<li>I'm not sure if it needs <code>true</code> there but we'll see.</li>
+<li><del>great! it works</del>.</li>
+<li>Actually, it does not work like that. However there is another extension called <code>sphinx-autodoc2</code> which has a similar syntax. <a rel="noopener" target="_blank" href="https://myst-parser.readthedocs.io/en/latest/syntax/code_and_apis.html#sphinx-autodoc2">https://myst-parser.readthedocs.io/en/latest/syntax/code_and_apis.html#sphinx-autodoc2</a></li>
+</ul>
+</li>
+<li>
+<p>I'm a little unclear what an action is on GitHub.</p>
+<ul>
+<li>We'll see more about it tomorrow, but basically: every time you push, it will automatically run some stuff for you.  This is really cool!</li>
+<li>Today, we see it being used to build a webpage (and we hook it in so that it makes it available on &quot;Github Pages&quot;)</li>
+<li>Tomorrow it will run automatic tests and warn us if the tests don't pass.</li>
+</ul>
+</li>
+<li>
+<p>I am thinking this might be handy to build a personal webpage as in &quot;about me&quot; or a short bio - anyone has done that and can recommend a tool/pathway to do that?</p>
+<ul>
+<li>Yes!  Many people do this.  If your github username is USERNAME then a repository named <code>USERNAME.github.io</code> will be available at <code>https://USERNAME.github.io/</code>.  There are different tools to do this, &quot;jekyll&quot; was a built-in one but I'd recommend searching &quot;personal github pages webpage&quot; and see what is good these days</li>
+</ul>
+</li>
+<li>
+<p>Does Sphinx work with GitLab?</p>
+<ul>
+<li>In theory yes: Gitlab supports runners that can run code automatically and do things.</li>
+<li>Another question is: does Gitlab provide free action runners?</li>
+<li>Gitlab does support actions (called pipelines I think?), but you may need to get your own runners to do the execution.</li>
+<li>Does anyone know the current state?</li>
+</ul>
+</li>
+<li>
+<p>How do you connect or link the Sphinx documentation in your repo to your code in your repo on GitHub?</p>
+<ul>
+<li>Hm... I'm not sure what you mean.  They can be in the same repo, so at least they are findable from each other</li>
+<li>Then, via things like autodoc/API docs, if the builder can import your module, then it finds it and documents it (and can link to the source automatically).</li>
+<li>There are other ways to tell Sphinx where the source to the docs are and automatically like there.</li>
+<li>It really depends on what you mean by linking.</li>
+<li>I meant your first bullet point, thank you. +1</li>
+</ul>
+</li>
+</ol>
+<h2 id="summary">Summary</h2>
+<p>https://coderefinery.github.io/documentation/summary/</p>
+<p>:::info</p>
+<h3 id="lunch-break-1-hour-we-resume-at-xx-00">Lunch break (1 hour), we resume at xx:00</h3>
+<p>:::</p>
+<h2 id="jupyter">Jupyter</h2>
+<p>https://coderefinery.github.io/jupyter/
+We'll see some of the basics of Jupyter, but that's not the main message: we see how things like version control are still useful with notebooks (in whatever system you use), and how they can be archived and shared easily (which are also points for other systems like Rmarkdown notebooks and so on).</p>
+<ol start="25">
+<li>
+<p>On the choice of VS code vs Jupyter lab - availability and actual function of extensions can be a factor. Not all extensions work with VS code as far as i can tell.</p>
+<ul>
+<li>Jupyter lab is for litterate programming, where you want to mix code, text and figures. It is for sharing your ideas, concepts with others. VS Code is a programming editor. If your focus on producing most code, I would choose VS Code.</li>
+<li>I was mostly evaluating them for notebook use.</li>
+</ul>
+</li>
+<li>
+<p>Yes Jupyter came from &quot;julia, python, and R&quot;.</p>
+<ul>
+<li>a new name whes split from &quot;IPython Notebook&quot; which was part of the IPython interperter</li>
+</ul>
+</li>
+<li>
+<p>Anyone has experience or can compare Rstudio (Posit now) and then Rmarkdown or Quarto with Jupyter? I mainly work in R. Or VScode to write Rmarkdown/Quarto/Jupyter?</p>
+<ul>
+<li>I think RMarkdown is very close to Jupyter. I prefer to work it in RStudio to get the most advantage with keyboard shortcuts, and the exportation to presentation, reports, and webpages. And when you want to get fancy you can even use the templates (when export it).
+<ul>
+<li>like Rmarkdown templates?
+<ul>
+<li>Yeah, like the tufte template.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Does anyone have much experience editing Jupyter notebooks (or others) from VS Code?</p>
+<ul>
+<li>You need to install an extension, but yes, possible, and nice.</li>
+</ul>
+</li>
+<li>
+<p>.A stupid question about notebook. Can I execute a command (eg ls) on the computer which runs the browser with notebook, and on a computer, which runs as server?</p>
+<ul>
+<li>No, I don't think so.  All commands get sent to the remote server (running the jupyter server) for executaion and browsers generally prohibit web pages from doing stuff on your local computer (would be a big security problem).</li>
+<li>When using a server, Jupyter typically runs in a container, but you may have the possiblilty of accessing files in different folders. Depends how it's set up.</li>
+<li>Actually, if you use &quot;%&quot; before the command, (i.e. %ls), it will execute it.</li>
+</ul>
+</li>
+<li>
+<p>Is there such a thing as binder for Rmarkdown or Quarto documents?</p>
+<ul>
+<li>It seems like you can configure Binder to start Quarto: https://quarto.org/docs/projects/binder.html</li>
+<li>Basically Binder installs stuff from defined files, and then starts some URL.  With a bit of configuration you can tell it to install what you need, and then direct to the right link</li>
+<li>For R projects see <a rel="noopener" target="_blank" href="https://github.com/karthik/holepunch">holepunch</a>
+<ul>
+<li>great link, thank you!</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>is Binder open and free? who owns the infrastructure?</p>
+<ul>
+<li>it's free. From what I remember Binder was a publicly fundend project at first.  The software is open source and they rely on donations (mostly from cloud providers I think) for the cloud credits that let it run.  (this was several years ago, they may have a more stable funding source now)</li>
+</ul>
+</li>
+<li>
+<p>When you write your scripts in a notebook - is there a good solution to run the code in the terminal?</p>
+<ul>
+<li>you can run as a script or you can include the content of the script as cells, we;ll show. you can also run scripts in a Jupyter notebook cell using shell commands. see &quot;!&quot; in https://coderefinery.github.io/jupyter/extra-features/
+<ul>
+<li>thanks! and how about a Rmarkdown or Quarto notebook?</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>What is &quot;localhost:8888/lab&quot;?</p>
+<ul>
+<li>'localhost' is a network name for &quot;your own computer&quot;.  :8888 is the &quot;port&quot; (identifier for what service is running locally).  So it tells us that it's connecting to your own computer to access the JupyterLab (which the instructor started in another window - it said this address for connecting)
+<ul>
+<li>Great answer, thank you! :)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>so is the instructor now running jupyter or binder? and on their own machine?</p>
+<ul>
+<li>The instructor started jupyter lab in the terminal on his machine. He is running jupyter locally and not on Binder.</li>
+<li>If it was binder the URL in the browser ways say &quot;mybinder.org&quot; somewhere in it.  &quot;localhost&quot; usually would mean &quot;somehow on your computer&quot;.
+<ul>
+<li>:+1:</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>The type of cell is Code</p>
+<ul>
+<li>It's a code cell,</li>
+<li>should be a markdown instead
+<ul>
+<li>Yes. Thank you both.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>sorry, you are a bit fast for me. How do I distinguish a markdown text from a code cell in the jupyter notebook?</p>
+<ul>
+<li>Above towards the top of the notebook frame you see a &quot;Code&quot; text - this selects the type</li>
+<li>(in practice I try to run and if it does the wrong thing, I change the type)</li>
+<li>Also, the cell that has in the left side <code>[ ]</code> is a <strong>code cell</strong>. Markdown or text cell does not have it. +1 better!</li>
+</ul>
+</li>
+<li>
+<p>I get 3.104 😅</p>
+<ul>
+<li>Heh, nice!  If you increase the number of points does it become more accurate?
+<ul>
+<li>it does! how do I run &quot;every code cell after this&quot;?</li>
+</ul>
+</li>
+<li>I don't have it open but is there a option in the &quot;Run&quot; menu?  (in practice I shift-Enter multiple times until I get to the point I want)
+<ul>
+<li>ah,ok, yes there is a option &quot;Run Selected Cell and All Below&quot;</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<h2 id="notebooks-and-version-control">Notebooks and version control</h2>
+<p>https://coderefinery.github.io/jupyter/version-control/</p>
+<ol start="39">
+<li>
+<p>Does jupyter only come as a browser window? Or does it have a desktop app as well?</p>
+<ul>
+<li>The &quot;Jupyter server&quot; basically is a browser-based thing.  But it is also the format, and for example VS Code and open, edit, and run them (I havent' done this but it's referenced abvoe)</li>
+<li>There is a desktop app here: https://github.com/jupyterlab/jupyterlab-desktop - I haven't used it, and I think it is basically one of these &quot;embed a browser in an application&quot; thing.
+<ul>
+<li>so it is roughly equivalent to Rstudio/Posit desktop and Rstudio server? And then its just a question of preference or main language?</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>I think I've lost one step. In my JupiterLab there isn't this connection to github repo. </p>
+<ul>
+<li>It might need a git extension set up.  Let me check.</li>
+<li>That might be it, thanks. </li>
+<li>jupyterlab-git, with conda/mamba I think it automatically initializes, not sure if the Pip one does</li>
+<li>I'll look it up.</li>
+</ul>
+</li>
+<li>
+<p>Sorry, I missed where is the original git repository, could you please tell me its address?</p>
+<ul>
+<li>Did they use the current example and initialize a new git repo as part of the exercise?
+<ul>
+<li>May be, but then how do I compare with their changes? Or should I make the changes and compare internally?</li>
+<li>we showed an example on the local computer and one on GitHub: https://github.com/coderefinery/jupyter/compare/5ff55b8..fce21e6
+<ul>
+<li>Got it, thanks</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>what was nbdime?</p>
+<ul>
+<li>&quot;NoteBook DIff and MErge&quot; - basically the basic tool that does these pretty diffs (and merges) of notebook files, that are too complex to use the standard &quot;git diff&quot; commands on
+<ul>
+<li>aah. thanks!</li>
+</ul>
+</li>
+<li>It can be hooked into git, Jupyter, and so on.</li>
+</ul>
+</li>
+</ol>
+<p>:::info</p>
+<h3 id="break-we-resume-at-xx-05">Break, we resume at xx:05</h3>
+<p>:::</p>
+<h2 id="sharing-notebooks">Sharing notebooks</h2>
+<p>https://coderefinery.github.io/jupyter/sharing/</p>
+<ol start="43">
+<li>
+<p>is it recommended to include extensive datasets? Or would you rather include a &quot;example&quot; subset of your data? but then its not fully reproducible</p>
+<ul>
+<li>I'd include a small example for testing and then a link to the dataset in a good repository (like we saw yesterday).  It could even include some automatic-downloading stuff (but I'd make sure it's obvious how to add your own data - doing downloading automatically can make it hard to understand)</li>
+<li>You are very right about the reproducibility trade-off, though.  There's not much to be done when the data is big, but it's something to consider.</li>
+</ul>
+</li>
+<li>
+<p>Under what use case would you want to use Binders than to just keep your Jupter notebook in GitHub?</p>
+<ul>
+<li>If you have a simple ( not too computationally expensive ) show case, where you want to provide users with the ability not to install jupyter and still run it. </li>
+<li>would they need to install Jupyter if you had it in GitHub?</li>
+<li>They are for different use cases: Github/lab/etc is for storing code and developing it (and has preview so you can see it but not interact).  Binder allows someone to run easily if they just want to test.  Local install would be for serious development work.</li>
+<li>So they can run it on the Binder browser?
+<ul>
+<li>yes</li>
+<li>Got it, and there is no other online platform where you can do this, just Binder?</li>
+</ul>
+</li>
+<li>There probably are some.  Working without a login like Binder for short-term experimentation, I'm not sure.</li>
+<li>Okay thank you.</li>
+</ul>
+</li>
+<li>
+<p>.Is it possible to include in the requirements.txt some python libs that are local files and run it in binder?</p>
+<ul>
+<li>No, Binder cannot access your local computer. You can reference files in the GitHub repository. We saw some examples of that yesterday in the environment.yaml files.</li>
+<li>Do you mean in the repository itself? 
+<ul>
+<li>sorry, yes, I meant in the repository</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Are there any other tutorials for jupyter-git and binder that you would recommend? to explore more than we covered today</p>
+</li>
+<li>
+<p>following up on 46: tutorial for Rmarkdown/Quarto -&gt; Binder</p>
+</li>
+</ol>
+<h2 id="feedback">Feedback</h2>
+<p>:::info</p>
+<h3 id="news-for-day-19-09">News for day 19.09</h3>
+<ul>
+<li>Today we did the things in the lesson</li>
+<li>Tomorrow will be automated testing and modular code development. We will continue to do demonstrations, nothing to install
+<ul>
+<li>These lessons are really the capstone of the whole course and you see everything we did in action again.
+:::</li>
+</ul>
+</li>
+</ul>
+<p>Today was:</p>
+<ul>
+<li>too fast: oo</li>
+<li>too slow: </li>
+<li>right speed: ooo</li>
+<li>too advanced:o</li>
+<li>too basic:</li>
+<li>right level: oo</li>
+<li>needed more exercise time: oo</li>
+<li>needed less exercise time: </li>
+<li>I will use what I learned today: ooo</li>
+<li>I would recommend today to others: ooo</li>
+<li>I would not recommend today to others: </li>
+<li>too slow sometimes, too fast other times: </li>
+</ul>
+<p>One good thing about today:</p>
+<ul>
+<li>Sphynx and Binder are tools new to me. :+1:</li>
+<li>Jupyter is a new tool for me</li>
+<li>NBdime was new for me, never had a chance to see/use it</li>
+<li>..</li>
+</ul>
+<p>One thing to improve for next time:</p>
+<ul>
+<li>R examples would be nice. :+1::+1:
+<ul>
+<li>thanks for the feedback, good suggestion</li>
+</ul>
+</li>
+<li>more practice/interactive exercises would be great :+1:
+<ul>
+<li>indeed, exercises are a better method for assimilating the material; demos are a way for us to know that everyone can follow, but it is not ideal </li>
+</ul>
+</li>
+</ul>
+<p>Any other feedback?</p>
+<ul>
+<li>..</li>
+<li>..</li>
+<li>..</li>
+</ul>
+
+  
+
+      </div>
+
+      <div class="uk-margin-large-top">
+        <hr>
+        <div class="uk-child-width-expand@s" uk-grid>
+
+  <div>
+    <h4>Funding</h4>
+    <p>
+      CodeRefinery is a project within the
+      <a href="https://neic.no" target="_blank">Nordic e-Infrastructure Collaboration</a> (NeIC).
+      NeIC is an organisational unit under <a href="https://www.nordforsk.org/" target="_blank">NordForsk</a>.
+    </p>
+  </div>
+
+  <div>
+    <h4>Privacy</h4>
+    <p>
+      <a href="https://coderefinery.org/privacy-policy/" target="_blank">Privacy policy</a>
+    </p>
+  </div>
+
+  <div>
+    <h4>Follow us</h4>
+    <ul class="uk-iconnav">
+      <li>
+        <a href="https://github.com/coderefinery" target="_blank" uk-icon="icon: github">GitHub</a>
+      </li>
+      <li>
+        <a rel="me" href="https://fosstodon.org/@coderefinery" target="_blank" uk-icon="icon: social">Mastodon</a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/company/coderefinery-research-software-development/?viewAsMember=true" target="_blank" uk-icon="icon: linkedin">LinkedIn</a>
+      </li>
+    </ul>
+  </div>
+
+  <div>
+    <h4>Contact</h4>
+    <p>
+      <a href="mailto:support@coderefinery.org">support@coderefinery.org</a>
+    </p>
+  </div>
+
+  <div>
+    <h4>Improve this page</h4>
+    <p>
+      <a href="https:&#x2F;&#x2F;github.com&#x2F;coderefinery&#x2F;2024-09-10-workshop">Source code</a>
+    </p>
+  </div>
+
+</div>
+
+      </div>
+
+    </div>
+  </body>
+
+  <script src="https://cdn.jsdelivr.net/npm/anchor-js/anchor.min.js"></script>
+  <script>
+    anchors.add();
+  </script>
+</html>
