@@ -14,6 +14,7 @@
 
 # This input will be used for all segments until redefined
 - input: raw/day1-obs.mkv
+- schedule-sync: 00:15:25=9:00:00
 
 
 ## Preview icebreaker
@@ -108,6 +109,7 @@
 
 # Day 2
 - input: raw/day2-obs.mkv
+- schedule-sync: 20:28=9:00:00
 
 # Day 2 icebreaker
 - output: out/day2-icebreaker.mkv
@@ -192,6 +194,7 @@
 
 ## Day 3
 - input: raw/day3-obs.mkv
+- schedule-sync: 00:21:31=9:00:00
 
 #- output: out/day3-icebreaker.mkv
 #  title: 3.1 Day 3 icebreaker
@@ -284,6 +287,7 @@
     - stop: 00:21:13
 
 
+- schedule-sync: 00:00:49=09:06:00
 - output: out/day4-reproducible-research.mkv
   title: 4.2 Reproducible Research
   description: >
@@ -344,11 +348,13 @@
 ######    ...
 ######  time:
 ######    - 3:38:30, 3:39:42
-######
-#####
-#### Day 5
-#
-#- input: raw/day5-obs.mkv
+
+
+### Day 5
+
+- input: raw/day5-obs.mkv
+- schedule-sync: 00:15:46=9:04:00
+
 #
 #- output: out/day5-intro.mkv
 #  title: 5.1 Day 5 icebreakers and intro
@@ -360,69 +366,68 @@
 #    - stop: 00:27:46
 #
 #
-#- output: out/day5-documentation.mkv
-#  title: 5.2 Documentation
-#  description: >
-#    In this lesson we discuss different solutions for implementing and
-#    deploying code documentation. We start by creating a wishlist for
-#    how we would code documentation like to be. Then after a tour of
-#    available tools, we discuss how to write useful and accessible
-#    READMEs, and then we progress by demonstrating and practicing the
-#    Sphinx documentation generator and demonstrate how to deploy
-#    documentation to Read the Docs service.
-#
-#    Topics and tools discussed: Markdown, reStructured text, README
-#    documentation, table of contents generation, Sphinx, Read the
-#    Docs, GitHub/GitLab pages.
-#
-#    https://coderefinery.github.io/documentation/
-#  time:
-#    - start: 00:27:46
-#    - -: Introduction to topics, initial questions
-#
-#    - 00:41:31: § Motivation and wishlist
-#    - 00:50:00: § Popular tools and solutions
-#    - 00:56:18: § In-code documentation
-#    - 01:05:19: § README files
-#    - stop: 01:14:33
-#    - start: 01:26:26
-#    - -: § Sphinx and Markdown
-#    - 02:02:17: § Deploying Sphinx documentation to Github Pages
-#    - 02:19:18: § Summary
-#    - 02:21:03: Teaser for after lunch
-#    - stop: 02:22:40
-#
-#- output: out/day5-jupyter.mkv
-#  title: 5.3 Jupyter
-#  description: >
-#    This lesson teachs learners the user interface of JupyterLab, how
-#    Jupyter notebooks work, and what some common and powerful usecases
-#    are. Our focus is to demonstrate and discuss and guide towards
-#    good practices for reproducibility, collaboration, and
-#    reusability. The emphasis of this lesson is to demonstrate how to
-#    use notebooks in combination with version control and how to share
-#    reproducible notebooks via Binder.
-#
-#    This lesson demonstrates the use of JupyterLab, nbdime,
-#    jupyterlab-git, and Binder.
-#
-#    https://coderefinery.github.io/jupyter/
-#  time:
-#    - start: 03:20:45
-#    - 03:23:05: § Jupyter notebooks
-#    - 03:39:09: § JupyterLab and Notebook interface
-#    - 03:51:35: First Computational Notebook
-#    - 04:02:15: § Notebooks and version control
-#    - stop: 04:11:55
-#    - start: 04:22:02
-#    - -: Jupyter notebook opened from VS Code
-#    - 04:24:26: Sharing notebooks (Binder)
-#    - 04:36:36: Q&A
-#    - 04:41:16: Binder has started, take a look and discuss
-#    - 04:46:08: § Shell commands, magics, and widgets
-#    - 04:47:33: § Summary and more Q&A
-#    - stop: 04:51:23
-#
+- output: out/day5-documentation.mkv
+  title: 5.2 Documentation
+  description: >
+    In this lesson we discuss different solutions for implementing and
+    deploying code documentation. We start by creating a wishlist for
+    how we would code documentation like to be. Then after a tour of
+    available tools, we discuss how to write useful and accessible
+    READMEs, and then we progress by demonstrating and practicing the
+    Sphinx documentation generator and demonstrate how to deploy
+    documentation to Github Pages.
+
+    Topics and tools discussed: Markdown, reStructured text, README
+    documentation, table of contents generation, Sphinx, Read the
+    Docs, GitHub/GitLab pages.
+
+    https://coderefinery.github.io/documentation/
+  time:
+    - start: 00:15:46
+    - -: Introduction to topics, initial questions
+    - 00:18:05: § Motivation and wishlist
+    - 00:34:50: § Popular tools and solutions
+    - 00:44:44: § In-code documentation
+    - 00:55:24: § README files
+    - stop: 01:09:35
+    - start: 01:23:21
+    - -: § Sphinx and Markdown
+    - 01:51:51: § Deploying Sphinx documentation to Github Pages
+    - 02:05:41: § Summary
+    - stop: 02:11:14
+
+- output: out/day5-jupyter.mkv
+  title: 5.3 Jupyter
+  description: >
+    This lesson teachs learners the user interface of JupyterLab, how
+    Jupyter notebooks work, and what some common and powerful usecases
+    are. Our focus is to demonstrate and discuss and guide towards
+    good practices for reproducibility, collaboration, and
+    reusability. The emphasis of this lesson is to demonstrate how to
+    use notebooks in combination with version control and how to share
+    reproducible notebooks via Binder.
+
+    This lesson demonstrates the use of JupyterLab, nbdime,
+    jupyterlab-git, and Binder.
+
+    https://coderefinery.github.io/jupyter/
+  time:
+    - start: 03:12:06
+    - 03:16:02: § Jupyter notebooks
+    - 03:29:50: § JupyterLab and Notebook interface
+    - 03:39:19: First Computational Notebook
+    - 03:53:32: § Notebooks and version control
+    - stop: 04:06:15
+    - start: 04:17:23
+    - -: Sharing notebooks (Binder)
+    #-  : Q&A
+    #- : Binder has started, take a look and discuss
+    #- : § Shell commands, magics, and widgets
+    #- : § Summary and more Q&A
+    - 04:40:56: Day 5 outro
+    - stop: 04:46:07
+
+
 #####- output: out/day5-outro.mkv
 #####  title: 5.3 Day 5 outro
 #####  description: >-
@@ -430,10 +435,11 @@
 #####  time:
 #####    - start: 03:45:28
 #####    - stop: 03:46:23
-###
-###
-###
-#- input: raw/day6-obs.mkv
+
+
+
+- input: raw/day6-obs.mkv
+- schedule-sync: 00:14:47=9:00:00
 #
 #- output: out/day6-intro.mkv
 #  title: 6.1 Day 6 icebreakers and intro
@@ -447,84 +453,89 @@
 #
 #
 #
-#- output: out/day6-testing.mkv
-#  title: 6.2 Software Testing
-#  description: >
-#    Software testing is a fundamental part of modern software
-#    development, and especially important for science since results
-#    should be correct.  Luckily, it's not so hard to get started, and
-#    anyone can do it. This is a crash course for scientists to get
-#    started testing their software.
-#
-#    Tools covered include concepts of testing for science, unit
-#    testing, pytest, continuous integration, and GitHub actions.  We
-#    make demos in Python, but have examples in other languages and
-#    this will apply to every language in some form.
-#
-#    https://coderefinery.github.io/testing/
-#
-#  editlist:
-#    - start: 00:24:31
-#    - -: Introduction
-#    - 00:26:01: § Motivation
-#    - 00:37:36: § Testing locally
-#    - 00:53:45: § Automated testing
-#    - stop: 01:22:09
-#    - start: 01:33:10
-#    - -: § Test design
-#    - 02:07:56: Q&A
-#    - stop: 02:21:56
-#
-#- output: out/day6-modular-code-development.mkv
-#  title: 6.3 Modular Code Development
-#  description: >
-#    In this live-coding demo session we take a Python script as
-#    starting point which reads data, computes simple statistics, and
-#    generates a plot. Together we then improve this code based on
-#    suggestions from the audience to arrive at a more reusable code
-#    with reusable components. We start in the Jupyter notebook, later
-#    move to a Python script/module, introduce testing, and finally
-#    introduce and motivate a command line interface to our code.
-#
-#    In this demonstration we use JupyterLab, Python, Pandas,
-#    Matplotlib, pytest, and Click.  It is also a great demonstration
-#    of pair programming.
-#
-#    https://coderefinery.github.io/modular-type-along/
-#  time:
-#    - start: 03:18:43
-#    - -: Introduction to the lesson
-#    - 03:28:17: § Learning outcomes
-#    - 03:28:50: § Our starting task
-#    - 03:29:21: Start by coping into a Jupyter notebook and get it to run
-#    - 03:35:08: How is it not modular now?
-#    - 03:36:13: Split code into three functions
-#    - 03:47:50: Make some hard-coded config be options
-#    - 03:49:39: Plot different values in a loop
-#    - 03:57:17: Lower limit as a parameter
-#    - 03:58:42: Moving to a command line script
-#    - 04:04:40: Command-line interface with click
-#    - stop: 04:21:05
-#    - start: 04:31:06
-#    - -: Discussion after break
-#    - 04:33:55: Move functions into an importable module
-#    - 04:37:20: Record dependencies in a requirements.txt
-#    - 04:41:15: Add tests
-#    - 04:44:03: Commit to version control
-#    - 04:44:40: Discussion
-#    - stop: 04:48:05
-#
-#- output: out/day6-outro.mkv
-#  title: 6.4 Workshop outro
-#  description: >
-#      The concluding remarks of the workshop.
-#
-#      Outro presentation (will be updated in the future):
-#      https://github.com/coderefinery/workshop-outro/blob/master/README.md
-#
-#  time:
-#    - start: 04:48:28
-#    - -: A small discussion about AI code generation
-#    - 04:52:56: Outro, where to go from here.
-#    - 05:07:11: General Q&A, more about AI code
-#    - stop: 05:16:10
+- output: out/day6-testing.mkv
+  title: 6.1 Software Testing
+  description: >
+    Software testing is a fundamental part of modern software
+    development, and especially important for science since results
+    should be correct.  Luckily, it's not so hard to get started, and
+    anyone can do it. This is a crash course for scientists to get
+    started testing their software.
+
+    Tools covered include concepts of testing for science, unit
+    testing, pytest, continuous integration, and GitHub actions.  We
+    make demos in Python, but have examples in other languages and
+    this will apply to every language in some form.
+
+    https://coderefinery.github.io/testing/
+
+  editlist:
+    - start: 00:14:47
+    - -: Introduction
+
+    - 00:20:10: § Motivation
+    - 00:38:54: § Testing locally
+    - 00:50:10: § Automated testing
+    - stop: 01:11:47
+    - start: 01:21:57
+    - 01:53:41: § Test design
+    - 02:11:00: Conclusions and recommendations
+    #- : Q&A
+    - stop: 02:14:56
+
+- output: out/day6-modular-code-development.mkv
+  title: 6.2 Modular Code Development
+  description: >
+    In this live-coding demo session we take a Python script as
+    starting point which reads data, computes simple statistics, and
+    generates a plot. Together we then improve this code based on
+    suggestions from the audience to arrive at a more reusable code
+    with reusable components. We start in the Jupyter notebook, later
+    move to a Python script/module, introduce testing, and finally
+    introduce and motivate a command line interface to our code.
+
+    In this demonstration we use JupyterLab, Python, Pandas,
+    Matplotlib, pytest, and Click.  It is also a great demonstration
+    of pair programming.
+
+    https://coderefinery.github.io/modular-type-along/
+  time:
+    - start: 03:13:53
+    - -: Introduction to the lesson
+
+    - 03:21:17: § Learning outcomes
+    - 03:23:11: § Our starting task
+    - 03:24:06: Start by coping into a Jupyter notebook and get it to run
+    - 03:28:19: How is it not modular now?
+    - 03:32:15: Split code into three functions
+    #- : Make some hard-coded config be options
+    #- : Plot different values in a loop
+    #- : Lower limit as a parameter
+    - 03:48:18: Moving to a command line script
+    - 03:54:57: Command-line interface with click
+    - stop: 04:07:50
+    - start: 04:18:03
+    #- -: Discussion after break
+    - -: Version control
+    #- : Move functions into an importable module
+    #- : Record dependencies in a requirements.txt
+    - 04:24:52: Add tests
+    #- : Commit to version control
+    - 04:32:30: Revisit the learning outcomes
+    #- : Discussion
+    - stop: 04:34:46
+
+- output: out/day6-outro.mkv
+  title: 6.3 Workshop outro
+  description: >
+      The concluding remarks of the workshop.
+
+      Outro presentation (will be updated in the future):
+      https://github.com/coderefinery/workshop-outro/blob/master/README.md
+
+  time:
+    - start: 04:34:46
+    #- -: A small discussion about AI code generation
+    #- 04:52:56: Outro, where to go from here.
+    #- 05:07:11: General Q&A, more about AI code
+    - stop: 04:44:26
